@@ -32,6 +32,14 @@ npm start
 
 Open **http://127.0.0.1:4173** in Chrome. After building, normal play, lessons, coaching and saves run entirely locally. Keep the terminal open while using the application; press **Ctrl+C** to stop it.
 
+If Git on Windows reports an issuer-certificate error when cloning, use the Windows trusted certificate store for that command:
+
+```powershell
+git -c http.sslBackend=schannel clone https://github.com/jhoyos135/ChessWorkshop.git
+```
+
+This keeps TLS certificate verification enabled. It does not affect the offline launcher.
+
 For development, use `npm run dev` instead of `npm start`. Both use the same strict loopback origin, so run only one server at a time. After source changes, rebuild with `npm run build` before using the production launcher. Refresh the browser to load a new production build.
 
 ```powershell
