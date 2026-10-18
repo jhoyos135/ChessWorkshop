@@ -1,0 +1,11 @@
+import { createServer } from 'node:http';
+import { readFile, stat } from 'node:fs/promises';
+import { resolve, extname, sep, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { spawn } from 'node:child_process';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'../dist');const host='127.0.0.1',port=4173;
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.wasm':'application/wasm','.json':'application/json','.txt':'text/plain; charset=utf-8','.svg':'image/svg+xml'};
+const server=createServer(async(req,res)=>{try{const url=new URL(req.url,`http://${host}:${port}`);const file=resolve(root,'.'+decodeURIComponent(url.pathname==='/'?'/index.html':url.pathname));if(file!==root&&!file.startsWith(root+sep)){res.writeHead(403).end();return;}const bytes=await readFile(file);res.writeHead(200,{'Content-Type':types[extname(file)]??'application/octet-stream','Cache-Control':'no-cache','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'"});res.end(bytes);}catch{res.writeHead(404).end('File not found. Build Chess Workshop before launching.');}});
+server.on('error',e=>{console.error(e.code==='EADDRINUSE'?`Port ${port} is occupied. Close the other Chess Workshop server or application using it, then relaunch. The save origin must remain http://${host}:${port}.`:e);process.exitCode=1;});
+await stat(root).catch(()=>{console.error('Production files are missing. Run npm run build first.');process.exit(1);});
+server.listen(port,host,()=>{console.log(`Chess Workshop: http://${host}:${port} — keep this window open. Ctrl+C stops the server.`);if(process.argv.includes('--open')){if(process.platform==='win32')spawn('rundll32.exe',['url.dll,FileProtocolHandler',`http://${host}:${port}`],{windowsHide:true,stdio:'ignore',detached:true}).unref();}});

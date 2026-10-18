@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-18T00:50:09.141Z",
+  "status": "passed",
+  "suite": "tests/browser/coaching.spec.ts",
+  "journeys": 8,
+  "includedInFullBrowserSuite": true,
+  "unitTests": 80,
+  "policyConfigurations": 6561,
+  "policyEvaluations": 13122,
+  "browserFeatureModeCases": 18,
+  "coverage": [
+    "Independent manual help for both colors",
+    "hint-two piece highlight with arrows Off",
+    "Guided played-move facts",
+    "both-color actual WASM important-mistake feedback",
+    "separate mate estimates",
+    "hidden retry preserves original game and recent reveal assistance",
+    "requested hint preemption and undo clearing",
+    "engine load failure and retry",
+    "independent Off/On request/Automatic features on both turns"
+  ],
+  "failedTests": []
+}

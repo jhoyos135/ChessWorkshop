@@ -1,0 +1,267 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "workspace\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/locked-drag.spec.ts",
+      "--reporter=list,json"
+    ],
+    "configFile": "workspace\\playwright.config.ts",
+    "rootDir": "workspace/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "workspace/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "workspace/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "workspace\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chrome",
+        "testDir": "workspace\\tests\\browser",
+        "snapshotDir": "workspace\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "viewport": {
+            "width": 1440,
+            "height": 1080
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run start",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "locked-drag.spec.ts",
+      "file": "locked-drag.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "locked w perspective accepts a piece whose base is placed on its legal destination",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12826,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 PLIES', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 PLIES', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 PLIES', { exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 PLIES', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 PLIES', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 PLIES', { exact: true })\u001b[22m\n\n    at workspace\\tests\\browser\\locked-drag.spec.ts:7:295",
+                    "location": {
+                      "file": "workspace\\tests\\browser\\locked-drag.spec.ts",
+                      "column": 295,
+                      "line": 7
+                    },
+                    "snippet": "  5 |  const session=createSession('local');session.initialFen=session.initialFen.replace(' w ',' '+side+' ');session.fen=session.initialFen;session.orientation=side;session.cameraLocked=true;session.presentation={...defaultSettings,flat:false,reducedMotion:true};session.help={w:assistance('Off'),b:assistance('Off')};await page.goto('/');await page.getByRole('button',{name:'Saved games',exact:true}).click();await page.getByLabel('File type').selectOption('JSON');await page.getByLabel('Paste JSON').fill(JSON.stringify({format:'chessworkshop-session',version:1,session}));await page.getByRole('button',{name:'Validate & import'}).click();await page.locator('.saved-card').getByRole('button',{name:'Resume',exact:true}).click();await page.getByRole('button',{name:'Resume',exact:true}).click();await expect(page.getByRole('button',{name:'Lock camera',exact:true})).toHaveAttribute('aria-pressed','true');\n  6 |  const box=(await page.locator('canvas').first().boundingBox())!,camera=new PerspectiveCamera(42,box.width/box.height,.1,1000),sign=side==='w'?1:-1;camera.position.set(sign*8.4,8.9,sign*12.7);camera.lookAt(0,0,0);camera.updateMatrixWorld();const from=side==='w'?'e2':'e7',to=side==='w'?'e4':'e5',at=(square:string,y=0)=>new Vector3(square.charCodeAt(0)-100.5,y,4.5-Number(square[1])),source=at(from,.92).project(camera),ray=new Raycaster();ray.setFromCamera(new Vector2(source.x,source.y),camera);const floor=ray.ray.intersectPlane(new Plane(new Vector3(0,1,0),0),new Vector3())!,offset=at(from).sub(floor),drop=at(to).sub(offset).project(camera),pixel=(point:Vector3)=>({x:box.x+(point.x+1)*box.width/2,y:box.y+(1-point.y)*box.height/2}),start=pixel(source),end=pixel(drop);\n> 7 |  await page.mouse.move(start.x,start.y);await page.mouse.down();await page.mouse.move(end.x,end.y,{steps:16});await page.waitForTimeout(150);await page.screenshot({path:`test-results/locked-base-${side}.png`,clip:box});await page.mouse.up();await expect(page.getByText('1 PLIES',{exact:true})).toBeVisible();await expect(page.locator(`.keyboard-board [aria-label^=\"${to}, ${side==='w'?'White':'Black'} pawn\"]`)).toHaveCount(1);\n    |                                                                                                                                                                                                                                                                                                       ^\n  8 | });\n  9 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "workspace\\tests\\browser\\locked-drag.spec.ts",
+                        "column": 295,
+                        "line": 7
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 PLIES', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 PLIES', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 PLIES', { exact: true })\u001b[22m\n\n\n  5 |  const session=createSession('local');session.initialFen=session.initialFen.replace(' w ',' '+side+' ');session.fen=session.initialFen;session.orientation=side;session.cameraLocked=true;session.presentation={...defaultSettings,flat:false,reducedMotion:true};session.help={w:assistance('Off'),b:assistance('Off')};await page.goto('/');await page.getByRole('button',{name:'Saved games',exact:true}).click();await page.getByLabel('File type').selectOption('JSON');await page.getByLabel('Paste JSON').fill(JSON.stringify({format:'chessworkshop-session',version:1,session}));await page.getByRole('button',{name:'Validate & import'}).click();await page.locator('.saved-card').getByRole('button',{name:'Resume',exact:true}).click();await page.getByRole('button',{name:'Resume',exact:true}).click();await expect(page.getByRole('button',{name:'Lock camera',exact:true})).toHaveAttribute('aria-pressed','true');\n  6 |  const box=(await page.locator('canvas').first().boundingBox())!,camera=new PerspectiveCamera(42,box.width/box.height,.1,1000),sign=side==='w'?1:-1;camera.position.set(sign*8.4,8.9,sign*12.7);camera.lookAt(0,0,0);camera.updateMatrixWorld();const from=side==='w'?'e2':'e7',to=side==='w'?'e4':'e5',at=(square:string,y=0)=>new Vector3(square.charCodeAt(0)-100.5,y,4.5-Number(square[1])),source=at(from,.92).project(camera),ray=new Raycaster();ray.setFromCamera(new Vector2(source.x,source.y),camera);const floor=ray.ray.intersectPlane(new Plane(new Vector3(0,1,0),0),new Vector3())!,offset=at(from).sub(floor),drop=at(to).sub(offset).project(camera),pixel=(point:Vector3)=>({x:box.x+(point.x+1)*box.width/2,y:box.y+(1-point.y)*box.height/2}),start=pixel(source),end=pixel(drop);\n> 7 |  await page.mouse.move(start.x,start.y);await page.mouse.down();await page.mouse.move(end.x,end.y,{steps:16});await page.waitForTimeout(150);await page.screenshot({path:`test-results/locked-base-${side}.png`,clip:box});await page.mouse.up();await expect(page.getByText('1 PLIES',{exact:true})).toBeVisible();await expect(page.locator(`.keyboard-board [aria-label^=\"${to}, ${side==='w'?'White':'Black'} pawn\"]`)).toHaveCount(1);\n    |                                                                                                                                                                                                                                                                                                       ^\n  8 | });\n  9 |\n    at workspace\\tests\\browser\\locked-drag.spec.ts:7:295"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T14:40:53.856Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "workspace\\test-results\\locked-drag-locked-w-persp-9c234-ed-on-its-legal-destination-chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "workspace\\test-results\\locked-drag-locked-w-persp-9c234-ed-on-its-legal-destination-chrome\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "workspace\\test-results\\locked-drag-locked-w-persp-9c234-ed-on-its-legal-destination-chrome\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "workspace\\tests\\browser\\locked-drag.spec.ts",
+                    "column": 295,
+                    "line": 7
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "47a10efad80ca546cf08-7d6d0c747b6d29b534b1",
+          "file": "locked-drag.spec.ts",
+          "line": 4,
+          "column": 38
+        },
+        {
+          "title": "locked b perspective accepts a piece whose base is placed on its legal destination",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12349,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 PLIES', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 PLIES', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 PLIES', { exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 PLIES', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 PLIES', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 PLIES', { exact: true })\u001b[22m\n\n    at workspace\\tests\\browser\\locked-drag.spec.ts:7:295",
+                    "location": {
+                      "file": "workspace\\tests\\browser\\locked-drag.spec.ts",
+                      "column": 295,
+                      "line": 7
+                    },
+                    "snippet": "  5 |  const session=createSession('local');session.initialFen=session.initialFen.replace(' w ',' '+side+' ');session.fen=session.initialFen;session.orientation=side;session.cameraLocked=true;session.presentation={...defaultSettings,flat:false,reducedMotion:true};session.help={w:assistance('Off'),b:assistance('Off')};await page.goto('/');await page.getByRole('button',{name:'Saved games',exact:true}).click();await page.getByLabel('File type').selectOption('JSON');await page.getByLabel('Paste JSON').fill(JSON.stringify({format:'chessworkshop-session',version:1,session}));await page.getByRole('button',{name:'Validate & import'}).click();await page.locator('.saved-card').getByRole('button',{name:'Resume',exact:true}).click();await page.getByRole('button',{name:'Resume',exact:true}).click();await expect(page.getByRole('button',{name:'Lock camera',exact:true})).toHaveAttribute('aria-pressed','true');\n  6 |  const box=(await page.locator('canvas').first().boundingBox())!,camera=new PerspectiveCamera(42,box.width/box.height,.1,1000),sign=side==='w'?1:-1;camera.position.set(sign*8.4,8.9,sign*12.7);camera.lookAt(0,0,0);camera.updateMatrixWorld();const from=side==='w'?'e2':'e7',to=side==='w'?'e4':'e5',at=(square:string,y=0)=>new Vector3(square.charCodeAt(0)-100.5,y,4.5-Number(square[1])),source=at(from,.92).project(camera),ray=new Raycaster();ray.setFromCamera(new Vector2(source.x,source.y),camera);const floor=ray.ray.intersectPlane(new Plane(new Vector3(0,1,0),0),new Vector3())!,offset=at(from).sub(floor),drop=at(to).sub(offset).project(camera),pixel=(point:Vector3)=>({x:box.x+(point.x+1)*box.width/2,y:box.y+(1-point.y)*box.height/2}),start=pixel(source),end=pixel(drop);\n> 7 |  await page.mouse.move(start.x,start.y);await page.mouse.down();await page.mouse.move(end.x,end.y,{steps:16});await page.waitForTimeout(150);await page.screenshot({path:`test-results/locked-base-${side}.png`,clip:box});await page.mouse.up();await expect(page.getByText('1 PLIES',{exact:true})).toBeVisible();await expect(page.locator(`.keyboard-board [aria-label^=\"${to}, ${side==='w'?'White':'Black'} pawn\"]`)).toHaveCount(1);\n    |                                                                                                                                                                                                                                                                                                       ^\n  8 | });\n  9 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "workspace\\tests\\browser\\locked-drag.spec.ts",
+                        "column": 295,
+                        "line": 7
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('1 PLIES', { exact: true })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('1 PLIES', { exact: true }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('1 PLIES', { exact: true })\u001b[22m\n\n\n  5 |  const session=createSession('local');session.initialFen=session.initialFen.replace(' w ',' '+side+' ');session.fen=session.initialFen;session.orientation=side;session.cameraLocked=true;session.presentation={...defaultSettings,flat:false,reducedMotion:true};session.help={w:assistance('Off'),b:assistance('Off')};await page.goto('/');await page.getByRole('button',{name:'Saved games',exact:true}).click();await page.getByLabel('File type').selectOption('JSON');await page.getByLabel('Paste JSON').fill(JSON.stringify({format:'chessworkshop-session',version:1,session}));await page.getByRole('button',{name:'Validate & import'}).click();await page.locator('.saved-card').getByRole('button',{name:'Resume',exact:true}).click();await page.getByRole('button',{name:'Resume',exact:true}).click();await expect(page.getByRole('button',{name:'Lock camera',exact:true})).toHaveAttribute('aria-pressed','true');\n  6 |  const box=(await page.locator('canvas').first().boundingBox())!,camera=new PerspectiveCamera(42,box.width/box.height,.1,1000),sign=side==='w'?1:-1;camera.position.set(sign*8.4,8.9,sign*12.7);camera.lookAt(0,0,0);camera.updateMatrixWorld();const from=side==='w'?'e2':'e7',to=side==='w'?'e4':'e5',at=(square:string,y=0)=>new Vector3(square.charCodeAt(0)-100.5,y,4.5-Number(square[1])),source=at(from,.92).project(camera),ray=new Raycaster();ray.setFromCamera(new Vector2(source.x,source.y),camera);const floor=ray.ray.intersectPlane(new Plane(new Vector3(0,1,0),0),new Vector3())!,offset=at(from).sub(floor),drop=at(to).sub(offset).project(camera),pixel=(point:Vector3)=>({x:box.x+(point.x+1)*box.width/2,y:box.y+(1-point.y)*box.height/2}),start=pixel(source),end=pixel(drop);\n> 7 |  await page.mouse.move(start.x,start.y);await page.mouse.down();await page.mouse.move(end.x,end.y,{steps:16});await page.waitForTimeout(150);await page.screenshot({path:`test-results/locked-base-${side}.png`,clip:box});await page.mouse.up();await expect(page.getByText('1 PLIES',{exact:true})).toBeVisible();await expect(page.locator(`.keyboard-board [aria-label^=\"${to}, ${side==='w'?'White':'Black'} pawn\"]`)).toHaveCount(1);\n    |                                                                                                                                                                                                                                                                                                       ^\n  8 | });\n  9 |\n    at workspace\\tests\\browser\\locked-drag.spec.ts:7:295"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T14:41:09.013Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "workspace\\test-results\\locked-drag-locked-b-persp-89e03-ed-on-its-legal-destination-chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "workspace\\test-results\\locked-drag-locked-b-persp-89e03-ed-on-its-legal-destination-chrome\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "workspace\\test-results\\locked-drag-locked-b-persp-89e03-ed-on-its-legal-destination-chrome\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "workspace\\tests\\browser\\locked-drag.spec.ts",
+                    "column": 295,
+                    "line": 7
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "47a10efad80ca546cf08-9e4df5429272cc4d8edc",
+          "file": "locked-drag.spec.ts",
+          "line": 4,
+          "column": 38
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-18T14:40:52.686Z",
+    "duration": 29321.688000000002,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

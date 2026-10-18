@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-18T15:17:19.698Z",
+  "passed": true,
+  "browser": "155.0.8059.84",
+  "origin": "http://127.0.0.1:4173",
+  "runtime": "workspace\\release\\ChessWorkshop-1.0.0\\runtime\\node.exe",
+  "filesVerified": 406,
+  "lessons": 32,
+  "lessonExercises": 97,
+  "puzzles": 100,
+  "candidates": 3,
+  "savedPliesRestored": 2,
+  "restoredPaused": true,
+  "lessonCompletionRestored": true,
+  "fullMoveReviewEntries": 2,
+  "completedLessonExercises": 3,
+  "localBestMoves": {
+    "w": false,
+    "b": true
+  },
+  "cameraLockRestored": true,
+  "homePreviewUnlocked": true,
+  "explainRestored": true,
+  "guidedGameRestored": true,
+  "blueTheme": true,
+  "specificLessonFeedback": true,
+  "timeoutDecisionRestored": true,
+  "externalRequests": [],
+  "occupiedPort": {
+    "exitCode": 1,
+    "actionableError": true
+  },
+  "sourceIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340",
+  "packagedIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340"
+}

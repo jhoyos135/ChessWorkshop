@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-18T00:50:09.141Z",
+  "status": "passed",
+  "includedInFullBrowserSuite": true,
+  "suites": {
+    "explanations": 3,
+    "guidedGame": 4,
+    "announcements": 3,
+    "lifecycle": 3,
+    "specialMoveAnimations": 8,
+    "blueTheme": 1,
+    "gameScopedCamera": 1,
+    "importPositions": 2
+  },
+  "unitTests": 80,
+  "finalStyleChecks": 5,
+  "finalBuildIndexSha256": "00b024e1f9e6f8a22d1f3fffb27672e72908bb20aa1eef069229e57979165feb",
+  "scope": "Complete guided game, semantic teaching imports, actual opponent/result announcements, game-scoped lock, persistent Explain and verified reasons, interruption clocks, in-game level changes, blue interface and special move frames",
+  "remaining": [
+    "Blocked-position timeout adjudication and visible pending decision",
+    "Actual beginner trials/calibration",
+    "Human instructional review"
+  ],
+  "reviewPerformanceFixed": true
+}

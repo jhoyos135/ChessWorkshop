@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-18T15:06:38.393Z",
+  "buildIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340",
+  "machine": {
+    "os": "Windows 11 Home",
+    "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+    "threads": 22,
+    "memoryGB": 32,
+    "vendor": "Google Inc. (Intel)",
+    "renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36"
+  },
+  "quality": {
+    "viewport": "1920x1080",
+    "dprCap": 1,
+    "shadows": 0,
+    "pieces": "sculpted Staunton",
+    "headless": true
+  },
+  "firstInteractionMs": 251.298,
+  "uiFpsDuringOrbit": 60.32011466665241,
+  "frameP95Ms": 16.799999999999727,
+  "saveP95Ms": 337.5999999642372,
+  "inputP95Ms": 12.300000011920929,
+  "coachP95Ms": 1254.699999988079,
+  "refinementP95Ms": 3016.399999976158,
+  "samples": {
+    "frames": 101,
+    "saves": 19,
+    "input": 24,
+    "coach": 8,
+    "refinement": 1
+  },
+  "raw": {
+    "saves": [
+      337.5999999642372,
+      12.800000011920929,
+      14.300000011920929,
+      20.100000023841858,
+      43.69999998807907,
+      53.90000003576279,
+      10.899999976158142,
+      40.69999998807907,
+      59.90000003576279,
+      23.80000001192093,
+      51.59999996423721,
+      21.599999964237213,
+      29.100000023841858,
+      24.30000001192093,
+      26.799999952316284,
+      46.39999997615814,
+      32.19999998807907,
+      30.69999998807907,
+      26.900000035762787
+    ],
+    "input": [
+      5.800000011920929,
+      8.399999976158142,
+      8.200000047683716,
+      6.299999952316284,
+      11.5,
+      12.300000011920929,
+      9.099999964237213,
+      11.399999976158142,
+      11.800000011920929,
+      12.300000011920929,
+      6.599999964237213,
+      11,
+      11,
+      13.299999952316284,
+      11.100000023841858,
+      11.800000011920929,
+      11.900000035762787,
+      5.099999964237213,
+      10.200000047683716,
+      9.599999964237213,
+      10.800000011920929,
+      9.900000035762787,
+      9.800000011920929,
+      11
+    ],
+    "coach": [
+      1254.699999988079,
+      1034.8999999761581,
+      1087.199999988079,
+      1037.800000011921,
+      1031.300000011921,
+      1035.699999988079,
+      1049.800000011921,
+      1052.2000000476837
+    ],
+    "refinement": [
+      3016.399999976158
+    ]
+  },
+  "limitations": "One local cold launch; frame cadence sampled during active orbit in headless Chrome. This is not a physical-monitor or beginner usability benchmark.",
+  "passed": true,
+  "scope": "Final priority build. First useful candidates and background refinement are measured separately; timing jobs ran sequentially after browser tests."
+}

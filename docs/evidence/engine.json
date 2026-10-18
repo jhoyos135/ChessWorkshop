@@ -1,0 +1,36 @@
+{
+  "runtime": "v20.19.4",
+  "name": "id name Stockfish 19 Lite WASM",
+  "options": [
+    "option name Threads type spin default 1 min 1 max 1",
+    "option name Hash type spin default 16 min 1 max 33554432",
+    "option name Clear Hash type button",
+    "option name Ponder type check default false",
+    "option name MultiPV type spin default 1 min 1 max 256",
+    "option name Skill Level type spin default 20 min 0 max 20",
+    "option name Move Overhead type spin default 10 min 0 max 5000",
+    "option name nodestime type spin default 0 min 0 max 10000",
+    "option name UCI_Chess960 type check default false",
+    "option name UCI_LimitStrength type check default false",
+    "option name UCI_Elo type spin default 1320 min 1320 max 3190",
+    "option name UCI_ShowWDL type check default false",
+    "option name EvalFile type string default nn-61e7af4bb97d.nnue"
+  ],
+  "bestmove": "bestmove g1f3 ponder b8c6",
+  "elapsedMs": 412.6894,
+  "memoryBefore": {
+    "rss": 40718336,
+    "heapTotal": 4689920,
+    "heapUsed": 4018456,
+    "external": 1521334,
+    "arrayBuffers": 12644
+  },
+  "memoryAfter": {
+    "rss": 102973440,
+    "heapTotal": 6787072,
+    "heapUsed": 4316624,
+    "external": 137901418,
+    "arrayBuffers": 1859313
+  },
+  "notes": "Node execution of the exact bundled single-threaded WASM provides startup/options and process memory evidence. Browser-worker legal output and cancellation are tested separately."
+}

@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-18T15:08:21.812Z",
+  "passed": true,
+  "machine": {
+    "os": "Windows 11 Home",
+    "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+    "memoryGB": 31.364898681640625,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36"
+  },
+  "protocol": {
+    "initialSeed": 334462,
+    "reviewedPlies": 80,
+    "subsequentPlies": 20,
+    "reviewBudgetMs": 350,
+    "view": "flat",
+    "reducedMotion": true,
+    "externalRequestsBlocked": true
+  },
+  "reviewMs": 66308.49889999999,
+  "saveP95Ms": 21.30000001192093,
+  "inputP95Ms": 13,
+  "samples": {
+    "saves": 20,
+    "input": 24
+  },
+  "sessionBytes": 130848,
+  "reviewEntries": 80,
+  "finalPlies": 100,
+  "buildIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340",
+  "raw": {
+    "saves": [
+      19.30000001192093,
+      19,
+      19.69999998807907,
+      18.099999964237213,
+      22.899999976158142,
+      18.69999998807907,
+      19.600000023841858,
+      20.5,
+      20.19999998807907,
+      18.80000001192093,
+      20,
+      19.600000023841858,
+      18.600000023841858,
+      19.099999964237213,
+      21.30000001192093,
+      18.399999976158142,
+      18,
+      18.899999976158142,
+      19.19999998807907,
+      18.5
+    ],
+    "input": [
+      10.300000011920929,
+      13,
+      12.800000011920929,
+      11.5,
+      11.899999976158142,
+      12.199999988079071,
+      12.399999976158142,
+      13.199999988079071,
+      12.399999976158142,
+      12.699999988079071,
+      11.899999976158142,
+      12.699999988079071,
+      12,
+      12.900000035762787,
+      12.399999976158142,
+      12.400000035762787,
+      12.400000035762787,
+      12.799999952316284,
+      12.599999964237213,
+      12.100000023841858,
+      12.600000023841858,
+      12.699999988079071,
+      12.699999988079071,
+      12.399999976158142
+    ]
+  },
+  "limitations": "One deterministic nonterminal game on this machine. Measures input and real IndexedDB writes after an 80-ply actual WASM review; it does not measure 3D frame cadence or human learning."
+}

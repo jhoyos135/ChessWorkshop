@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-18T14:59:14.443487+00:00",
+  "status": "passed",
+  "browser": "Chrome 155",
+  "journeys": 103,
+  "fullSuite": true,
+  "failedTests": [],
+  "retries": 0,
+  "skipped": 0,
+  "durationMs": 482031.207,
+  "raw": "browser-results.json",
+  "buildIndexSha256": "079de1459236843a1b1dabf61790a8f667b3a38d4436b0f7fc6344fb3a399ccc",
+  "uniqueJourneys": 104,
+  "finalCoaching": {
+    "journeys": 25,
+    "newUniqueJourneys": 1,
+    "raw": "final-coaching-results.json",
+    "buildIndexSha256": "a5a86d9f7ab55a8e4310e39166cfd18619e2039269e90dd3e63fc74864c53d0c",
+    "scope": "Final stronger-cache guard; actual WASM tactics, current-position cancellation, both-color toggles, explanations and feedback"
+  },
+  "finalPriority": {
+    "journeys": 14,
+    "newUniqueJourneys": 0,
+    "raw": "final-priority-results.json",
+    "buildIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340",
+    "scope": "Current recommendation priority, post-move feedback, actual tactical accuracy and stronger-cache retention"
+  }
+}

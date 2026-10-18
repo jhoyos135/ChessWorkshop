@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-18T00:50:09.141Z",
+  "status": "passed",
+  "journeys": 11,
+  "suites": [
+    "tests/browser/curriculum.spec.ts",
+    "tests/browser/teaching-ux.spec.ts",
+    "tests/browser/guided-game.spec.ts"
+  ],
+  "coverage": [
+    "all 32 lessons and 97 exercises completed and saved",
+    "unfinished continuation title matches target",
+    "demonstration playback after reload",
+    "attempt directly playable after reload",
+    "explicit correct, partial and retry feedback",
+    "automatic completion and reload",
+    "no game Resume or Undo in teaching",
+    "drills begun midway require all exercises",
+    "earlier final-feedback save completes without duplicate credit",
+    "current multi-move hint targets and post-success clearing",
+    "Full guided game mid-game restore, checkmate certificate and separate review",
+    "Legacy opening-only completion extends without losing credit",
+    "Malformed teaching JSON rejected atomically with recovery",
+    "Legacy normalized continuation from Home and backups",
+    "Contradictory lesson lifecycle fields rejected atomically",
+    "Wrong-move destination, fork and capture feedback; Retry heading and inactive lesson clocks"
+  ],
+  "failedTests": [],
+  "includedInFullBrowserSuite": true
+}

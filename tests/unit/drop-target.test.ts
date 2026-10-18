@@ -1,0 +1,4 @@
+import { it,expect } from 'vitest';
+import { dragTarget,squareAt } from '../../src/board/dropTarget';
+it('a legal cursor target takes priority, with a centered piece-base fallback for perspective offset',()=>{const legal=new Set<'e3'|'e4'>(['e3','e4']);expect(dragTarget('e3',{x:.5,z:.5},legal)).toEqual({square:'e3',valid:true});expect(dragTarget('d5',{x:.5,z:.5},legal)).toEqual({square:'e4',valid:true});expect(dragTarget('d5',{x:.9,z:.85},legal)).toEqual({square:'d5',valid:false});});
+it('off-board and invalid destinations are never changed to a nearby legal move',()=>{expect(squareAt({x:4.1,z:0})).toBeNull();expect(squareAt({x:-3.5,z:3.5})).toBe('a1');expect(squareAt({x:3.5,z:-3.5})).toBe('h8');expect(dragTarget(undefined,{x:9,z:9},new Set())).toBeNull();expect(dragTarget('e5',{x:.5,z:-.5},new Set<'e3'|'e4'>(['e3','e4']))).toEqual({square:'e5',valid:false});});

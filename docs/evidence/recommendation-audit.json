@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-18T14:53:04.848103+00:00",
+  "status": "reproduced before fix; corrected unit and real-WASM browser checks pass",
+  "cases": [
+    {
+      "side": "w",
+      "olderDepth": 10,
+      "olderPrimary": "e2e4",
+      "finalDepth": 11,
+      "finalBestmove": "d2d4",
+      "displayedBefore": "e2e4",
+      "displayedAfter": "d2d4"
+    },
+    {
+      "side": "b",
+      "olderDepth": 10,
+      "olderPrimary": "e7e5",
+      "finalDepth": 11,
+      "finalBestmove": "c7c5",
+      "displayedBefore": "e7e5",
+      "displayedAfter": "c7c5"
+    }
+  ],
+  "unit": "tests/unit/engine-accuracy.test.ts",
+  "actualWasm": "final-priority-results.json",
+  "resolution": "Only coherent completed alternatives whose primary matches final bestmove; otherwise publish the verified final primary alone. Automatic current-turn analysis deepens after idle.",
+  "buildIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340",
+  "strongerCache": "Preserved across hints, assistance changes, pause/resume; different histories and restricted searches remain separate."
+}

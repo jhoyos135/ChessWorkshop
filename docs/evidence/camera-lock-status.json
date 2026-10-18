@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-18T00:50:09.141Z",
+  "status": "passed",
+  "suite": "tests/browser/drag.spec.ts",
+  "includedInFullBrowserSuite": true,
+  "coverage": [
+    "locked orbit and wheel gestures leave identical canvas pixels",
+    "legal piece dragging remains available",
+    "lock persists across reload",
+    "explicit overhead/perspective/reset still work",
+    "unlock restores orbit",
+    "legacy/import validation",
+    "Game lock never affects Home orbit or a new game"
+  ],
+  "failedTests": [],
+  "journeys": 2
+}

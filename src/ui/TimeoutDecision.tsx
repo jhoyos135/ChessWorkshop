@@ -1,0 +1,4 @@
+import { other,sideName,type Side } from '../sessions/model';
+export function TimeoutDecision({flagged,disabled,onResolve}:{flagged:Side;disabled:boolean;onResolve:(canMate:boolean)=>void}){
+ return <section className="timeout-decision" role="region" aria-label="Timeout adjudication"><h3>Decide the timeout result</h3><p>{sideName(flagged)}’s clock reached zero. The app cannot establish whether {sideName(other(flagged))} could ever give checkmate from this position.</p><p>Consider any possible legal continuation. A forced mate is not required. Clocks and play stay paused until this decision is saved.</p><div className="button-row"><button disabled={disabled} onClick={()=>onResolve(true)}>Opponent can mate</button><button disabled={disabled} onClick={()=>onResolve(false)}>Draw: no possible mate</button></div>{disabled&&<p>Use the live game in the tab that owns this save to decide.</p>}</section>;
+}

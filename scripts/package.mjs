@@ -1,0 +1,16 @@
+import { mkdir,cp,copyFile,readFile,writeFile,readdir,stat,realpath,lstat,rm } from 'node:fs/promises';
+import { resolve,sep } from 'node:path';
+import { createHash } from 'node:crypto';
+const workspace=await realpath(resolve('.')),out=resolve('release/ChessWorkshop-1.0.0');
+if(!out.toLowerCase().startsWith((workspace+sep+'release'+sep).toLowerCase()))throw Error('Package target is outside the intended release folder');
+const existing=await lstat(out).catch(()=>null);if(existing){if(existing.isSymbolicLink()||(await realpath(out)).toLowerCase()!==out.toLowerCase())throw Error('Refusing to replace a linked release directory');console.log('Replacing generated package directory:',out);await rm(out,{recursive:true,force:true});}await mkdir(out,{recursive:true});
+for(const path of ['dist','docs','sources'])await cp(path,resolve(out,path),{recursive:true});
+await mkdir(resolve(out,'runtime'),{recursive:true});await copyFile(process.execPath,resolve(out,'runtime/node.exe'));await copyFile('C:/Program Files/nodejs/LICENSE',resolve(out,'runtime/Node-LICENSE.txt'));
+await mkdir(resolve(out,'scripts'),{recursive:true});await copyFile('scripts/serve.mjs',resolve(out,'scripts/serve.mjs'));
+for(const path of ['Launch Chess Workshop.cmd','README.md','LICENSE'])await copyFile(path,resolve(out,path));
+for(const path of ['src','content','tests','scripts','public','docs','sources'])await cp(path,resolve(out,'source',path),{recursive:true});
+for(const path of ['.gitignore','.gitattributes','Launch Chess Workshop.cmd','SPEC.md','README.md','LICENSE','package.json','package-lock.json','index.html','tsconfig.json','vite.config.ts','vitest.config.ts','playwright.config.ts'])await copyFile(path,resolve(out,'source',path));
+await mkdir(resolve(out,'licenses'),{recursive:true});const credits=[];
+async function licenses(dir){for(const entry of await readdir(dir,{withFileTypes:true})){if(entry.name.startsWith('.'))continue;const path=resolve(dir,entry.name);if(entry.isDirectory()){if(entry.name.startsWith('@')){await licenses(path);continue;}try{const pkg=JSON.parse(await readFile(resolve(path,'package.json'),'utf8'));const target=resolve(out,'licenses',pkg.name.replaceAll('/','__'));await mkdir(target,{recursive:true});for(const file of await readdir(path))if(/^(licen[sc]e|copying|notice)(\.|$)/i.test(file)&&!(await stat(resolve(path,file))).isDirectory())await copyFile(resolve(path,file),resolve(target,file));credits.push({name:pkg.name,version:pkg.version,license:pkg.license??'See bundled notices',repository:pkg.repository});}catch{} }}}
+await licenses(resolve('node_modules'));await writeFile(resolve(out,'licenses/dependencies.json'),JSON.stringify(credits,null,2));
+const manifest=[];async function hashTree(dir){for(const e of await readdir(dir,{withFileTypes:true})){const p=resolve(dir,e.name);if(e.isDirectory())await hashTree(p);else{const data=await readFile(p);manifest.push({path:p.slice(out.length+1).replaceAll('\\','/'),bytes:data.length,sha256:createHash('sha256').update(data).digest('hex')});}}}await hashTree(out);await writeFile(resolve(out,'SHA256-MANIFEST.json'),JSON.stringify(manifest,null,2));console.log(`Offline package: ${out}; ${manifest.length} files; ${Math.round(manifest.reduce((n,f)=>n+f.bytes,0)/1048576)} MB; bundled Node ${process.version}`);

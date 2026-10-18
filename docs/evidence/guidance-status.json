@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-18T00:50:09.141Z",
+  "status": "passed",
+  "journeys": 4,
+  "suite": "tests/browser/best-moves.spec.ts",
+  "includedInFullBrowserSuite": true,
+  "coverage": [
+    "both colors",
+    "persistent toggle across turns/reload",
+    "click source/other piece preserves guide",
+    "expand alternatives without commitment",
+    "local acknowledgments",
+    "separate White/Black toggles, including enabling from Off",
+    "inactive-side edits preserve the other side",
+    "both saved choices restore exactly"
+  ],
+  "failedTests": []
+}

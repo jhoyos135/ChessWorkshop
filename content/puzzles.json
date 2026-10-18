@@ -1,0 +1,2897 @@
+[
+  {
+    "id": "puzzle-001",
+    "version": 1,
+    "fen": "8/8/8/8/Q7/8/5K2/7k w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "a4h4"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on a4.",
+      "Try Qh4# (a4 to h4)."
+    ],
+    "explanation": "Qh4# checks the king on h1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h4"
+    ]
+  },
+  {
+    "id": "puzzle-002",
+    "version": 1,
+    "fen": "8/8/8/8/7Q/8/k7/2K5 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "h4a4"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on h4.",
+      "Try Qa4# (h4 to a4)."
+    ],
+    "explanation": "Qa4# checks the king on a2. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a4"
+    ]
+  },
+  {
+    "id": "puzzle-003",
+    "version": 1,
+    "fen": "8/8/8/Q7/8/6K1/8/6k1 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "a5e1"
+      ],
+      [
+        "a5a1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on a5.",
+      "Try Qe1# (a5 to e1)."
+    ],
+    "explanation": "Qe1# checks the king on g1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e1"
+    ]
+  },
+  {
+    "id": "puzzle-004",
+    "version": 1,
+    "fen": "8/5K2/7k/8/8/6Q1/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "g3g6"
+      ],
+      [
+        "g3h4"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on g3.",
+      "Try Qg6# (g3 to g6)."
+    ],
+    "explanation": "Qg6# checks the king on h6. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "g6"
+    ]
+  },
+  {
+    "id": "puzzle-005",
+    "version": 1,
+    "fen": "8/2Q5/8/8/8/8/2K5/k7 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "c7a5"
+      ],
+      [
+        "c7a7"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on c7.",
+      "Try Qa5# (c7 to a5)."
+    ],
+    "explanation": "Qa5# checks the king on a1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a5"
+    ]
+  },
+  {
+    "id": "puzzle-006",
+    "version": 1,
+    "fen": "k1K5/8/8/8/8/8/4Q3/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "e2a6"
+      ],
+      [
+        "e2a2"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on e2.",
+      "Try Qa6# (e2 to a6)."
+    ],
+    "explanation": "Qa6# checks the king on a8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a6"
+    ]
+  },
+  {
+    "id": "puzzle-007",
+    "version": 1,
+    "fen": "8/8/8/1Q6/8/K7/8/k7 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "b5f1"
+      ],
+      [
+        "b5b2"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on b5.",
+      "Try Qf1# (b5 to f1)."
+    ],
+    "explanation": "Qf1# checks the king on a1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "f1"
+    ]
+  },
+  {
+    "id": "puzzle-008",
+    "version": 1,
+    "fen": "k7/8/K7/8/7Q/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "h4d8"
+      ],
+      [
+        "h4h8"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on h4.",
+      "Try Qd8# (h4 to d8)."
+    ],
+    "explanation": "Qd8# checks the king on a8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d8"
+    ]
+  },
+  {
+    "id": "puzzle-009",
+    "version": 1,
+    "fen": "8/8/2Q5/8/8/8/5K1k/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "c6h6"
+      ],
+      [
+        "c6g2"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on c6.",
+      "Try Qh6# (c6 to h6)."
+    ],
+    "explanation": "Qh6# checks the king on h2. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h6"
+    ]
+  },
+  {
+    "id": "puzzle-010",
+    "version": 1,
+    "fen": "k1K5/8/8/8/8/7Q/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "h3a3"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on h3.",
+      "Try Qa3# (h3 to a3)."
+    ],
+    "explanation": "Qa3# checks the king on a8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a3"
+    ]
+  },
+  {
+    "id": "puzzle-011",
+    "version": 1,
+    "fen": "6k1/8/6K1/8/8/7Q/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "h3c8"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on h3.",
+      "Try Qc8# (h3 to c8)."
+    ],
+    "explanation": "Qc8# checks the king on g8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c8"
+    ]
+  },
+  {
+    "id": "puzzle-012",
+    "version": 1,
+    "fen": "7k/8/6K1/8/1Q6/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "b4b8"
+      ],
+      [
+        "b4f8"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on b4.",
+      "Try Qb8# (b4 to b8)."
+    ],
+    "explanation": "Qb8# checks the king on h8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "b8"
+    ]
+  },
+  {
+    "id": "puzzle-013",
+    "version": 1,
+    "fen": "Q7/8/7k/5K2/8/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "a8h8"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on a8.",
+      "Try Qh8# (a8 to h8)."
+    ],
+    "explanation": "Qh8# checks the king on h6. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h8"
+    ]
+  },
+  {
+    "id": "puzzle-014",
+    "version": 1,
+    "fen": "8/8/8/5Q2/8/2K5/8/2k5 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "f5f1"
+      ],
+      [
+        "f5c2"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on f5.",
+      "Try Qf1# (f5 to f1)."
+    ],
+    "explanation": "Qf1# checks the king on c1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "f1"
+    ]
+  },
+  {
+    "id": "puzzle-015",
+    "version": 1,
+    "fen": "8/7Q/8/8/8/2K5/8/2k5 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "h7h1"
+      ],
+      [
+        "h7c2"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on h7.",
+      "Try Qh1# (h7 to h1)."
+    ],
+    "explanation": "Qh1# checks the king on c1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h1"
+    ]
+  },
+  {
+    "id": "puzzle-016",
+    "version": 1,
+    "fen": "8/1Q6/8/8/8/8/5K1k/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "b7h7"
+      ],
+      [
+        "b7g2"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on b7.",
+      "Try Qh7# (b7 to h7)."
+    ],
+    "explanation": "Qh7# checks the king on h2. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h7"
+    ]
+  },
+  {
+    "id": "puzzle-017",
+    "version": 1,
+    "fen": "8/k1K5/8/8/8/7Q/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "h3a3"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on h3.",
+      "Try Qa3# (h3 to a3)."
+    ],
+    "explanation": "Qa3# checks the king on a7. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a3"
+    ]
+  },
+  {
+    "id": "puzzle-018",
+    "version": 1,
+    "fen": "2k5/8/3K4/8/8/8/6Q1/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "g2a8"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on g2.",
+      "Try Qa8# (g2 to a8)."
+    ],
+    "explanation": "Qa8# checks the king on c8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a8"
+    ]
+  },
+  {
+    "id": "puzzle-019",
+    "version": 1,
+    "fen": "8/Q7/8/8/8/K7/8/k7 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "a7g1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on a7.",
+      "Try Qg1# (a7 to g1)."
+    ],
+    "explanation": "Qg1# checks the king on a1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "g1"
+    ]
+  },
+  {
+    "id": "puzzle-020",
+    "version": 1,
+    "fen": "8/8/8/8/8/8/k1K5/5Q2 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "f1a6"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on f1.",
+      "Try Qa6# (f1 to a6)."
+    ],
+    "explanation": "Qa6# checks the king on a2. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a6"
+    ]
+  },
+  {
+    "id": "puzzle-021",
+    "version": 1,
+    "fen": "1k6/8/K1Q5/8/8/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "c6b7"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on c6.",
+      "Try Qb7# (c6 to b7)."
+    ],
+    "explanation": "Qb7# checks the king on b8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "b7"
+    ]
+  },
+  {
+    "id": "puzzle-022",
+    "version": 1,
+    "fen": "8/8/2K5/k7/8/8/8/2Q5 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "c1a3"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on c1.",
+      "Try Qa3# (c1 to a3)."
+    ],
+    "explanation": "Qa3# checks the king on a5. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a3"
+    ]
+  },
+  {
+    "id": "puzzle-023",
+    "version": 1,
+    "fen": "8/8/8/4Q3/8/1K6/8/2k5 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "e5e1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on e5.",
+      "Try Qe1# (e5 to e1)."
+    ],
+    "explanation": "Qe1# checks the king on c1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e1"
+    ]
+  },
+  {
+    "id": "puzzle-024",
+    "version": 1,
+    "fen": "6k1/Q7/5K2/8/8/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "a7g7"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on a7.",
+      "Try Qg7# (a7 to g7)."
+    ],
+    "explanation": "Qg7# checks the king on g8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "g7"
+    ]
+  },
+  {
+    "id": "puzzle-025",
+    "version": 1,
+    "fen": "Q7/8/8/8/8/1K6/8/1k6 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "a8h1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on a8.",
+      "Try Qh1# (a8 to h1)."
+    ],
+    "explanation": "Qh1# checks the king on b1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h1"
+    ]
+  },
+  {
+    "id": "puzzle-026",
+    "version": 1,
+    "fen": "8/8/8/8/8/k1K5/6Q1/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "g2a8"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on g2.",
+      "Try Qa8# (g2 to a8)."
+    ],
+    "explanation": "Qa8# checks the king on a3. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a8"
+    ]
+  },
+  {
+    "id": "puzzle-027",
+    "version": 1,
+    "fen": "8/3Q4/5K1k/8/8/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "d7h3"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on d7.",
+      "Try Qh3# (d7 to h3)."
+    ],
+    "explanation": "Qh3# checks the king on h6. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h3"
+    ]
+  },
+  {
+    "id": "puzzle-028",
+    "version": 1,
+    "fen": "8/8/8/k1K5/8/6Q1/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "g3a3"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on g3.",
+      "Try Qa3# (g3 to a3)."
+    ],
+    "explanation": "Qa3# checks the king on a5. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a3"
+    ]
+  },
+  {
+    "id": "puzzle-029",
+    "version": 1,
+    "fen": "8/8/8/8/8/K7/3Q4/k7 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "d2e1"
+      ],
+      [
+        "d2d1"
+      ],
+      [
+        "d2c1"
+      ],
+      [
+        "d2b2"
+      ],
+      [
+        "d2a2"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on d2.",
+      "Try Qe1# (d2 to e1)."
+    ],
+    "explanation": "Qe1# checks the king on a1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e1"
+    ]
+  },
+  {
+    "id": "puzzle-030",
+    "version": 1,
+    "fen": "8/8/8/8/Q7/K7/8/k7 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "a4d1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the queen on a4.",
+      "Try Qd1# (a4 to d1)."
+    ],
+    "explanation": "Qd1# checks the king on a1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "queen mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d1"
+    ]
+  },
+  {
+    "id": "puzzle-031",
+    "version": 1,
+    "fen": "8/8/8/8/8/5R1K/8/7k w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "f3f1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on f3.",
+      "Try Rf1# (f3 to f1)."
+    ],
+    "explanation": "Rf1# checks the king on h1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "f1"
+    ]
+  },
+  {
+    "id": "puzzle-032",
+    "version": 1,
+    "fen": "8/8/3R4/8/8/7K/8/7k w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "d6d1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on d6.",
+      "Try Rd1# (d6 to d1)."
+    ],
+    "explanation": "Rd1# checks the king on h1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d1"
+    ]
+  },
+  {
+    "id": "puzzle-033",
+    "version": 1,
+    "fen": "8/8/k1K5/8/7R/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "h4a4"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on h4.",
+      "Try Ra4# (h4 to a4)."
+    ],
+    "explanation": "Ra4# checks the king on a6. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a4"
+    ]
+  },
+  {
+    "id": "puzzle-034",
+    "version": 1,
+    "fen": "8/8/6R1/8/8/3K4/8/3k4 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "g6g1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on g6.",
+      "Try Rg1# (g6 to g1)."
+    ],
+    "explanation": "Rg1# checks the king on d1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "g1"
+    ]
+  },
+  {
+    "id": "puzzle-035",
+    "version": 1,
+    "fen": "8/8/8/8/6R1/8/8/5K1k w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "g4h4"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on g4.",
+      "Try Rh4# (g4 to h4)."
+    ],
+    "explanation": "Rh4# checks the king on h1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h4"
+    ]
+  },
+  {
+    "id": "puzzle-036",
+    "version": 1,
+    "fen": "5k2/8/5K1R/8/8/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "h6h8"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on h6.",
+      "Try Rh8# (h6 to h8)."
+    ],
+    "explanation": "Rh8# checks the king on f8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h8"
+    ]
+  },
+  {
+    "id": "puzzle-037",
+    "version": 1,
+    "fen": "8/8/R7/8/8/5K2/8/5k2 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "a6a1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on a6.",
+      "Try Ra1# (a6 to a1)."
+    ],
+    "explanation": "Ra1# checks the king on f1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a1"
+    ]
+  },
+  {
+    "id": "puzzle-038",
+    "version": 1,
+    "fen": "8/8/8/5K1k/8/8/4R3/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "e2h2"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on e2.",
+      "Try Rh2# (e2 to h2)."
+    ],
+    "explanation": "Rh2# checks the king on h5. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h2"
+    ]
+  },
+  {
+    "id": "puzzle-039",
+    "version": 1,
+    "fen": "8/1R6/8/8/8/8/8/5K1k w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "b7h7"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on b7.",
+      "Try Rh7# (b7 to h7)."
+    ],
+    "explanation": "Rh7# checks the king on h1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h7"
+    ]
+  },
+  {
+    "id": "puzzle-040",
+    "version": 1,
+    "fen": "7k/8/6K1/8/8/4R3/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "e3e8"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on e3.",
+      "Try Re8# (e3 to e8)."
+    ],
+    "explanation": "Re8# checks the king on h8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e8"
+    ]
+  },
+  {
+    "id": "puzzle-041",
+    "version": 1,
+    "fen": "8/8/8/4R3/8/8/k1K5/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "e5a5"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on e5.",
+      "Try Ra5# (e5 to a5)."
+    ],
+    "explanation": "Ra5# checks the king on a2. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a5"
+    ]
+  },
+  {
+    "id": "puzzle-042",
+    "version": 1,
+    "fen": "8/3R4/8/8/5K1k/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "d7h7"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on d7.",
+      "Try Rh7# (d7 to h7)."
+    ],
+    "explanation": "Rh7# checks the king on h4. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h7"
+    ]
+  },
+  {
+    "id": "puzzle-043",
+    "version": 1,
+    "fen": "7k/5K2/8/8/8/8/8/6R1 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "g1h1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on g1.",
+      "Try Rh1# (g1 to h1)."
+    ],
+    "explanation": "Rh1# checks the king on h8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h1"
+    ]
+  },
+  {
+    "id": "puzzle-044",
+    "version": 1,
+    "fen": "6k1/8/6K1/8/8/8/8/2R5 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "c1c8"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on c1.",
+      "Try Rc8# (c1 to c8)."
+    ],
+    "explanation": "Rc8# checks the king on g8. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c8"
+    ]
+  },
+  {
+    "id": "puzzle-045",
+    "version": 1,
+    "fen": "8/8/6R1/8/5K1k/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "g6h6"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on g6.",
+      "Try Rh6# (g6 to h6)."
+    ],
+    "explanation": "Rh6# checks the king on h4. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h6"
+    ]
+  },
+  {
+    "id": "puzzle-046",
+    "version": 1,
+    "fen": "8/8/5K1k/8/8/6R1/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "g3h3"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on g3.",
+      "Try Rh3# (g3 to h3)."
+    ],
+    "explanation": "Rh3# checks the king on h6. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h3"
+    ]
+  },
+  {
+    "id": "puzzle-047",
+    "version": 1,
+    "fen": "8/8/8/k1K5/8/8/5R2/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "f2a2"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on f2.",
+      "Try Ra2# (f2 to a2)."
+    ],
+    "explanation": "Ra2# checks the king on a5. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a2"
+    ]
+  },
+  {
+    "id": "puzzle-048",
+    "version": 1,
+    "fen": "8/8/8/2R5/8/5K1k/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "c5h5"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on c5.",
+      "Try Rh5# (c5 to h5)."
+    ],
+    "explanation": "Rh5# checks the king on h3. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h5"
+    ]
+  },
+  {
+    "id": "puzzle-049",
+    "version": 1,
+    "fen": "8/8/3R4/8/8/8/5K1k/8 w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "d6h6"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on d6.",
+      "Try Rh6# (d6 to h6)."
+    ],
+    "explanation": "Rh6# checks the king on h2. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h6"
+    ]
+  },
+  {
+    "id": "puzzle-050",
+    "version": 1,
+    "fen": "8/8/8/8/1R6/7K/8/7k w - - 0 1",
+    "side": "w",
+    "objective": "Find any legal checkmate in one.",
+    "accepted": [
+      [
+        "b4b1"
+      ]
+    ],
+    "predicate": "mate",
+    "hints": [
+      "Look for a check and inspect every escape.",
+      "Consider the rook on b4.",
+      "Try Rb1# (b4 to b1)."
+    ],
+    "explanation": "Rb1# checks the king on h1. After this move the opponent has no legal response: every escape, capture, and block is unavailable.",
+    "feedback": "That move is not checkmate. Check all king escapes and captures.",
+    "tags": [
+      "rook mate",
+      "mate in one",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "b1"
+    ]
+  },
+  {
+    "id": "puzzle-051",
+    "version": 1,
+    "fen": "8/4K3/8/3N1q2/6k1/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "d5e3"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on d5.",
+      "Try Ne3+ (d5 to e3)."
+    ],
+    "explanation": "Ne3+ checks the king on g4 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e3"
+    ]
+  },
+  {
+    "id": "puzzle-052",
+    "version": 1,
+    "fen": "8/1k6/5K2/8/2q5/1N6/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "b3a5"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on b3.",
+      "Try Na5+ (b3 to a5)."
+    ],
+    "explanation": "Na5+ checks the king on b7 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "a5"
+    ]
+  },
+  {
+    "id": "puzzle-053",
+    "version": 1,
+    "fen": "2NK2k1/8/6q1/8/8/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "c8e7"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on c8.",
+      "Try Ne7+ (c8 to e7)."
+    ],
+    "explanation": "Ne7+ checks the king on g8 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e7"
+    ]
+  },
+  {
+    "id": "puzzle-054",
+    "version": 1,
+    "fen": "8/8/8/4k3/1N6/8/5q2/3K4 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "b4d3"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on b4.",
+      "Try Nd3+ (b4 to d3)."
+    ],
+    "explanation": "Nd3+ checks the king on e5 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d3"
+    ]
+  },
+  {
+    "id": "puzzle-055",
+    "version": 1,
+    "fen": "8/1q1k4/8/8/6K1/3N4/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "d3c5"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on d3.",
+      "Try Nc5+ (d3 to c5)."
+    ],
+    "explanation": "Nc5+ checks the king on d7 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c5"
+    ]
+  },
+  {
+    "id": "puzzle-056",
+    "version": 1,
+    "fen": "6N1/7K/8/3q4/6k1/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "g8f6"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on g8.",
+      "Try Nf6+ (g8 to f6)."
+    ],
+    "explanation": "Nf6+ checks the king on g4 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "f6"
+    ]
+  },
+  {
+    "id": "puzzle-057",
+    "version": 1,
+    "fen": "8/8/1k6/q3N3/8/8/2K5/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "e5c4"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on e5.",
+      "Try Nc4+ (e5 to c4)."
+    ],
+    "explanation": "Nc4+ checks the king on b6 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c4"
+    ]
+  },
+  {
+    "id": "puzzle-058",
+    "version": 1,
+    "fen": "8/3k1N2/8/8/8/5q2/8/6K1 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "f7e5"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on f7.",
+      "Try Ne5+ (f7 to e5)."
+    ],
+    "explanation": "Ne5+ checks the king on d7 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e5"
+    ]
+  },
+  {
+    "id": "puzzle-059",
+    "version": 1,
+    "fen": "8/N7/8/8/1k1q4/8/4K3/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "a7c6"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on a7.",
+      "Try Nc6+ (a7 to c6)."
+    ],
+    "explanation": "Nc6+ checks the king on b4 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c6"
+    ]
+  },
+  {
+    "id": "puzzle-060",
+    "version": 1,
+    "fen": "8/8/2KN4/8/8/8/1k1q4/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "d6c4"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on d6.",
+      "Try Nc4+ (d6 to c4)."
+    ],
+    "explanation": "Nc4+ checks the king on b2 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c4"
+    ]
+  },
+  {
+    "id": "puzzle-061",
+    "version": 1,
+    "fen": "8/8/8/4k3/1q1N4/8/8/2K5 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "d4c6"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on d4.",
+      "Try Nc6+ (d4 to c6)."
+    ],
+    "explanation": "Nc6+ checks the king on e5 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c6"
+    ]
+  },
+  {
+    "id": "puzzle-062",
+    "version": 1,
+    "fen": "8/8/8/8/2N3q1/8/6k1/4K3 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "c4e3"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on c4.",
+      "Try Ne3+ (c4 to e3)."
+    ],
+    "explanation": "Ne3+ checks the king on g2 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e3"
+    ]
+  },
+  {
+    "id": "puzzle-063",
+    "version": 1,
+    "fen": "8/6K1/8/8/2N5/8/6k1/5q2 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "c4e3"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on c4.",
+      "Try Ne3+ (c4 to e3)."
+    ],
+    "explanation": "Ne3+ checks the king on g2 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e3"
+    ]
+  },
+  {
+    "id": "puzzle-064",
+    "version": 1,
+    "fen": "8/8/8/N7/8/8/1q1k4/7K w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "a5c4"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on a5.",
+      "Try Nc4+ (a5 to c4)."
+    ],
+    "explanation": "Nc4+ checks the king on d2 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c4"
+    ]
+  },
+  {
+    "id": "puzzle-065",
+    "version": 1,
+    "fen": "8/6K1/8/8/1q3N2/8/8/4k3 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "f4d3"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on f4.",
+      "Try Nd3+ (f4 to d3)."
+    ],
+    "explanation": "Nd3+ checks the king on e1 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d3"
+    ]
+  },
+  {
+    "id": "puzzle-066",
+    "version": 1,
+    "fen": "7K/8/8/8/5k2/8/8/2q1N3 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "e1d3"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on e1.",
+      "Try Nd3+ (e1 to d3)."
+    ],
+    "explanation": "Nd3+ checks the king on f4 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d3"
+    ]
+  },
+  {
+    "id": "puzzle-067",
+    "version": 1,
+    "fen": "2k5/8/2N3q1/8/1K6/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "c6e7"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on c6.",
+      "Try Ne7+ (c6 to e7)."
+    ],
+    "explanation": "Ne7+ checks the king on c8 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e7"
+    ]
+  },
+  {
+    "id": "puzzle-068",
+    "version": 1,
+    "fen": "3k4/8/3q4/6N1/8/8/K7/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "g5f7"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on g5.",
+      "Try Nf7+ (g5 to f7)."
+    ],
+    "explanation": "Nf7+ checks the king on d8 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "f7"
+    ]
+  },
+  {
+    "id": "puzzle-069",
+    "version": 1,
+    "fen": "8/8/4q3/6K1/8/1N3k2/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "b3d4"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on b3.",
+      "Try Nd4+ (b3 to d4)."
+    ],
+    "explanation": "Nd4+ checks the king on f3 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d4"
+    ]
+  },
+  {
+    "id": "puzzle-070",
+    "version": 1,
+    "fen": "4q3/8/4N3/3k4/8/5K2/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "e6c7"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on e6.",
+      "Try Nc7+ (e6 to c7)."
+    ],
+    "explanation": "Nc7+ checks the king on d5 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c7"
+    ]
+  },
+  {
+    "id": "puzzle-071",
+    "version": 1,
+    "fen": "8/8/8/K6N/8/3q4/6k1/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "h5f4"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on h5.",
+      "Try Nf4+ (h5 to f4)."
+    ],
+    "explanation": "Nf4+ checks the king on g2 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "f4"
+    ]
+  },
+  {
+    "id": "puzzle-072",
+    "version": 1,
+    "fen": "8/8/8/8/8/1q6/2N1k3/7K w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "c2d4"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on c2.",
+      "Try Nd4+ (c2 to d4)."
+    ],
+    "explanation": "Nd4+ checks the king on e2 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d4"
+    ]
+  },
+  {
+    "id": "puzzle-073",
+    "version": 1,
+    "fen": "5K2/8/8/8/3k4/8/8/q1N5 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "c1b3"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on c1.",
+      "Try Nb3+ (c1 to b3)."
+    ],
+    "explanation": "Nb3+ checks the king on d4 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "b3"
+    ]
+  },
+  {
+    "id": "puzzle-074",
+    "version": 1,
+    "fen": "8/8/8/2k4K/8/6N1/5q2/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "g3e4"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on g3.",
+      "Try Ne4+ (g3 to e4)."
+    ],
+    "explanation": "Ne4+ checks the king on c5 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e4"
+    ]
+  },
+  {
+    "id": "puzzle-075",
+    "version": 1,
+    "fen": "8/8/8/3N2K1/q3k3/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Check the king and attack the queen with the same knight move.",
+    "accepted": [
+      [
+        "d5c3"
+      ]
+    ],
+    "hints": [
+      "Look for an L-shaped double attack with check.",
+      "Consider the knight on d5.",
+      "Try Nc3+ (d5 to c3)."
+    ],
+    "explanation": "Nc3+ checks the king on e4 and attacks the queen. This task ends at the fork; calculate further before claiming the queen is won.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "knight fork",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c3"
+    ]
+  },
+  {
+    "id": "puzzle-076",
+    "version": 1,
+    "fen": "8/5K2/8/1k6/8/4R3/8/4q3 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "e3e1"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on e3.",
+      "Try Rxe1 (e3 to e1)."
+    ],
+    "explanation": "Rxe1 captures the queen on e1. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e1"
+    ]
+  },
+  {
+    "id": "puzzle-077",
+    "version": 1,
+    "fen": "8/3R3q/8/3K4/7k/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "d7h7"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on d7.",
+      "Try Rxh7+ (d7 to h7)."
+    ],
+    "explanation": "Rxh7+ captures the queen on h7. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h7"
+    ]
+  },
+  {
+    "id": "puzzle-078",
+    "version": 1,
+    "fen": "4q3/4R3/k7/8/8/2K5/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "e7e8"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on e7.",
+      "Try Rxe8 (e7 to e8)."
+    ],
+    "explanation": "Rxe8 captures the queen on e8. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e8"
+    ]
+  },
+  {
+    "id": "puzzle-079",
+    "version": 1,
+    "fen": "8/8/3R4/2K5/8/8/7k/3q4 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "d6d1"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on d6.",
+      "Try Rxd1 (d6 to d1)."
+    ],
+    "explanation": "Rxd1 captures the queen on d1. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d1"
+    ]
+  },
+  {
+    "id": "puzzle-080",
+    "version": 1,
+    "fen": "1q6/8/6K1/8/8/8/1R6/2k5 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "b2b8"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on b2.",
+      "Try Rxb8 (b2 to b8)."
+    ],
+    "explanation": "Rxb8 captures the queen on b8. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "b8"
+    ]
+  },
+  {
+    "id": "puzzle-081",
+    "version": 1,
+    "fen": "8/5k2/8/8/8/3K2Rq/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "g3h3"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on g3.",
+      "Try Rxh3 (g3 to h3)."
+    ],
+    "explanation": "Rxh3 captures the queen on h3. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h3"
+    ]
+  },
+  {
+    "id": "puzzle-082",
+    "version": 1,
+    "fen": "4K3/k7/8/8/8/6qR/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "h3g3"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on h3.",
+      "Try Rxg3 (h3 to g3)."
+    ],
+    "explanation": "Rxg3 captures the queen on g3. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "g3"
+    ]
+  },
+  {
+    "id": "puzzle-083",
+    "version": 1,
+    "fen": "6K1/8/3q1R2/8/2k5/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "f6d6"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on f6.",
+      "Try Rxd6 (f6 to d6)."
+    ],
+    "explanation": "Rxd6 captures the queen on d6. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d6"
+    ]
+  },
+  {
+    "id": "puzzle-084",
+    "version": 1,
+    "fen": "6k1/8/8/2K5/5R1q/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "f4h4"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on f4.",
+      "Try Rxh4 (f4 to h4)."
+    ],
+    "explanation": "Rxh4 captures the queen on h4. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h4"
+    ]
+  },
+  {
+    "id": "puzzle-085",
+    "version": 1,
+    "fen": "8/2K5/7k/8/8/8/8/R4q2 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "a1f1"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on a1.",
+      "Try Rxf1 (a1 to f1)."
+    ],
+    "explanation": "Rxf1 captures the queen on f1. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "f1"
+    ]
+  },
+  {
+    "id": "puzzle-086",
+    "version": 1,
+    "fen": "k7/8/8/4R2q/8/8/6K1/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "e5h5"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on e5.",
+      "Try Rxh5 (e5 to h5)."
+    ],
+    "explanation": "Rxh5 captures the queen on h5. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h5"
+    ]
+  },
+  {
+    "id": "puzzle-087",
+    "version": 1,
+    "fen": "8/K7/8/4q3/8/8/1Bk5/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "b2e5"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the bishop on b2.",
+      "Try Bxe5 (b2 to e5)."
+    ],
+    "explanation": "Bxe5 captures the queen on e5. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e5"
+    ]
+  },
+  {
+    "id": "puzzle-088",
+    "version": 1,
+    "fen": "8/2k5/8/5K2/8/8/8/1R1q4 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "b1d1"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on b1.",
+      "Try Rxd1 (b1 to d1)."
+    ],
+    "explanation": "Rxd1 captures the queen on d1. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "d1"
+    ]
+  },
+  {
+    "id": "puzzle-089",
+    "version": 1,
+    "fen": "k7/8/8/8/K7/8/6Rq/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "g2h2"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on g2.",
+      "Try Rxh2 (g2 to h2)."
+    ],
+    "explanation": "Rxh2 captures the queen on h2. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h2"
+    ]
+  },
+  {
+    "id": "puzzle-090",
+    "version": 1,
+    "fen": "1qR5/7K/8/8/8/6k1/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "c8b8"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on c8.",
+      "Try Rxb8 (c8 to b8)."
+    ],
+    "explanation": "Rxb8 captures the queen on b8. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "b8"
+    ]
+  },
+  {
+    "id": "puzzle-091",
+    "version": 1,
+    "fen": "8/8/k7/8/8/3K4/1qR5/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "c2b2"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on c2.",
+      "Try Rxb2 (c2 to b2)."
+    ],
+    "explanation": "Rxb2 captures the queen on b2. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "b2"
+    ]
+  },
+  {
+    "id": "puzzle-092",
+    "version": 1,
+    "fen": "2K5/6q1/3k4/6R1/8/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "g5g7"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on g5.",
+      "Try Rxg7 (g5 to g7)."
+    ],
+    "explanation": "Rxg7 captures the queen on g7. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "g7"
+    ]
+  },
+  {
+    "id": "puzzle-093",
+    "version": 1,
+    "fen": "8/5R2/8/8/8/2k2q2/8/K7 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "f7f3"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on f7.",
+      "Try Rxf3+ (f7 to f3)."
+    ],
+    "explanation": "Rxf3+ captures the queen on f3. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "f3"
+    ]
+  },
+  {
+    "id": "puzzle-094",
+    "version": 1,
+    "fen": "8/8/7k/4R3/8/1K6/8/4q3 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "e5e1"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on e5.",
+      "Try Rxe1 (e5 to e1)."
+    ],
+    "explanation": "Rxe1 captures the queen on e1. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e1"
+    ]
+  },
+  {
+    "id": "puzzle-095",
+    "version": 1,
+    "fen": "6q1/8/1K2B1k1/8/8/8/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "e6g8"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the bishop on e6.",
+      "Try Bxg8 (e6 to g8)."
+    ],
+    "explanation": "Bxg8 captures the queen on g8. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "g8"
+    ]
+  },
+  {
+    "id": "puzzle-096",
+    "version": 1,
+    "fen": "6k1/8/5B2/8/7q/8/8/6K1 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "f6h4"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the bishop on f6.",
+      "Try Bxh4 (f6 to h4)."
+    ],
+    "explanation": "Bxh4 captures the queen on h4. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "h4"
+    ]
+  },
+  {
+    "id": "puzzle-097",
+    "version": 1,
+    "fen": "8/7K/4qR2/8/8/1k6/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "f6e6"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on f6.",
+      "Try Rxe6 (f6 to e6)."
+    ],
+    "explanation": "Rxe6 captures the queen on e6. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "e6"
+    ]
+  },
+  {
+    "id": "puzzle-098",
+    "version": 1,
+    "fen": "8/K7/8/8/2q5/3B2k1/8/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "d3c4"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the bishop on d3.",
+      "Try Bxc4 (d3 to c4)."
+    ],
+    "explanation": "Bxc4 captures the queen on c4. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c4"
+    ]
+  },
+  {
+    "id": "puzzle-099",
+    "version": 1,
+    "fen": "8/8/5k2/8/8/2q1R3/4K3/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "e3c3"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the rook on e3.",
+      "Try Rxc3 (e3 to c3)."
+    ],
+    "explanation": "Rxc3 captures the queen on c3. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "rotate for challenge"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "c3"
+    ]
+  },
+  {
+    "id": "puzzle-100",
+    "version": 1,
+    "fen": "8/8/8/8/1q6/2B5/2k4K/8 w - - 0 1",
+    "side": "w",
+    "objective": "Capture the undefended queen without losing your piece immediately.",
+    "accepted": [
+      [
+        "c3b4"
+      ]
+    ],
+    "hints": [
+      "Scan captures before quiet moves.",
+      "Consider the bishop on c3.",
+      "Try Bxb4 (c3 to b4)."
+    ],
+    "explanation": "Bxb4 captures the queen on b4. The opposing king cannot capture your piece on that square.",
+    "feedback": "That move does not meet the stated tactical objective. Retry the same position.",
+    "tags": [
+      "hanging queen",
+      "tactics",
+      "White perspective"
+    ],
+    "source": "Original Chess Workshop composition, deterministic curation seed 0xC4E5526; CC0-1.0. Selected by legal-position and objective predicates, 2026-10-17.",
+    "targets": [
+      "b4"
+    ]
+  }
+]

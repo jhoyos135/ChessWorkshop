@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-18T15:09:23.712Z",
+  "status": "fixed; unit and browser verification recorded separately",
+  "fen": "4k3/8/8/p1p1p1p1/PpPpPpPp/1P1P1P1P/8/4K3 w - - 0 1",
+  "proof": {
+    "positions": 768,
+    "edges": 3808,
+    "reachableChecks": 0,
+    "reachablePawnMoves": 0,
+    "reachableCaptures": 0
+  },
+  "checks": [
+    {
+      "side": "w",
+      "possibleMate": "uncertain",
+      "result": null,
+      "pending": "w",
+      "paused": true,
+      "draw": {
+        "winner": null,
+        "reason": "Time expired · players adjudicated no possible mate"
+      }
+    },
+    {
+      "side": "b",
+      "possibleMate": "uncertain",
+      "result": null,
+      "pending": "b",
+      "paused": true,
+      "draw": {
+        "winner": null,
+        "reason": "Time expired · players adjudicated no possible mate"
+      }
+    }
+  ],
+  "scope": "Exhaustive counter-independent legal graph of this fixture, starting with either side. Every edge is a noncapturing king move; no position is check. The runtime classifier requests adjudication for a full staggered pawn barrier, not a general dead-position solver.",
+  "browserEvidence": [
+    "browser-results.json",
+    "timeout-browser-results.json",
+    "timeout-legacy-results.json"
+  ],
+  "buildIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340"
+}

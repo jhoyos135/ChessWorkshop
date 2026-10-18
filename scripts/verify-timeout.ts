@@ -1,0 +1,11 @@
+import { writeFile,readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { Chess } from 'chess.js';
+import { BLOCKED_FEN,proveBlockedFixture } from '../tests/fixtures/timeout';
+import { possibleMate } from '../src/chess/rules';
+import { createSession } from '../src/sessions/model';
+import { tick,pendingTimeout,resolveTimeout } from '../src/sessions/commands';
+const proof=proveBlockedFixture();
+const checks=(['w','b'] as const).map(side=>{const session=createSession('local',BLOCKED_FEN.replace(' w ',' '+side+' '));session.clock={initial:1000,increment:0,remaining:{w:1000,b:1000,[side]:1},paused:false};const expired=tick(session,2);if(expired.result||pendingTimeout(expired)!==side||!expired.clock.paused)throw Error('Timeout regression');return {side,possibleMate:possibleMate(new Chess(session.fen),side==='w'?'b':'w'),result:expired.result,pending:pendingTimeout(expired),paused:expired.clock.paused,draw:resolveTimeout(expired,false).result};});
+const portable=createSession('local',BLOCKED_FEN);portable.title='Blocked timeout verification';portable.clock={initial:1000,increment:0,remaining:{w:1,b:1000},paused:false};await writeFile('tests/fixtures/timeout-session.json',JSON.stringify({format:'chessworkshop-session',version:1,session:tick(portable,2)},null,2));
+const report={date:new Date().toISOString(),status:'fixed; unit and browser verification recorded separately',fen:BLOCKED_FEN,proof,checks,scope:'Exhaustive counter-independent legal graph of this fixture, starting with either side. Every edge is a noncapturing king move; no position is check. The runtime classifier requests adjudication for a full staggered pawn barrier, not a general dead-position solver.',browserEvidence:['browser-results.json','timeout-browser-results.json','timeout-legacy-results.json'],buildIndexSha256:createHash('sha256').update(await readFile('dist/index.html')).digest('hex')};await writeFile('docs/evidence/timeout-audit.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));

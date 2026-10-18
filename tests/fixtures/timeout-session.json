@@ -1,0 +1,75 @@
+{
+  "format": "chessworkshop-session",
+  "version": 1,
+  "session": {
+    "schema": 1,
+    "appVersion": "1.0.0",
+    "contentVersion": 1,
+    "id": "007f2bbe-2ad6-4aad-8b4c-c200c88c5740",
+    "title": "Blocked timeout verification",
+    "mode": "local",
+    "created": 1792336163711,
+    "updated": 1792336163711,
+    "revision": 0,
+    "initialFen": "4k3/8/8/p1p1p1p1/PpPpPpPp/1P1P1P1P/8/4K3 w - - 0 1",
+    "moves": [],
+    "fen": "4k3/8/8/p1p1p1p1/PpPpPpPp/1P1P1P1P/8/4K3 w - - 0 1",
+    "historyPly": null,
+    "result": null,
+    "historyKnown": false,
+    "ruleProfile": "training-fide-claims-v1",
+    "events": [
+      "Flag fell: adjudication required"
+    ],
+    "players": {
+      "w": "White",
+      "b": "Black"
+    },
+    "human": "w",
+    "level": "Beginner",
+    "engineVersion": "Stockfish.js 19.0.1 lite single",
+    "policyVersion": "teaching-1",
+    "seed": 2040808314,
+    "clock": {
+      "initial": 1000,
+      "increment": 0,
+      "remaining": {
+        "w": 0,
+        "b": 1000
+      },
+      "paused": true
+    },
+    "orientation": "w",
+    "camera": "perspective",
+    "cameraLocked": false,
+    "annotations": [],
+    "rotate": false,
+    "handoff": false,
+    "help": {
+      "w": {
+        "coaching": "Off",
+        "arrows": "Off",
+        "explanations": "Off",
+        "legal": false,
+        "threats": false,
+        "evaluation": false,
+        "protection": false,
+        "feedback": "Off"
+      },
+      "b": {
+        "coaching": "Off",
+        "arrows": "Off",
+        "explanations": "Off",
+        "legal": false,
+        "threats": false,
+        "evaluation": false,
+        "protection": false,
+        "feedback": "Off"
+      }
+    },
+    "branches": [],
+    "review": [],
+    "reviewProgress": 0,
+    "helpUsed": false
+  }
+}

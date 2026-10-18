@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-18T00:50:09.141Z",
+  "status": "passed",
+  "journeys": 5,
+  "coverage": [
+    "every analyzed move and persisted prefix",
+    "both-score and mate-aware comparisons",
+    "skill-linked original game and lesson",
+    "independent hidden retry and scheduling",
+    "cancel/reload/resume without duplicate rows",
+    "legacy key-moment-only save rebuild",
+    "reanalysis and preserved reveal timestamps",
+    "assisted immediate reveal retry and independent later due retry",
+    "game switching and position navigation cancel obsolete work"
+  ],
+  "failedTests": [],
+  "includedInFullBrowserSuite": true
+}

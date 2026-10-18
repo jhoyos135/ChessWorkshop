@@ -1,0 +1,80 @@
+{
+  "browser": "Chrome 155",
+  "content": {
+    "lessons": 32,
+    "lessonExercises": 97,
+    "demonstrations": 32,
+    "additionalPuzzles": 100
+  },
+  "independentHelpConfigurations": 6561,
+  "pairedTeachingGames": 8,
+  "pairedTeachingPlies": 598,
+  "beginnerPlaytesting": "User says current experience is fine for now; no detailed novice trial recorded",
+  "teachingCalibration": "Current settings retained per user; formal calibration deferred",
+  "firefox": "unverified; user selected Chrome",
+  "humanInstructionalReview": "outstanding",
+  "behavioralHelpEvaluations": 13122,
+  "date": "2026-10-18T15:18:52.549883+00:00",
+  "status": "incomplete",
+  "releaseStatus": "incomplete",
+  "automatedChecks": "passed",
+  "unitTests": 91,
+  "unitFiles": 13,
+  "browserJourneys": 104,
+  "fullBrowserSuiteJourneys": 103,
+  "implementationGaps": [],
+  "remainingRequirements": [
+    "Documented beginner trials and teaching-policy calibration",
+    "Human instructional review"
+  ],
+  "buildIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340",
+  "timeout": {
+    "passed": true,
+    "proofPositions": 768,
+    "proofEdges": 3808,
+    "browserJourneys": 10,
+    "raw": "timeout-audit.json"
+  },
+  "performance": {
+    "fullFps": 60.53635207898683,
+    "lowFps": 60.32011466665241,
+    "saveP95Ms": 337.5999999642372,
+    "inputP95Ms": 12.899999976158142,
+    "coachP95Ms": 1340,
+    "refinementP95Ms": 3016.399999976158,
+    "passed": true
+  },
+  "reviewPerformance": {
+    "reviewedPlies": 80,
+    "finalPlies": 100,
+    "saveP95Ms": 21.30000001192093,
+    "inputP95Ms": 13,
+    "passed": true
+  },
+  "package": {
+    "passed": true,
+    "filesVerified": 406,
+    "blueTheme": true,
+    "guidedGameRestored": true,
+    "explainRestored": true,
+    "homePreviewUnlocked": true,
+    "specificLessonFeedback": true,
+    "timeoutDecisionRestored": true,
+    "packagedIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340"
+  },
+  "finalCoachingJourneys": 25,
+  "drag": {
+    "passed": true,
+    "bothOrientations": true,
+    "raw": "accuracy-and-drag-results.json"
+  },
+  "recommendations": {
+    "passed": true,
+    "finalChoiceMatchesDisplay": true,
+    "automaticRefinementMs": 3000,
+    "strongerCachePreserved": true,
+    "actualWasmTacticalPositions": 4,
+    "raw": "final-coaching-results.json"
+  },
+  "finalPriorityJourneys": 14
+}

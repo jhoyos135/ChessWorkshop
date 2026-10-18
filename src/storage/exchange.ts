@@ -1,0 +1,11 @@
+import { Chess, validateFen } from 'chess.js';
+import { createSession, type Session } from '../sessions/model';
+import { rebuild, uci, adjudicate, assertLegalTurn } from '../chess/rules';
+export function pgn(s:Session){const g=rebuild(s);g.setHeader('Event','Chess Workshop training');g.setHeader('White',s.players.w);g.setHeader('Black',s.players.b);g.setHeader('Date',new Date(s.created).toISOString().slice(0,10).replaceAll('-','.'));g.setHeader('Result',s.result?(s.result.winner==='w'?'1-0':s.result.winner==='b'?'0-1':'1/2-1/2'):'*');return g.pgn();}
+export function importFen(text:string){const input=text.trim();const valid=validateFen(input);if(!valid.ok)throw Error(valid.error);const g=new Chess(input);assertLegalTurn(g);const s=createSession('local',g.fen());s.historyKnown=false;s.title='Imported position';s.events.push('FEN import: repetitions count only from this known position.');s.result=adjudicate(s);return s;}
+export function inspectPgn(text:string){if(text.length>10*1024*1024)throw Error('PGN exceeds 10 MB');const features=[];if(/[()]/.test(text))features.push('variations');if(/\{[^}]*\}|;[^\n]*/.test(text))features.push('comments');if(/\$\d+/.test(text))features.push('annotation glyphs');if(/\[Variant\s+"(?!Standard)/i.test(text))throw Error('Only standard chess PGN is supported.');return features;}
+export function importPgn(text:string,allowMainline=false){const extra=inspectPgn(text);if(extra.length&&!allowMainline)throw Error(`PGN contains ${extra.join(', ')}. Confirm mainline-only import; these features will not be retained.`);const g=new Chess();g.loadPgn(text);const history=g.history({verbose:true});const initial=history[0]?.before??g.fen();assertLegalTurn(new Chess(initial));const s=createSession('local',initial);s.title=g.getHeaders().Event??'Imported PGN';s.moves=history.map(uci);s.fen=g.fen();s.players={w:g.getHeaders().White??'White',b:g.getHeaders().Black??'Black'};s.result=adjudicate(s);if(!s.result){const r=g.getHeaders().Result;if(['1-0','0-1','1/2-1/2'].includes(r))s.result={winner:r==='1-0'?'w':r==='0-1'?'b':null,reason:'Imported PGN result'};}return s;}
+export function download(name:string,text:string,type='application/json'){const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+
+
+

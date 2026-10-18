@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-18T00:49:25.991Z",
+  "status": "unresolved functional audit finding",
+  "fen": "4k3/8/8/p1p1p1p1/PpPpPpPp/1P1P1P1P/8/4K3 w - - 0 1",
+  "checks": [
+    {
+      "side": "w",
+      "inCheck": false,
+      "legalPawnMoves": 0,
+      "possibleMate": "yes"
+    },
+    {
+      "side": "b",
+      "inCheck": false,
+      "legalPawnMoves": 0,
+      "possibleMate": "yes"
+    }
+  ],
+  "actualTimeoutResult": {
+    "winner": "b",
+    "reason": "Time expired"
+  },
+  "adjudicationEvent": false,
+  "finding": "Mutually blocked pawn barrier with kings on opposite sides receives a definite timeout winner from material alone. Conservative unresolved-position adjudication needs implementation and verification.",
+  "source": "src/chess/rules.ts possibleMate; src/sessions/commands.ts tick",
+  "uiFollowUp": "Existing unresolved-timeout choices are inside the closed game-actions details. Verify and expose the pending decision visibly.",
+  "next": "Prove the blocked fixture, fix conservative timeout classification, and verify visible decisions for both colors."
+}

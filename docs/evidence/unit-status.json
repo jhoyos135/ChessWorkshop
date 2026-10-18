@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-18T15:02:58.645501+00:00",
+  "runStart": "2026-10-18T14:59:15Z",
+  "status": "passed",
+  "command": "npm test",
+  "tests": 91,
+  "files": 13,
+  "failedTests": [],
+  "coverage": "Rules, content, storage/imports, timeout proof and lifecycle, announcements, perspective drop targets, final UCI choice and stronger-cache preservation, engines and review"
+}

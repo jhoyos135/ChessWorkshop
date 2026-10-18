@@ -1,0 +1,24 @@
+import { chromium } from '@playwright/test';
+import { Chess } from 'chess.js';
+import { writeFile,readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import os from 'node:os';
+
+// Measures real IndexedDB writes after actual WASM review, not a mocked repository.
+const plies=80,extra=20,game=new Chess();let seed=0x51a7e;
+function nextMove(){const choices=game.moves({verbose:true});for(let n=0;n<choices.length;n++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const index=seed%choices.length,move=choices.splice(index,1)[0];game.move(move);if(!game.isGameOver())return move.san;game.undo();n--;}throw Error('No nonterminal continuation');}
+const browser=await chromium.launch({channel:'chrome'});
+try{
+ const page=await browser.newPage({viewport:{width:1440,height:1080}});await page.route('**/*',route=>new URL(route.request().url()).hostname==='127.0.0.1'?route.continue():route.abort());
+ await page.goto('http://127.0.0.1:4173');await page.getByRole('button',{name:'Settings',exact:true}).click();for(const label of ['Accessible flat board','Reduced motion'])await page.getByText(label,{exact:true}).locator('..').getByRole('checkbox').check();await page.getByRole('navigation').getByRole('button',{name:'Home',exact:true}).click();await page.getByRole('button',{name:/Across the table/}).click();await page.getByRole('button',{name:'Set up the board →'}).click();await page.getByRole('button',{name:'Resume',exact:true}).click();
+ async function play(){const san=nextMove();await page.getByLabel('Enter a move').fill(san);await page.getByRole('button',{name:'Play move',exact:true}).click();}
+ for(let i=0;i<plies;i++)await play();await page.getByText('Saved',{exact:true}).waitFor();await page.getByRole('button',{name:'Review',exact:true}).click();const reviewStart=performance.now();await page.getByRole('button',{name:'Analyze / continue review',exact:true}).click();
+ const progressTimer=setInterval(async()=>{try{console.log('Review checkpoint:',await page.locator('.review-game progress').getAttribute('value'));}catch{}},10000);
+ try{await page.getByText(`Every analyzed move (${plies})`,{exact:true}).waitFor({timeout:180000});await page.getByText('Saved',{exact:true}).waitFor();}finally{clearInterval(progressTimer);}
+ const reviewMs=performance.now()-reviewStart;await page.getByRole('button',{name:'Return to original game',exact:true}).click();await page.getByRole('button',{name:'Resume',exact:true}).click();await page.getByText('Saved',{exact:true}).waitFor();await page.evaluate(()=>{performance.clearMeasures('cw-save');performance.clearMeasures('cw-input');});
+ for(let i=0;i<extra;i++){await play();await page.getByText('Saved',{exact:true}).waitFor();}
+ const square=game.moves({verbose:true})[0].from;for(let i=0;i<24;i++)await page.getByRole('gridcell',{name:new RegExp('^'+square+',')}).click();await page.waitForTimeout(100);
+ const metrics=await page.evaluate(async()=>{const db=await new Promise((resolve,reject)=>{const request=indexedDB.open('chess-workshop');request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error);});const sessions=await new Promise((resolve,reject)=>{const request=db.transaction('sessions').objectStore('sessions').getAll();request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error);});db.close();return {saves:performance.getEntriesByName('cw-save').map(entry=>entry.duration),input:performance.getEntriesByName('cw-input').map(entry=>entry.duration),session:sessions[0],userAgent:navigator.userAgent};});
+ const p95=values=>[...values].sort((a,b)=>a-b)[Math.ceil(values.length*.95)-1];
+ const report={date:new Date().toISOString(),passed:p95(metrics.saves)<500&&p95(metrics.input)<100&&metrics.session.reviewMoves.length===plies&&metrics.session.moves.length===plies+extra,machine:{os:os.version(),cpu:os.cpus()[0].model,memoryGB:os.totalmem()/1073741824,userAgent:metrics.userAgent},protocol:{initialSeed:0x51a7e,reviewedPlies:plies,subsequentPlies:extra,reviewBudgetMs:350,view:'flat',reducedMotion:true,externalRequestsBlocked:true},reviewMs,saveP95Ms:p95(metrics.saves),inputP95Ms:p95(metrics.input),samples:{saves:metrics.saves.length,input:metrics.input.length},sessionBytes:Buffer.byteLength(JSON.stringify(metrics.session)),reviewEntries:metrics.session.reviewMoves.length,finalPlies:metrics.session.moves.length,buildIndexSha256:createHash('sha256').update(await readFile('dist/index.html')).digest('hex'),raw:{saves:metrics.saves,input:metrics.input},limitations:'One deterministic nonterminal game on this machine. Measures input and real IndexedDB writes after an 80-ply actual WASM review; it does not measure 3D frame cadence or human learning.'};await writeFile('docs/evidence/review-performance.json',JSON.stringify(report,null,2));console.log(JSON.stringify({...report,raw:undefined},null,2));if(!report.passed)process.exitCode=1;
+}finally{await browser.close();}

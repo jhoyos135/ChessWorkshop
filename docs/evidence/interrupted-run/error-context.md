@@ -1,0 +1,269 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: teaching-ux.spec.ts >> watch, try, correct, and automatic lesson completion are explicit and saved
+- Location: tests\browser\teaching-ux.spec.ts:4:1
+
+# Error details
+
+```
+Test timeout of 60000ms exceeded.
+```
+
+```
+Tearing down "context" exceeded the test timeout of 60000ms.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main"
+  - complementary [ref=e5]:
+    - link "♞ CHESS WORKSHOP" [ref=e6] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=e7]: ♞
+      - generic [ref=e8]:
+        - text: CHESS
+        - generic [ref=e9]: WORKSHOP
+    - generic [ref=e10]: MAKE YOUR NEXT MOVE
+    - navigation "Main navigation" [ref=e11]:
+      - button "Home" [ref=e12] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e13]: ⌂
+        - text: Home
+      - button "Play" [ref=e14] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e15]: ♞
+        - text: Play
+      - button "Lessons" [ref=e16] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e17]: ▤
+        - text: Lessons
+      - button "Practice" [ref=e18] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e19]: ◎
+        - text: Practice
+      - button "Review" [ref=e20] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e21]: ↺
+        - text: Review
+      - button "Saved games" [ref=e22] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e23]: ▣
+        - text: Saved games
+      - button "Settings" [ref=e24] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e25]: ⚙
+        - text: Settings
+    - generic [ref=e26]: Entirely on your machineNo account. Just chess.
+  - generic [ref=e28]:
+    - banner [ref=e29]:
+      - generic [ref=e30]: YOUR SPACE TO LEARN & PLAY
+      - generic [ref=e31]:
+        - generic [ref=e32]: ● Offline ready
+        - button "Open settings" [ref=e33] [cursor=pointer]: CW
+    - main [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: LEARN BY DOING
+          - heading "Board orientation and coordinates" [level=1] [ref=e38]
+        - generic [ref=e39]: Saved
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e43]: ♚
+            - strong [ref=e44]: Black
+            - generic "Black clock" [ref=e45]: ∞
+          - generic [ref=e46]:
+            - grid "Chess board. Arrow keys navigate, Enter selects, Escape cancels." [ref=e47]:
+              - gridcell "a8, empty" [ref=e48] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e49]: a8
+              - gridcell "b8, empty" [ref=e50] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e51]: b8
+              - gridcell "c8, empty" [ref=e52] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e53]: c8
+              - gridcell "d8, empty" [ref=e54] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e55]: d8
+              - gridcell "e8, Black king" [ref=e56] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e57]: ♚
+                - generic [aria-hidden] [ref=e58]: e8
+              - gridcell "f8, empty" [ref=e59] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e60]: f8
+              - gridcell "g8, empty" [ref=e61] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e62]: g8
+              - gridcell "h8, empty" [ref=e63] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e64]: h8
+              - gridcell "a7, empty" [ref=e65] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e66]: a7
+              - gridcell "b7, empty" [ref=e67] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e68]: b7
+              - gridcell "c7, empty" [ref=e69] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e70]: c7
+              - gridcell "d7, empty" [ref=e71] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e72]: d7
+              - gridcell "e7, empty" [ref=e73] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e74]: e7
+              - gridcell "f7, empty" [ref=e75] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e76]: f7
+              - gridcell "g7, empty" [ref=e77] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e78]: g7
+              - gridcell "h7, empty" [ref=e79] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e80]: h7
+              - gridcell "a6, empty" [ref=e81] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e82]: a6
+              - gridcell "b6, empty" [ref=e83] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e84]: b6
+              - gridcell "c6, empty" [ref=e85] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e86]: c6
+              - gridcell "d6, empty" [ref=e87] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e88]: d6
+              - gridcell "e6, empty" [ref=e89] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e90]: e6
+              - gridcell "f6, empty" [ref=e91] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e92]: f6
+              - gridcell "g6, empty" [ref=e93] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e94]: g6
+              - gridcell "h6, empty" [ref=e95] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e96]: h6
+              - gridcell "a5, empty" [ref=e97] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e98]: a5
+              - gridcell "b5, empty" [ref=e99] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e100]: b5
+              - gridcell "c5, empty" [ref=e101] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e102]: c5
+              - gridcell "d5, empty" [ref=e103] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e104]: d5
+              - gridcell "e5, empty" [ref=e105] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e106]: e5
+              - gridcell "f5, empty" [ref=e107] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e108]: f5
+              - gridcell "g5, empty" [ref=e109] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e110]: g5
+              - gridcell "h5, empty" [ref=e111] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e112]: h5
+              - gridcell "a4, empty" [ref=e113] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e114]: a4
+              - gridcell "b4, empty" [ref=e115] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e116]: b4
+              - gridcell "c4, empty" [ref=e117] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e118]: c4
+              - gridcell "d4, empty" [ref=e119] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e120]: d4
+              - gridcell "e4, empty" [ref=e121] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e122]: e4
+              - gridcell "f4, empty" [ref=e123] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e124]: f4
+              - gridcell "g4, empty" [ref=e125] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e126]: g4
+              - gridcell "h4, empty" [ref=e127] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e128]: h4
+              - gridcell "a3, empty" [ref=e129] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e130]: a3
+              - gridcell "b3, empty" [ref=e131] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e132]: b3
+              - gridcell "c3, empty" [ref=e133] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e134]: c3
+              - gridcell "d3, empty" [ref=e135] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e136]: d3
+              - gridcell "e3, empty" [ref=e137] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e138]: e3
+              - gridcell "f3, empty" [ref=e139] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e140]: f3
+              - gridcell "g3, empty" [ref=e141] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e142]: g3
+              - gridcell "h3, empty" [ref=e143] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e144]: h3
+              - gridcell "a2, empty" [ref=e145] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e146]: a2
+              - gridcell "b2, empty" [ref=e147] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e148]: b2
+              - gridcell "c2, empty" [ref=e149] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e150]: c2
+              - gridcell "d2, empty" [ref=e151] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e152]: d2
+              - gridcell "e2, empty" [ref=e153] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e154]: e2
+              - gridcell "f2, empty" [ref=e155] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e156]: f2
+              - gridcell "g2, empty" [ref=e157] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e158]: g2
+              - gridcell "h2, empty" [ref=e159] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e160]: h2
+              - gridcell "a1, White rook" [ref=e161] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e162]: ♖
+                - generic [aria-hidden] [ref=e163]: a1
+              - gridcell "b1, empty" [ref=e164] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e165]: b1
+              - gridcell "c1, empty" [ref=e166] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e167]: c1
+              - gridcell "d1, empty" [ref=e168] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e169]: d1
+              - gridcell "e1, White king" [ref=e170] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e171]: ♔
+                - generic [aria-hidden] [ref=e172]: e1
+              - gridcell "f1, empty" [ref=e173] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e174]: f1
+              - gridcell "g1, empty" [ref=e175] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e176]: g1
+              - gridcell "h1, empty" [ref=e177] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e178]: h1
+            - generic: Arrow keys to navigate · Enter to move
+          - generic [ref=e179]:
+            - generic [ref=e180]: ♔
+            - strong [ref=e181]: White
+            - generic [ref=e182]: White
+            - generic "White clock" [ref=e183]: ∞
+          - generic [ref=e184]:
+            - button "↻ Flip" [ref=e185] [cursor=pointer]
+            - button "▧ Overhead" [ref=e186] [cursor=pointer]
+            - button "Reset view" [ref=e187] [cursor=pointer]
+            - button "3D board" [ref=e188] [cursor=pointer]
+          - generic [ref=e189]:
+            - generic [ref=e190]: Enter a move
+            - textbox "Enter a move" [ref=e191]:
+              - /placeholder: Nf3 or g1f3
+            - button "Play move" [disabled] [ref=e192]
+        - complementary [ref=e193]:
+          - generic [ref=e194]:
+            - generic [ref=e195]: Introduction
+            - heading "One idea at a time." [level=2] [ref=e196]
+          - generic [ref=e197]:
+            - generic "Lesson stages" [ref=e198]:
+              - generic [ref=e199]: 1 · Learn the idea
+              - generic [ref=e200]: 2 · Watch an example
+              - generic [ref=e201]: 3 · Try it yourself
+            - generic [ref=e202]:
+              - strong [ref=e203]: 0 of 3 exercises finished
+              - generic "Exercise progress" [ref=e204]:
+                - 'generic "Exercise 1: current" [ref=e205]': "1"
+                - 'generic "Exercise 2: to do" [ref=e206]': "2"
+                - 'generic "Exercise 3: to do" [ref=e207]': "3"
+            - generic [ref=e208]: ONE IDEA TO LEARN
+            - 'heading "Every square has a name: a letter followed by a number." [level=3] [ref=e209]'
+            - paragraph [ref=e210]: Find the letter along the edge, then the number along the side. Where they meet is your square.
+            - generic [ref=e211]: For example, a4 means column a, row 4. Turning the board does not change a square’s name.
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - term [ref=e214]: file
+                - definition [ref=e215]: A column of squares, named a through h.
+              - generic [ref=e216]:
+                - term [ref=e217]: rank
+                - definition [ref=e218]: A row of squares, numbered 1 through 8.
+            - button "Watch demonstration" [ref=e219] [cursor=pointer]
+            - paragraph [ref=e220]: Watch one move at a time, then try 3 exercises.
+            - group [ref=e221]:
+              - generic "More about this idea" [ref=e222] [cursor=pointer]
+            - group [ref=e223]:
+              - generic "Objective & provenance" [ref=e224] [cursor=pointer]
+          - generic [ref=e225]:
+            - group [ref=e226]:
+              - generic "Position notes (0)" [ref=e227] [cursor=pointer]
+            - generic [ref=e228]:
+              - button "Save now" [ref=e229] [cursor=pointer]
+              - button "Export" [ref=e230] [cursor=pointer]
+      - generic [ref=e231]:
+        - generic [ref=e232]: CHESS WORKSHOP
+        - generic [ref=e233]: A thoughtful move starts here. ✧
+      - status [ref=e234]: Welcome to your workshop.
+      - generic [aria-hidden]: Welcome to your workshop.
+```

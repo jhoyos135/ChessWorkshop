@@ -1,0 +1,21 @@
+import { describe,it,expect } from 'vitest';
+import { Chess } from 'chess.js';
+import { adjudicate,claimable,dead,perft,playUci,rebuild,repetitions,repetitionKey,possibleMate } from '../../src/chess/rules';
+import { createSession } from '../../src/sessions/model';
+import { commitMove,tick,undo } from '../../src/sessions/commands';
+function played(moves:string[],fen?:string){const s=createSession('local',fen);s.clock.paused=false;for(const m of moves){s.moves.push(m);playUci(new Chess(s.fen),m);s.fen=rebuild(s).fen();}return s;}
+describe('rules adapter and adjudication',()=>{
+ it('start perft 1–3',()=>{const g=new Chess();expect(perft(g,1)).toBe(20);expect(perft(g,2)).toBe(400);expect(perft(g,3)).toBe(8902);});
+ it('Kiwipete regression',()=>expect(perft(new Chess('r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1'),2)).toBe(2039));
+ it.each(['w','b'] as const)('both castles for %s',side=>{for(const end of ['g','c']){const g=new Chess(`r3k2r/8/8/8/8/8/8/R3K2R ${side} KQkq - 0 1`),rank=side==='w'?'1':'8';playUci(g,`e${rank}${end}${rank}`);expect(g.get(`${end}${rank}` as 'g1')?.type).toBe('k');expect(g.get(`${end==='g'?'f':'d'}${rank}` as 'f1')?.type).toBe('r');}});
+ it('cannot castle through attack or while in check',()=>{for(const fen of ['r3k2r/8/8/8/2b5/8/8/R3K2R w KQkq - 0 1','r3k2r/8/8/8/8/8/4r3/R3K2R w KQkq - 0 1'])expect(()=>playUci(new Chess(fen),'e1g1')).toThrow();});
+ it.each([['4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 2','e5d6','d5'],['4k3/8/8/8/3Pp3/8/8/4K3 b - d3 0 2','e4d3','d4']])('en passant %s',(fen,m,captured)=>{const g=new Chess(fen);playUci(g,m);expect(g.get(captured as 'd5')).toBeUndefined();});
+ it('en passant expires, cannot expose king',()=>{const g=new Chess('4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 2');playUci(g,'e1f1');playUci(g,'e8f8');expect(()=>playUci(g,'e5d6')).toThrow();expect(()=>playUci(new Chess('k3r3/8/8/3pP3/8/8/8/4K3 w - d6 0 2'),'e5d6')).toThrow();});
+ it.each(['q','r','b','n'])('promotion captures and underpromotion %s',p=>{for(const [fen,move,to] of [['4k2r/6P1/8/8/8/8/8/4K3 w - - 0 1',`g7h8${p}`,'h8'],['4k3/8/8/8/8/8/6p1/4K2R b - - 0 1',`g2h1${p}`,'h1']]){const g=new Chess(fen);playUci(g,move);expect(g.get(to as 'h8')?.type).toBe(p);}});
+ it('threefold claims, fivefold automatic and history rebuild',()=>{const cycle=['g1f3','g8f6','f3g1','f6g8'];const s=played([...cycle,...cycle]);expect(repetitions(s)).toBe(3);expect(claimable(s)).toMatch(/Threefold/);expect(adjudicate(s)).toBeNull();const t=played([...cycle,...cycle,...cycle,...cycle]);expect(adjudicate(t)?.reason).toMatch(/fivefold/);});
+ it('intended move claim does not commit',()=>{const cycle=['g1f3','g8f6','f3g1','f6g8'];const s=played([...cycle,...cycle.slice(0,3)]);expect(claimable(s)).toBeNull();expect(claimable(s,'f6g8')).toMatch(/Threefold/);expect(s.moves).toHaveLength(7);});
+ it('50/75 moves and mate precedence',()=>{const s=createSession('local','7k/8/8/8/8/8/8/KR6 w - - 100 60');expect(claimable(s)).toMatch(/50/);expect(adjudicate(s)).toBeNull();s.initialFen='7k/8/8/8/8/8/8/KR6 w - - 150 80';expect(adjudicate(s)?.reason).toMatch(/75/);const mate=played(['g6g7'],'7k/8/5KQ1/8/8/8/8/8 w - - 149 80');expect(adjudicate(mate)?.reason).toBe('Checkmate');});
+ it('stalemate and proven dead patterns, not every two-knight position',()=>{expect(adjudicate(createSession('local','7k/5K2/6Q1/8/8/8/8/8 b - - 0 1'))?.reason).toBe('Stalemate');expect(dead(new Chess('7k/8/8/8/8/8/8/KN6 w - - 0 1'))).toBe(true);expect(dead(new Chess('7k/8/8/8/8/8/8/KNN5 w - - 0 1'))).toBe(false);expect(possibleMate(new Chess('7k/8/8/8/8/8/8/K7 w - - 0 1'),'w')).toBe('no');});
+ it('repetition key ignores unavailable en passant',()=>{const a=new Chess('4k3/8/8/3p4/8/8/8/4K3 w - d6 0 2'),b=new Chess('4k3/8/8/3p4/8/8/8/4K3 w - - 0 2');expect(repetitionKey(a)).toBe(repetitionKey(b));});
+ it('clock increment exactly once, paused clocks frozen, undo preserves branch',()=>{let s=createSession('computer');s.clock={initial:600000,increment:10000,remaining:{w:600000,b:600000},paused:false};s=tick(s,1200);s=commitMove(s,'e2e4');expect(s.clock.remaining.w).toBe(608800);s=commitMove(s,'e7e5');s=undo(s);expect(s.moves).toHaveLength(0);expect(s.branches[0].moves).toHaveLength(2);expect(s.clock.paused).toBe(true);expect(tick(s,1000).clock.remaining).toEqual(s.clock.remaining);});
+});
