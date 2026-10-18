@@ -1,0 +1,28 @@
+{
+  "uniqueBlobsChecked": 248,
+  "archivesChecked": 1,
+  "issues": [],
+  "pngMetadataChunks": 0,
+  "passed": true,
+  "scope": "Current first-party files, compressed test traces, public master history and commit author/committer fields",
+  "credentialsDetected": false,
+  "personalPathsDetected": false,
+  "commitIdentity": "Chess Workshop Contributors <contributors@example.invalid>",
+  "upstreamNoticesPreserved": true,
+  "upstreamEngineUnchanged": true,
+  "screenshotsContainEmbeddedMetadata": false,
+  "publicRepositoryOwnerVisible": true,
+  "remoteCacheLimit": "GitHub may retain cached old commits; other existing clones are outside this repository cleanup.",
+  "prevention": [
+    "npm run privacy:check",
+    "npm run test:privacy",
+    "Packaging rejects detected paths or credential patterns",
+    "Package diagnostics use portable paths"
+  ],
+  "readmeParagraphsRemoved": true,
+  "date": "2026-10-18T16:32:22.009486+00:00",
+  "rewrittenHistoryCommits": 7,
+  "privacyTestsPassed": 2,
+  "packageSmokePassed": true,
+  "runtimeUnchanged": true
+}

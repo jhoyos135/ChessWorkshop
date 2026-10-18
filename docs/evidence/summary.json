@@ -51,12 +51,12 @@
     "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
   },
   "package": {
-    "date": "2026-10-18T16:09:24.355Z",
+    "date": "2026-10-18T16:31:43.734Z",
     "passed": true,
     "browser": "155.0.8059.84",
     "origin": "http://127.0.0.1:4173",
     "runtime": "workspace\\release\\ChessWorkshop-1.0.0\\runtime\\node.exe",
-    "filesVerified": 425,
+    "filesVerified": 429,
     "lessons": 32,
     "lessonExercises": 97,
     "puzzles": 100,
@@ -102,7 +102,7 @@
   "finalPriorityJourneys": 14,
   "sourceInstall": {
     "passed": true,
-    "testedCommit": "ccf1f36cb34a72c4ee671acdb68a105d4e26b26b",
+    "testedCommit": "d45302a86fc868511ad98cb1bb4baf94703d098b",
     "matchingRuntimeAssets": 9,
     "raw": "source-install-final.json"
   },

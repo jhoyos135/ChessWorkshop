@@ -3,7 +3,7 @@
   "passed": true,
   "repository": "https://github.com/jhoyos135/ChessWorkshop",
   "branch": "master",
-  "testedCommit": "c350d727d8d77aed4814182e2a4a916d3d8b3167",
+  "testedCommit": "86a2a5655607f74d3bac0e95a83aaedee322ed07",
   "checkout": "workspace\\release\\source-install-check",
   "runtime": "v20.19.4",
   "browser": "155.0.8059.84",

@@ -24,7 +24,7 @@ October 18, 2026. **Complete for the requested release.** All A1–A16 acceptanc
 
 The added delivery requirement provides a public [jhoyos135/ChessWorkshop](https://github.com/jhoyos135/ChessWorkshop) repository on `master`, an illustrated README with three screenshots, source installation and offline-launch commands. Source, engine assets, content, tests, licenses and verification evidence are included; generated dependencies, build output and local packages are ignored by Git.
 
-An independent clean clone of public commit `c350d72` passed the documented dependency installation, engine bundling, production build and `npm start` commands. All nine built runtime assets matched the then-delivered policy-1 build byte for byte. Offline gameplay, acknowledged save/reload, local coaching, 32 lessons, 100 puzzles and all three README images were checked. [source-install.json](evidence/source-install.json) records the environment and scope; it does not replace human learning or instructional review.
+An independent clean clone of public commit `86a2a56` passed the documented dependency installation, engine bundling, production build and `npm start` commands. All nine built runtime assets matched the then-delivered policy-1 build byte for byte. Offline gameplay, acknowledged save/reload, local coaching, 32 lessons, 100 puzzles and all three README images were checked. [source-install.json](evidence/source-install.json) records the environment and scope; it does not replace human learning or instructional review.
 
 ## Closed gaps from the earlier audit
 
@@ -46,6 +46,6 @@ Teaching policy 2 gives Beginner a 55% chance of a quiet turn, and First steps 7
 
 The both-color opportunity fixtures, replayed games, Chrome journeys and timing checks are recorded in PLAYTESTING.md and evidence/beginner-tuning.json. Follow-up difficulty feedback can guide another tuning iteration; no rating or guaranteed win rate is asserted.
 
-The user then accepted the revised difficulty: “is fine now, continue with the goal until is completed.” This closes the remaining difficulty feedback gate. Source commit `ccf1f36` also fixes a duplicate seed property in the tuning verification script that the final clean-source build caught; all nine runtime files match the installed build.
+The user then accepted the revised difficulty: “is fine now, continue with the goal until is completed.” This closes the remaining difficulty feedback gate. Source commit `d45302a` also fixes a duplicate seed property in the tuning verification script that the final clean-source build caught; all nine runtime files match the installed build.
 
 No required implementation or user acceptance item remains open. Firefox was replaced by Chrome at the user’s direction. The supported dead-position boundary, explicit unusual-timeout adjudication, and machine-specific performance scope remain documented product limits.

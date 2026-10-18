@@ -94,7 +94,7 @@ The public source repository is [jhoyos135/ChessWorkshop](https://github.com/jho
 
 ## Clean public-source installation
 
-[source-install.json](evidence/source-install.json) records an independent clean clone of public commit `c350d72`. The README's `npm ci`, engine-bundling, production-build and `npm start` commands succeeded using Node 20.19.4. All nine built runtime assets matched the then-delivered policy-1 build byte for byte. Chrome verified two saved plies restored paused, a legal local-engine recommendation matching final bestmove, 32 lessons, 100 puzzles and the three README PNGs with external runtime requests blocked. The normal application server was restored afterward.
+[source-install.json](evidence/source-install.json) records an independent clean clone of public commit `86a2a56`. The README's `npm ci`, engine-bundling, production-build and `npm start` commands succeeded using Node 20.19.4. All nine built runtime assets matched the then-delivered policy-1 build byte for byte. Chrome verified two saved plies restored paused, a legal local-engine recommendation matching final bestmove, 32 lessons, 100 puzzles and the three README PNGs with external runtime requests blocked. The normal application server was restored afterward.
 
 This is one Windows installation using the machine's existing npm configuration/cache. Bundling recopies the upstream GPL license with its original Windows line endings; its text is unchanged. The content probe waits for navigation to finish before counting cards. These installation checks do not establish human learning outcomes.
 
@@ -107,16 +107,19 @@ Teaching policy 2 responds to actual user difficulty feedback. Lessons are accep
 
 The revised policy passed 95 unit tests in 14 files, seven Chrome worker/lifecycle/older-save journeys, all twelve level/color setup combinations, and four actual-WASM mate/fork recommendation checks. These focused checks supplement the earlier full-suite evidence; that earlier full run used the preceding build. Eight revised seeded games replayed 818 plies and eight midpoint restores: six Beginner wins, two First steps wins, no move limits. Maximum policy times were 425.2 ms Beginner and 33.2 ms First steps, below 500/250 ms budgets. Historical policy-1 game evidence is retained separately. The user subsequently accepted the revised difficulty. Automated results do not establish a measured human rating or learning outcome.
 
-The revised Windows package passed a fresh bundled-runtime smoke with external requests blocked: 425 manifest files, 32 lessons, 97 exercises, 100 puzzles, legal engine advice, saved game/lesson restoration, per-side toggles, timeout recovery and occupied-port handling. Its tested index SHA-256 is `8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a`; archive sidecars record final integrity.
+The revised Windows package passed a fresh bundled-runtime smoke with external requests blocked: 429 manifest files, 32 lessons, 97 exercises, 100 puzzles, legal engine advice, saved game/lesson restoration, per-side toggles, timeout recovery and occupied-port handling. Its tested index SHA-256 is `8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a`; archive sidecars record final integrity.
 
 
 ## Final source-install correction
 
-The clean public checkout caught TypeScript error TS2783 in the new difficulty verification script: its initial seed field was overwritten by the returned seed. Commit `ccf1f36` separates `initialSeed` from `seed`, preserving both states. Type checking and the public-source production build pass, and all nine built runtime files match the installed app byte for byte. [source-install-final.json](evidence/source-install-final.json) records the original failure, corrected commit, commands, dependency audit and hashes. No application runtime changed in this correction.
+The clean public checkout caught TypeScript error TS2783 in the new difficulty verification script: its initial seed field was overwritten by the returned seed. Commit `d45302a` separates `initialSeed` from `seed`, preserving both states. Type checking and the public-source production build pass, and all nine built runtime files match the installed app byte for byte. [source-install-final.json](evidence/source-install-final.json) records the original failure, corrected commit, commands, dependency audit and hashes. No application runtime changed in this correction.
 
 
 ## Final acceptance
 
 All A1–A16 scenarios pass on the final build. The complete regression has 106 Chrome journeys, no failures, no flaky results and no skips; 95 unit tests pass in 14 files. The full offline library contains 32 lessons, 97 playable exercises, 32 demonstrations and 100 curated original puzzles. Both quality modes meet the local measured targets, and the 100-ply game preserves all 80 review records. Lesson and revised difficulty acceptance are recorded from the user's own feedback. No required implementation item remains open. Firefox is unverified by the user's Chrome selection, and the supported dead-position/adjudication boundaries remain as specified.
 
-The final offline package smoke passed with all 425 manifest entries verified, no external runtime requests, the full library available, legal WASM coaching, saved game/lesson restoration, per-side assistance, camera scope, timeout recovery, and the actionable fixed-port conflict error. The ZIP sidecars verify the final assembled archive against its embedded manifest.
+The final offline package smoke passed with all 429 manifest entries verified, no external runtime requests, the full library available, legal WASM coaching, saved game/lesson restoration, per-side assistance, camera scope, timeout recovery, and the actionable fixed-port conflict error. The ZIP sidecars verify the final assembled archive against its embedded manifest.
+
+
+Privacy cleanup replaces personal filesystem paths with portable labels, including archived trace contents, and uses a generic Git author identity. The requested README paragraphs are removed. The privacy check runs before packaging; the two redaction tests and fresh offline package smoke pass. All application runtime files remain unchanged. See evidence/privacy-audit.json for scope and remote-cache limits.

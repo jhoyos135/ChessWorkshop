@@ -3,7 +3,7 @@
   "passed": true,
   "repository": "https://github.com/jhoyos135/ChessWorkshop",
   "branch": "master",
-  "testedCommit": "ccf1f36cb34a72c4ee671acdb68a105d4e26b26b",
+  "testedCommit": "d45302a86fc868511ad98cb1bb4baf94703d098b",
   "runtime": "v20.19.4",
   "commands": [
     "git clone --branch master --single-branch --depth 1",
@@ -67,10 +67,10 @@
     "reportedVulnerabilities": 0
   },
   "closedFinding": {
-    "initialCommit": "969d24ca7c0f65efc115df074af95785d63bba7e",
+    "initialCommit": "1701d7181d181f538b449bc53e6a2af194bda0c3",
     "error": "TS2783: duplicate seed property in scripts/verify-beginner.ts",
     "fix": "Store the input as initialSeed and retain the resulting seed separately",
-    "correctedCommit": "ccf1f36cb34a72c4ee671acdb68a105d4e26b26b"
+    "correctedCommit": "d45302a86fc868511ad98cb1bb4baf94703d098b"
   },
   "limitations": "One Windows machine with existing npm configuration/cache. Bundling recopies an unchanged GPL license with CRLF line endings. Source installation is verified separately from the packaged browser smoke."
 }
