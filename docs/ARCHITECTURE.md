@@ -81,3 +81,10 @@ Automatic assistance first requests the normal one-second full-strength search. 
 A shorter hint request reuses the strongest compatible cached result instead of replacing a deeper recommendation. Compatibility includes exact initial FEN, full move history, engine generation, strength, MultiPV and restricted-move options. Current-result reuse also avoids aborting a useful ongoing refinement merely to repeat an already available hint.
 
 Post-move comparison work is suspended during both initial current-position analysis and refinement. The refinement state therefore reserves the serialized engine queue instead of allowing background move-review jobs to compete with the next foreground recommendation.
+
+
+## Teaching-policy revision 2
+
+User feedback on October 18 accepted lessons for now and found Beginner too hard. The teaching selector now samples a quiet-turn branch (Beginner 55%, First steps 75%) that can overlook captures and threats; other Beginner decisions still evaluate one immediate reply. Quiet candidates use material/development/direct-safety heuristics and exclude captures, checks, promotions and stalemate where a quiet alternative exists. Available mates are completed. These branch probabilities are tuning parameters, not human ratings or measured mistake rates. Stockfish coaching remains skill 20 independently.
+
+New sessions record `teaching-2`. Existing computer games adopt it at the next committed teaching move, retaining all prior moves and recording an upgrade event with the advanced seed. Interrupted work cannot commit an upgrade or consume a seed. A zero seed maps deterministically to a nonzero random stream. Reproducibility evidence includes both-color opportunity fixtures, eight complete games with JSON midpoint restores, and Chrome retry/cancellation/older-save journeys.

@@ -1,0 +1,1086 @@
+{
+  "date": "2026-10-18T15:50:30.752Z",
+  "passed": true,
+  "policyVersion": "teaching-2",
+  "profiles": {
+    "First steps": {
+      "quietProbability": 0.75
+    },
+    "Beginner": {
+      "quietProbability": 0.55
+    }
+  },
+  "userFeedback": {
+    "date": "2026-10-18",
+    "lessons": "lessons are ok for now",
+    "beginner": "beginner seems to hard"
+  },
+  "scope": "Both-color free-rook opportunities across 64 spread seeds per level; legal move replay and exact seeded reproduction.",
+  "limitations": "Quiet-turn probability is not a measured error rate or human rating. These fixtures show opportunities are sometimes missed; they do not prove subjective ease. Follow-up user difficulty feedback is optional for this tuning iteration.",
+  "cases": [
+    {
+      "side": "w",
+      "fen": "6k1/8/8/3r4/2B5/8/8/6K1 w - - 0 1",
+      "capture": "c4d5",
+      "level": "First steps",
+      "quiet": 47,
+      "captures": 17,
+      "decisions": [
+        {
+          "seed": 3761132862,
+          "move": "g1h1"
+        },
+        {
+          "seed": 3226217053,
+          "move": "g1h2"
+        },
+        {
+          "seed": 784628165,
+          "move": "c4d5"
+        },
+        {
+          "seed": 2458475954,
+          "move": "g1f2"
+        },
+        {
+          "seed": 4258716665,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1561876425,
+          "move": "c4d5"
+        },
+        {
+          "seed": 871650656,
+          "move": "c4d5"
+        },
+        {
+          "seed": 932386318,
+          "move": "c4b3"
+        },
+        {
+          "seed": 2312130800,
+          "move": "g1f2"
+        },
+        {
+          "seed": 3920379642,
+          "move": "g1f1"
+        },
+        {
+          "seed": 1311583358,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3123752883,
+          "move": "c4d5"
+        },
+        {
+          "seed": 2649135620,
+          "move": "g1g2"
+        },
+        {
+          "seed": 1969817514,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1138305179,
+          "move": "c4b3"
+        },
+        {
+          "seed": 2100765972,
+          "move": "c4a2"
+        },
+        {
+          "seed": 3732997009,
+          "move": "g1h1"
+        },
+        {
+          "seed": 18943114,
+          "move": "c4e2"
+        },
+        {
+          "seed": 4013735075,
+          "move": "g1f1"
+        },
+        {
+          "seed": 3553155478,
+          "move": "g1h1"
+        },
+        {
+          "seed": 971241027,
+          "move": "c4d5"
+        },
+        {
+          "seed": 2388382196,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1667962794,
+          "move": "c4a6"
+        },
+        {
+          "seed": 1952538470,
+          "move": "c4a2"
+        },
+        {
+          "seed": 1547701951,
+          "move": "c4d5"
+        },
+        {
+          "seed": 994906218,
+          "move": "c4b3"
+        },
+        {
+          "seed": 2398537586,
+          "move": "g1f2"
+        },
+        {
+          "seed": 4166230559,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1214238588,
+          "move": "c4b3"
+        },
+        {
+          "seed": 2275594519,
+          "move": "c4d5"
+        },
+        {
+          "seed": 2693040814,
+          "move": "g1g2"
+        },
+        {
+          "seed": 4211011146,
+          "move": "g1f1"
+        },
+        {
+          "seed": 1588894239,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3172108035,
+          "move": "g1h2"
+        },
+        {
+          "seed": 2642293857,
+          "move": "g1g2"
+        },
+        {
+          "seed": 272863293,
+          "move": "c4e2"
+        },
+        {
+          "seed": 8618392,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3739868421,
+          "move": "g1h1"
+        },
+        {
+          "seed": 2880674664,
+          "move": "g1g2"
+        },
+        {
+          "seed": 3036716647,
+          "move": "c4d5"
+        },
+        {
+          "seed": 389181875,
+          "move": "c4e2"
+        },
+        {
+          "seed": 1934084324,
+          "move": "c4a2"
+        },
+        {
+          "seed": 3568701146,
+          "move": "g1h1"
+        },
+        {
+          "seed": 481797096,
+          "move": "c4f1"
+        },
+        {
+          "seed": 199587286,
+          "move": "c4e2"
+        },
+        {
+          "seed": 3334909780,
+          "move": "g1h2"
+        },
+        {
+          "seed": 2935013379,
+          "move": "g1g2"
+        },
+        {
+          "seed": 4207097796,
+          "move": "g1f1"
+        },
+        {
+          "seed": 3627794677,
+          "move": "g1h1"
+        },
+        {
+          "seed": 3096485246,
+          "move": "g1h2"
+        },
+        {
+          "seed": 1645248437,
+          "move": "c4a6"
+        },
+        {
+          "seed": 1980400822,
+          "move": "c4a2"
+        },
+        {
+          "seed": 3292737268,
+          "move": "g1h2"
+        },
+        {
+          "seed": 259826607,
+          "move": "c4e2"
+        },
+        {
+          "seed": 3939523415,
+          "move": "g1f1"
+        },
+        {
+          "seed": 4038575166,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3596448132,
+          "move": "g1h1"
+        },
+        {
+          "seed": 2192480209,
+          "move": "g1f2"
+        },
+        {
+          "seed": 69603340,
+          "move": "c4e2"
+        },
+        {
+          "seed": 499388228,
+          "move": "c4f1"
+        },
+        {
+          "seed": 3421338979,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1402484759,
+          "move": "c4a6"
+        },
+        {
+          "seed": 646704990,
+          "move": "c4f1"
+        },
+        {
+          "seed": 4117592310,
+          "move": "g1f1"
+        }
+      ]
+    },
+    {
+      "side": "w",
+      "fen": "6k1/8/8/3r4/2B5/8/8/6K1 w - - 0 1",
+      "capture": "c4d5",
+      "level": "Beginner",
+      "quiet": 32,
+      "captures": 32,
+      "decisions": [
+        {
+          "seed": 3761132862,
+          "move": "g1h1"
+        },
+        {
+          "seed": 3226217053,
+          "move": "c4d5"
+        },
+        {
+          "seed": 784628165,
+          "move": "c4d5"
+        },
+        {
+          "seed": 2458475954,
+          "move": "g1f2"
+        },
+        {
+          "seed": 4258716665,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1561876425,
+          "move": "c4d5"
+        },
+        {
+          "seed": 871650656,
+          "move": "c4d5"
+        },
+        {
+          "seed": 932386318,
+          "move": "c4b3"
+        },
+        {
+          "seed": 2312130800,
+          "move": "g1f2"
+        },
+        {
+          "seed": 3920379642,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1311583358,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3123752883,
+          "move": "c4d5"
+        },
+        {
+          "seed": 2649135620,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1969817514,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1138305179,
+          "move": "c4b3"
+        },
+        {
+          "seed": 2100765972,
+          "move": "c4a2"
+        },
+        {
+          "seed": 3732997009,
+          "move": "g1h1"
+        },
+        {
+          "seed": 18943114,
+          "move": "c4e2"
+        },
+        {
+          "seed": 4013735075,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3553155478,
+          "move": "g1h1"
+        },
+        {
+          "seed": 971241027,
+          "move": "c4d5"
+        },
+        {
+          "seed": 2388382196,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1667962794,
+          "move": "c4a6"
+        },
+        {
+          "seed": 1952538470,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1547701951,
+          "move": "c4d5"
+        },
+        {
+          "seed": 994906218,
+          "move": "c4b3"
+        },
+        {
+          "seed": 2398537586,
+          "move": "g1f2"
+        },
+        {
+          "seed": 4166230559,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1214238588,
+          "move": "c4b3"
+        },
+        {
+          "seed": 2275594519,
+          "move": "c4d5"
+        },
+        {
+          "seed": 2693040814,
+          "move": "g1g2"
+        },
+        {
+          "seed": 4211011146,
+          "move": "g1f1"
+        },
+        {
+          "seed": 1588894239,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3172108035,
+          "move": "g1h2"
+        },
+        {
+          "seed": 2642293857,
+          "move": "c4d5"
+        },
+        {
+          "seed": 272863293,
+          "move": "c4e2"
+        },
+        {
+          "seed": 8618392,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3739868421,
+          "move": "g1h1"
+        },
+        {
+          "seed": 2880674664,
+          "move": "g1g2"
+        },
+        {
+          "seed": 3036716647,
+          "move": "c4d5"
+        },
+        {
+          "seed": 389181875,
+          "move": "c4e2"
+        },
+        {
+          "seed": 1934084324,
+          "move": "c4a2"
+        },
+        {
+          "seed": 3568701146,
+          "move": "g1h1"
+        },
+        {
+          "seed": 481797096,
+          "move": "c4d5"
+        },
+        {
+          "seed": 199587286,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3334909780,
+          "move": "g1h2"
+        },
+        {
+          "seed": 2935013379,
+          "move": "g1g2"
+        },
+        {
+          "seed": 4207097796,
+          "move": "g1f1"
+        },
+        {
+          "seed": 3627794677,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3096485246,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1645248437,
+          "move": "c4a6"
+        },
+        {
+          "seed": 1980400822,
+          "move": "c4a2"
+        },
+        {
+          "seed": 3292737268,
+          "move": "c4d5"
+        },
+        {
+          "seed": 259826607,
+          "move": "c4e2"
+        },
+        {
+          "seed": 3939523415,
+          "move": "c4d5"
+        },
+        {
+          "seed": 4038575166,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3596448132,
+          "move": "g1h1"
+        },
+        {
+          "seed": 2192480209,
+          "move": "c4d5"
+        },
+        {
+          "seed": 69603340,
+          "move": "c4d5"
+        },
+        {
+          "seed": 499388228,
+          "move": "c4d5"
+        },
+        {
+          "seed": 3421338979,
+          "move": "c4d5"
+        },
+        {
+          "seed": 1402484759,
+          "move": "c4a6"
+        },
+        {
+          "seed": 646704990,
+          "move": "c4f1"
+        },
+        {
+          "seed": 4117592310,
+          "move": "g1f1"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "fen": "6k1/8/8/2b5/3R4/8/8/6K1 b - - 0 1",
+      "capture": "c5d4",
+      "level": "First steps",
+      "quiet": 47,
+      "captures": 17,
+      "decisions": [
+        {
+          "seed": 3761132862,
+          "move": "c5a7"
+        },
+        {
+          "seed": 3226217053,
+          "move": "g8f8"
+        },
+        {
+          "seed": 784628165,
+          "move": "c5d4"
+        },
+        {
+          "seed": 2458475954,
+          "move": "g8g7"
+        },
+        {
+          "seed": 4258716665,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1561876425,
+          "move": "c5d4"
+        },
+        {
+          "seed": 871650656,
+          "move": "c5d4"
+        },
+        {
+          "seed": 932386318,
+          "move": "c5b6"
+        },
+        {
+          "seed": 2312130800,
+          "move": "g8g7"
+        },
+        {
+          "seed": 3920379642,
+          "move": "c5a3"
+        },
+        {
+          "seed": 1311583358,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3123752883,
+          "move": "c5d4"
+        },
+        {
+          "seed": 2649135620,
+          "move": "g8f7"
+        },
+        {
+          "seed": 1969817514,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1138305179,
+          "move": "c5b6"
+        },
+        {
+          "seed": 2100765972,
+          "move": "g8h7"
+        },
+        {
+          "seed": 3732997009,
+          "move": "c5a7"
+        },
+        {
+          "seed": 18943114,
+          "move": "c5e7"
+        },
+        {
+          "seed": 4013735075,
+          "move": "c5a3"
+        },
+        {
+          "seed": 3553155478,
+          "move": "c5a7"
+        },
+        {
+          "seed": 971241027,
+          "move": "c5d4"
+        },
+        {
+          "seed": 2388382196,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1667962794,
+          "move": "g8h8"
+        },
+        {
+          "seed": 1952538470,
+          "move": "g8h7"
+        },
+        {
+          "seed": 1547701951,
+          "move": "c5d4"
+        },
+        {
+          "seed": 994906218,
+          "move": "c5b6"
+        },
+        {
+          "seed": 2398537586,
+          "move": "g8g7"
+        },
+        {
+          "seed": 4166230559,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1214238588,
+          "move": "c5b6"
+        },
+        {
+          "seed": 2275594519,
+          "move": "c5d4"
+        },
+        {
+          "seed": 2693040814,
+          "move": "g8f7"
+        },
+        {
+          "seed": 4211011146,
+          "move": "c5a3"
+        },
+        {
+          "seed": 1588894239,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3172108035,
+          "move": "g8f8"
+        },
+        {
+          "seed": 2642293857,
+          "move": "g8f7"
+        },
+        {
+          "seed": 272863293,
+          "move": "c5e7"
+        },
+        {
+          "seed": 8618392,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3739868421,
+          "move": "c5a7"
+        },
+        {
+          "seed": 2880674664,
+          "move": "g8f7"
+        },
+        {
+          "seed": 3036716647,
+          "move": "c5d4"
+        },
+        {
+          "seed": 389181875,
+          "move": "c5e7"
+        },
+        {
+          "seed": 1934084324,
+          "move": "g8h7"
+        },
+        {
+          "seed": 3568701146,
+          "move": "c5a7"
+        },
+        {
+          "seed": 481797096,
+          "move": "c5f8"
+        },
+        {
+          "seed": 199587286,
+          "move": "c5e7"
+        },
+        {
+          "seed": 3334909780,
+          "move": "g8f8"
+        },
+        {
+          "seed": 2935013379,
+          "move": "g8f7"
+        },
+        {
+          "seed": 4207097796,
+          "move": "c5a3"
+        },
+        {
+          "seed": 3627794677,
+          "move": "c5a7"
+        },
+        {
+          "seed": 3096485246,
+          "move": "g8f8"
+        },
+        {
+          "seed": 1645248437,
+          "move": "g8h8"
+        },
+        {
+          "seed": 1980400822,
+          "move": "g8h7"
+        },
+        {
+          "seed": 3292737268,
+          "move": "g8f8"
+        },
+        {
+          "seed": 259826607,
+          "move": "c5e7"
+        },
+        {
+          "seed": 3939523415,
+          "move": "c5a3"
+        },
+        {
+          "seed": 4038575166,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3596448132,
+          "move": "c5a7"
+        },
+        {
+          "seed": 2192480209,
+          "move": "g8g7"
+        },
+        {
+          "seed": 69603340,
+          "move": "c5e7"
+        },
+        {
+          "seed": 499388228,
+          "move": "c5f8"
+        },
+        {
+          "seed": 3421338979,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1402484759,
+          "move": "g8h8"
+        },
+        {
+          "seed": 646704990,
+          "move": "c5f8"
+        },
+        {
+          "seed": 4117592310,
+          "move": "c5a3"
+        }
+      ]
+    },
+    {
+      "side": "b",
+      "fen": "6k1/8/8/2b5/3R4/8/8/6K1 b - - 0 1",
+      "capture": "c5d4",
+      "level": "Beginner",
+      "quiet": 32,
+      "captures": 32,
+      "decisions": [
+        {
+          "seed": 3761132862,
+          "move": "c5a7"
+        },
+        {
+          "seed": 3226217053,
+          "move": "c5d4"
+        },
+        {
+          "seed": 784628165,
+          "move": "c5d4"
+        },
+        {
+          "seed": 2458475954,
+          "move": "g8g7"
+        },
+        {
+          "seed": 4258716665,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1561876425,
+          "move": "c5d4"
+        },
+        {
+          "seed": 871650656,
+          "move": "c5d4"
+        },
+        {
+          "seed": 932386318,
+          "move": "c5b6"
+        },
+        {
+          "seed": 2312130800,
+          "move": "g8g7"
+        },
+        {
+          "seed": 3920379642,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1311583358,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3123752883,
+          "move": "c5d4"
+        },
+        {
+          "seed": 2649135620,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1969817514,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1138305179,
+          "move": "c5b6"
+        },
+        {
+          "seed": 2100765972,
+          "move": "g8h7"
+        },
+        {
+          "seed": 3732997009,
+          "move": "c5a7"
+        },
+        {
+          "seed": 18943114,
+          "move": "c5e7"
+        },
+        {
+          "seed": 4013735075,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3553155478,
+          "move": "c5a7"
+        },
+        {
+          "seed": 971241027,
+          "move": "c5d4"
+        },
+        {
+          "seed": 2388382196,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1667962794,
+          "move": "g8h8"
+        },
+        {
+          "seed": 1952538470,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1547701951,
+          "move": "c5d4"
+        },
+        {
+          "seed": 994906218,
+          "move": "c5b6"
+        },
+        {
+          "seed": 2398537586,
+          "move": "g8g7"
+        },
+        {
+          "seed": 4166230559,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1214238588,
+          "move": "c5b6"
+        },
+        {
+          "seed": 2275594519,
+          "move": "c5d4"
+        },
+        {
+          "seed": 2693040814,
+          "move": "g8f7"
+        },
+        {
+          "seed": 4211011146,
+          "move": "c5a3"
+        },
+        {
+          "seed": 1588894239,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3172108035,
+          "move": "g8f8"
+        },
+        {
+          "seed": 2642293857,
+          "move": "c5d4"
+        },
+        {
+          "seed": 272863293,
+          "move": "c5e7"
+        },
+        {
+          "seed": 8618392,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3739868421,
+          "move": "c5a7"
+        },
+        {
+          "seed": 2880674664,
+          "move": "g8f7"
+        },
+        {
+          "seed": 3036716647,
+          "move": "c5d4"
+        },
+        {
+          "seed": 389181875,
+          "move": "c5e7"
+        },
+        {
+          "seed": 1934084324,
+          "move": "g8h7"
+        },
+        {
+          "seed": 3568701146,
+          "move": "c5a7"
+        },
+        {
+          "seed": 481797096,
+          "move": "c5d4"
+        },
+        {
+          "seed": 199587286,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3334909780,
+          "move": "g8f8"
+        },
+        {
+          "seed": 2935013379,
+          "move": "g8f7"
+        },
+        {
+          "seed": 4207097796,
+          "move": "c5a3"
+        },
+        {
+          "seed": 3627794677,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3096485246,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1645248437,
+          "move": "g8h8"
+        },
+        {
+          "seed": 1980400822,
+          "move": "g8h7"
+        },
+        {
+          "seed": 3292737268,
+          "move": "c5d4"
+        },
+        {
+          "seed": 259826607,
+          "move": "c5e7"
+        },
+        {
+          "seed": 3939523415,
+          "move": "c5d4"
+        },
+        {
+          "seed": 4038575166,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3596448132,
+          "move": "c5a7"
+        },
+        {
+          "seed": 2192480209,
+          "move": "c5d4"
+        },
+        {
+          "seed": 69603340,
+          "move": "c5d4"
+        },
+        {
+          "seed": 499388228,
+          "move": "c5d4"
+        },
+        {
+          "seed": 3421338979,
+          "move": "c5d4"
+        },
+        {
+          "seed": 1402484759,
+          "move": "g8h8"
+        },
+        {
+          "seed": 646704990,
+          "move": "c5f8"
+        },
+        {
+          "seed": 4117592310,
+          "move": "c5a3"
+        }
+      ]
+    }
+  ]
+}

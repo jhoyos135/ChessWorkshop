@@ -8,26 +8,25 @@
   },
   "independentHelpConfigurations": 6561,
   "pairedTeachingGames": 8,
-  "pairedTeachingPlies": 598,
-  "beginnerPlaytesting": "User says current experience is fine for now; no detailed novice trial recorded",
-  "teachingCalibration": "Current settings retained per user; formal calibration deferred",
+  "pairedTeachingPlies": 818,
+  "beginnerPlaytesting": "User reports Beginner too hard on October 18; teaching-2 responds to that feedback",
+  "teachingCalibration": "55% quiet turns Beginner; 75% First steps. Automated behavior verified; revised subjective difficulty not yet reassessed.",
   "firefox": "unverified; user selected Chrome",
-  "humanInstructionalReview": "outstanding",
+  "humanInstructionalReview": "User accepts lessons for now on October 18; no exhaustive review claimed",
   "behavioralHelpEvaluations": 13122,
-  "date": "2026-10-18T15:36:23.444376+00:00",
-  "status": "incomplete",
-  "releaseStatus": "incomplete",
+  "date": "2026-10-18T15:52:34.088222+00:00",
+  "status": "difficulty-tuned",
+  "releaseStatus": "candidate",
   "automatedChecks": "passed",
-  "unitTests": 91,
-  "unitFiles": 13,
+  "unitTests": 95,
+  "unitFiles": 14,
   "browserJourneys": 104,
   "fullBrowserSuiteJourneys": 103,
   "implementationGaps": [],
   "remainingRequirements": [
-    "Documented beginner trials and teaching-policy calibration",
-    "Human instructional review"
+    "Revised Beginner difficulty has not yet been reassessed by the user"
   ],
-  "buildIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340",
+  "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a",
   "timeout": {
     "passed": true,
     "proofPositions": 768,
@@ -85,5 +84,16 @@
     "screenshots": 3,
     "externalRequests": 0,
     "raw": "source-install.json"
+  },
+  "difficultyRevision": {
+    "policyVersion": "teaching-2",
+    "browserJourneys": 12,
+    "browserScope": "Seven worker/lifecycle/legacy-resume journeys plus twelve level/color combinations in one journey and four actual-WASM recommendation journeys",
+    "unitTests": 95,
+    "unitFiles": 14,
+    "raw": "beginner-tuning.json",
+    "games": "teaching-games.json",
+    "browserRaw": "beginner-browser-results.json",
+    "priorFullSuite": "Earlier 103-journey full suite and final focused checks remain historical evidence; no full-suite rerun claimed on this revision."
   }
 }
