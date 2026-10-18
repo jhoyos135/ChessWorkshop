@@ -123,3 +123,5 @@ The final offline package smoke passed with all 429 manifest entries verified, n
 
 
 Privacy cleanup replaces personal filesystem paths with portable labels, including archived trace contents, and uses a generic Git author identity. The requested README paragraphs are removed. The privacy check runs before packaging; the two redaction tests and fresh offline package smoke pass. All application runtime files remain unchanged. See evidence/privacy-audit.json for scope and remote-cache limits.
+
+A fresh public clone verifies the sanitized branch and neutral commit identities. A separate API check confirms GitHub still serves old cached commit content outside that history. Complete remote erasure is not claimed; purging cached views requires GitHub Support. This limitation is recorded explicitly in the privacy audit.

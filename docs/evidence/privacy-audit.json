@@ -12,7 +12,7 @@
   "upstreamEngineUnchanged": true,
   "screenshotsContainEmbeddedMetadata": false,
   "publicRepositoryOwnerVisible": true,
-  "remoteCacheLimit": "GitHub may retain cached old commits; other existing clones are outside this repository cleanup.",
+  "remoteCacheLimit": "The published branch and reachable history are sanitized. A GitHub API check still serves content from an old commit outside that history. Permanent cached-content removal requires GitHub Support; old third-party clones cannot be erased here.",
   "prevention": [
     "npm run privacy:check",
     "npm run test:privacy",
@@ -24,5 +24,10 @@
   "rewrittenHistoryCommits": 7,
   "privacyTestsPassed": 2,
   "packageSmokePassed": true,
-  "runtimeUnchanged": true
+  "runtimeUnchanged": true,
+  "publicBaseHistoryCommitsChecked": 8,
+  "publicBaseBlobsChecked": 256,
+  "publicCloneVerified": true,
+  "remoteCachedOldContentStillAccessible": true,
+  "completeRemoteErasureConfirmed": false
 }
