@@ -2,10 +2,6 @@
 
 A local, offline chess learning application for Windows. Final verification uses Chrome; Edge passed core journeys during development. Firefox compatibility is unverified on this machine. Real procedural 3D pieces and a wooden board share legal rules and saved state with a keyboard-accessible flat board. No accounts, remote opponents, analytics, remote fonts, or runtime downloads.
 
-Implementation and verification are complete for this release. All A1–A16 acceptance scenarios pass, including 95 unit tests and 106 Chrome journeys. The user accepts the lessons for now and has accepted the gentler Beginner introduced in teaching policy 2. No measured human rating or learning outcome is claimed. The blocked-pawn timeout regression now enters a visible, saved adjudication state instead of assigning a winner from material alone. The [completion audit](docs/COMPLETION-AUDIT.md) records evidence and limits without treating automated legal replay as human learning validation.
-
-Beginner now sometimes chooses a quiet move instead of taking a free piece or calculating a threat. First steps does this more often. Both always obey the rules, and the coach still analyzes at full strength. Existing games use the revised opponent on future computer turns after reloading; all played moves remain unchanged.
-
 ## Install and run locally
 
 ### Windows offline package
@@ -120,6 +116,8 @@ Legal movement, check, castling, en passant, and all promotions use chess.js. Ch
 Dead-position recognition covers proven material patterns, not every blocked position. Two knights are not automatically declared dead. An unusual timeout with unresolved mating possibility shows **Decide the timeout result** beside the board. Play and clocks stay paused, including after reload, until **Opponent can mate** or **Draw: no possible mate** is confirmed. In local play both players acknowledge. Consider any possible legal mating continuation, not only forced mate. A full staggered pawn barrier triggers this decision even with extra material. Older automatic timeout wins in such positions reopen for a decision while the original stored record stays unchanged until an explicit save. The normal previous-snapshot recovery policy applies after saving. This is a local training rules policy, not tournament certification.
 
 ## Development and verification
+
+Run `npm run privacy:check` before publishing diagnostics. It checks first-party files and archived traces for personal filesystem paths and common credential patterns. `npm run test:privacy` tests the redaction rules. Packaging also runs the privacy check; generated package reports use portable paths.
 
 `npm test` runs rules, content objectives, storage, clocks, and engine-boundary tests. `npm run validate:content` checks lesson metadata and legal branches. `npm run verify:teaching` replays eight paired, seeded First steps/Beginner games for both colors, checking legal results, exact reload/replay, and policy time budgets; it does not measure a human rating. `npm run test:browser` runs offline journeys in installed Chrome with the bundled WASM. Chrome is the requested verification browser. Edge also received a compatibility run. Firefox verification was attempted but its downloaded executable could not start on this Windows installation; it is not claimed verified. `node scripts/measure.mjs` records local performance. `npm run package` assembles the offline Windows folder with a Node runtime, production assets, complete application source, upstream engine source and weights, licenses, and SHA-256 file manifest.
 

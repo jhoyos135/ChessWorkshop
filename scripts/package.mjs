@@ -1,6 +1,8 @@
+import { auditTracked } from './privacy.mjs';
 import { mkdir,cp,copyFile,readFile,writeFile,readdir,stat,realpath,lstat,rm } from 'node:fs/promises';
 import { resolve,sep } from 'node:path';
 import { createHash } from 'node:crypto';
+const privacy=await auditTracked();if(privacy.issues.length)throw Error('Privacy check failed. Run npm run privacy:check before packaging.');
 const workspace=await realpath(resolve('.')),out=resolve('release/ChessWorkshop-1.0.0');
 if(!out.toLowerCase().startsWith((workspace+sep+'release'+sep).toLowerCase()))throw Error('Package target is outside the intended release folder');
 const existing=await lstat(out).catch(()=>null);if(existing){if(existing.isSymbolicLink()||(await realpath(out)).toLowerCase()!==out.toLowerCase())throw Error('Refusing to replace a linked release directory');console.log('Replacing generated package directory:',out);await rm(out,{recursive:true,force:true});}await mkdir(out,{recursive:true});
