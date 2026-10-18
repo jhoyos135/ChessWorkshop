@@ -14,17 +14,17 @@
   "firefox": "unverified; user selected Chrome",
   "humanInstructionalReview": "User accepts lessons for now on October 18; no exhaustive review claimed",
   "behavioralHelpEvaluations": 13122,
-  "date": "2026-10-18T16:08:49.238507+00:00",
+  "date": "2026-10-18T22:22:02.300Z",
   "status": "complete",
   "releaseStatus": "complete",
   "automatedChecks": "passed",
-  "unitTests": 95,
+  "unitTests": 97,
   "unitFiles": 14,
-  "browserJourneys": 106,
-  "fullBrowserSuiteJourneys": 106,
+  "browserJourneys": 110,
+  "fullBrowserSuiteJourneys": 110,
   "implementationGaps": [],
   "remainingRequirements": [],
-  "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a",
+  "buildIndexSha256": "de71d962fdb028da89e55db5d0eb65d97312c12b2959ca9da6e2b0982e5274d3",
   "timeout": {
     "passed": true,
     "proofPositions": 768,
@@ -33,14 +33,15 @@
     "raw": "timeout-audit.json"
   },
   "performance": {
-    "fullFps": 60.23007890183581,
-    "lowFps": 60.106990442127156,
-    "saveP95Ms": 391.19999998807907,
-    "inputP95Ms": 13.200000047683716,
-    "coachP95Ms": 1251.800000011921,
-    "refinementP95Ms": 3013.699999988079,
+    "fullFps": 60.345342652710684,
+    "lowFps": 60.17209218494008,
+    "saveP95Ms": 346.39999997615814,
+    "inputP95Ms": 13.199999988079071,
+    "coachP95Ms": 1329.6000000238419,
+    "automaticRefinementP95Ms": null,
+    "stableRecommendationAfterIdle": true,
     "passed": true,
-    "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
+    "buildIndexSha256": "de71d962fdb028da89e55db5d0eb65d97312c12b2959ca9da6e2b0982e5274d3"
   },
   "reviewPerformance": {
     "reviewedPlies": 80,
@@ -51,16 +52,16 @@
     "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
   },
   "package": {
-    "date": "2026-10-18T16:31:43.734Z",
+    "date": "2026-10-18T22:21:38.550Z",
     "passed": true,
     "browser": "155.0.8059.84",
     "origin": "http://127.0.0.1:4173",
     "runtime": "workspace\\release\\ChessWorkshop-1.0.0\\runtime\\node.exe",
-    "filesVerified": 429,
+    "filesVerified": 433,
     "lessons": 32,
     "lessonExercises": 97,
     "puzzles": 100,
-    "candidates": 3,
+    "candidates": 31,
     "savedPliesRestored": 2,
     "restoredPaused": true,
     "lessonCompletionRestored": true,
@@ -82,8 +83,8 @@
       "exitCode": 1,
       "actionableError": true
     },
-    "sourceIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a",
-    "packagedIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
+    "sourceIndexSha256": "de71d962fdb028da89e55db5d0eb65d97312c12b2959ca9da6e2b0982e5274d3",
+    "packagedIndexSha256": "de71d962fdb028da89e55db5d0eb65d97312c12b2959ca9da6e2b0982e5274d3"
   },
   "finalCoachingJourneys": 25,
   "drag": {
@@ -149,5 +150,6 @@
     "raw": "release-browser-results.json",
     "status": "release-browser-status.json",
     "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
-  }
+  },
+  "bestMovesUpdate": "best-moves-update.json"
 }

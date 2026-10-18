@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-18",
+  "buildIndexSha256": "de71d962fdb028da89e55db5d0eb65d97312c12b2959ca9da6e2b0982e5274d3",
+  "change": "Show every legal move for the current position; rank only coherent Stockfish candidates; keep the highlighted recommendation stable until the position changes or the player requests deeper analysis.",
+  "defaultSearchMs": 1000,
+  "manualDeeperSearchMs": 5000,
+  "automaticIdleRefinement": false,
+  "fullChromeRegression": {
+    "command": "npx playwright test --project chrome --reporter list --output test-results/ranked-full-final",
+    "passed": 110,
+    "failed": 0,
+    "skipped": 0,
+    "workers": 1,
+    "durationMinutesApprox": 7.9
+  },
+  "affectedChromeRegression": {
+    "passed": 38,
+    "failed": 0,
+    "scope": [
+      "both colors and all legal moves including ranked and unranked labels",
+      "unchanged best move after more than four seconds idle",
+      "explicit five-second analysis and legal tactical recommendations",
+      "board source and destination preview and per-side toggles",
+      "stale-analysis cancellation, pause, resume and variation isolation",
+      "flat board, keyboard access and 200 percent text scale"
+    ]
+  },
+  "unitTests": {"passed": 97, "files": 14},
+  "contentValidation": {"lessons": 32, "exercises": 97, "invalidRecords": 0},
+  "performance": {
+    "fullQuality": {"framesPerSecond": 60.3453, "firstInteractionMs": 275.17, "inputP95Ms": 13.2, "saveP95Ms": 139.2, "firstUsefulCoachP95Ms": 1282.1},
+    "reducedQuality": {"framesPerSecond": 60.1721, "firstInteractionMs": 270.02, "inputP95Ms": 12.9, "saveP95Ms": 346.4, "firstUsefulCoachP95Ms": 1329.6},
+    "unchangedPositionIdleCheckMs": 4200,
+    "automaticRefinementSamples": 0
+  },
+  "limitations": "Only the top coherent Stockfish candidates have comparable engine scores. Other legal moves are listed without manufactured ranks. Local headless Chrome performance is machine-specific."
+}

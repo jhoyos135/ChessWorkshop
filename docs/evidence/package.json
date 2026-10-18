@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-18T16:31:43.734Z",
+  "date": "2026-10-18T22:21:38.550Z",
   "passed": true,
   "browser": "155.0.8059.84",
   "origin": "http://127.0.0.1:4173",
   "runtime": "workspace\\release\\ChessWorkshop-1.0.0\\runtime\\node.exe",
-  "filesVerified": 429,
+  "filesVerified": 433,
   "lessons": 32,
   "lessonExercises": 97,
   "puzzles": 100,
-  "candidates": 3,
+  "candidates": 31,
   "savedPliesRestored": 2,
   "restoredPaused": true,
   "lessonCompletionRestored": true,
@@ -30,6 +30,6 @@
     "exitCode": 1,
     "actionableError": true
   },
-  "sourceIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a",
-  "packagedIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
+  "sourceIndexSha256": "de71d962fdb028da89e55db5d0eb65d97312c12b2959ca9da6e2b0982e5274d3",
+  "packagedIndexSha256": "de71d962fdb028da89e55db5d0eb65d97312c12b2959ca9da6e2b0982e5274d3"
 }

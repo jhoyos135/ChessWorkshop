@@ -12,7 +12,7 @@ These are interaction patterns, not imported lesson text, positions, artwork, or
 
 ## Implemented response
 
-The recommendation guide is separate from the player’s current selection. Clicking a piece, another piece, or an empty square does not remove it. Only a changed position, disabled best-move mode, or an explicitly inactive game invalidates that advice. The initial view emphasizes one recommendation; other candidates can be expanded. Labels say “the actual piece name” and “MOVE HERE,” and a visible sentence explains the piece, its square, and its destination. A selected-piece instruction appears only when that piece is actually selected.
+The recommendation guide is separate from the player’s current selection. Clicking a piece, another piece, or an empty square does not remove it. Only a changed position, disabled best-move mode, or an explicitly inactive game invalidates that advice. The move list shows every legal choice, led by the engine-ranked candidates; the rest are identified as unranked. Selecting a row previews its route. Waiting on the same position does not silently replace the recommendation; a player can explicitly request deeper analysis. Labels say “the actual piece name” and “MOVE HERE,” and a visible sentence explains the piece, its square, and its destination. A selected-piece instruction appears only when that piece is actually selected.
 
 Lessons use Learn → Watch → Try stages, short original rule summaries, contextual definitions, and movement-shape diagrams. A demonstration shows its next route and supports autoplay, pause and manual stepping. New teaching sessions use a clear flat learning view, with the 3D view still available. The practice stage displays one goal and a direct explanation of click/drag input.
 

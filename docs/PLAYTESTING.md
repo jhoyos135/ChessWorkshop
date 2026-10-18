@@ -33,7 +33,7 @@ No novice outcomes, measured ratings, or completed human instructional review ha
 
 The user reported that locked-camera drags returned pieces to their starting square, questioned the current recommendation's accuracy, and asked for piece names instead of the generic source label. Both-color perspective fixtures reproduced a drop where the piece base was on a legal square but the raw ray selected a square behind it. A shared drop-target resolver and explicit drop marker correct that discrepancy while preserving direct cursor drops and captures.
 
-A deterministic UCI case also reproduced a completed older iteration disagreeing with the engine's final bestmove. The display now follows that final choice, keeps alternatives coherent, and refines automatic recommendations while the position stays unchanged. Actual WASM tests check both-color mates and checking knight forks, current-position keys and cancellation after a move. Source overlays now name the piece in both board views. These checks are implementation evidence and do not replace the remaining human learning and instructional reviews.
+A deterministic UCI case also reproduced a completed older iteration disagreeing with the engine's final bestmove. The display follows that final choice and keeps alternatives coherent. The earlier release refined automatic recommendations while the position stayed unchanged; the later best-move update removed that silent change. Actual WASM tests check both-color mates and checking knight forks, current-position keys and cancellation after a move. Source overlays name the piece in both board views. These checks are implementation evidence and do not replace human learning or instructional review.
 
 
 ## Lesson acceptance and Beginner tuning · October 18, 2026
