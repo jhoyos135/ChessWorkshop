@@ -9,23 +9,21 @@
   "independentHelpConfigurations": 6561,
   "pairedTeachingGames": 8,
   "pairedTeachingPlies": 818,
-  "beginnerPlaytesting": "User reports Beginner too hard on October 18; teaching-2 responds to that feedback",
-  "teachingCalibration": "55% quiet turns Beginner; 75% First steps. Automated behavior verified; revised subjective difficulty not yet reassessed.",
+  "beginnerPlaytesting": "User accepted revised Beginner difficulty on October 18: is fine now, continue with the goal until is completed",
+  "teachingCalibration": "User feedback drove teaching-2: 55% quiet turns Beginner, 75% First steps; revised difficulty accepted. No measured rating claimed.",
   "firefox": "unverified; user selected Chrome",
   "humanInstructionalReview": "User accepts lessons for now on October 18; no exhaustive review claimed",
   "behavioralHelpEvaluations": 13122,
-  "date": "2026-10-18T15:52:34.088222+00:00",
-  "status": "difficulty-tuned",
-  "releaseStatus": "candidate",
+  "date": "2026-10-18T16:08:49.238507+00:00",
+  "status": "complete",
+  "releaseStatus": "complete",
   "automatedChecks": "passed",
   "unitTests": 95,
   "unitFiles": 14,
-  "browserJourneys": 104,
-  "fullBrowserSuiteJourneys": 103,
+  "browserJourneys": 106,
+  "fullBrowserSuiteJourneys": 106,
   "implementationGaps": [],
-  "remainingRequirements": [
-    "Revised Beginner difficulty has not yet been reassessed by the user"
-  ],
+  "remainingRequirements": [],
   "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a",
   "timeout": {
     "passed": true,
@@ -35,31 +33,57 @@
     "raw": "timeout-audit.json"
   },
   "performance": {
-    "fullFps": 60.53635207898683,
-    "lowFps": 60.32011466665241,
-    "saveP95Ms": 337.5999999642372,
-    "inputP95Ms": 12.899999976158142,
-    "coachP95Ms": 1340,
-    "refinementP95Ms": 3016.399999976158,
-    "passed": true
+    "fullFps": 60.23007890183581,
+    "lowFps": 60.106990442127156,
+    "saveP95Ms": 391.19999998807907,
+    "inputP95Ms": 13.200000047683716,
+    "coachP95Ms": 1251.800000011921,
+    "refinementP95Ms": 3013.699999988079,
+    "passed": true,
+    "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
   },
   "reviewPerformance": {
     "reviewedPlies": 80,
     "finalPlies": 100,
-    "saveP95Ms": 21.30000001192093,
-    "inputP95Ms": 13,
-    "passed": true
+    "saveP95Ms": 61.30000001192093,
+    "inputP95Ms": 12.399999976158142,
+    "passed": true,
+    "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
   },
   "package": {
+    "date": "2026-10-18T16:09:24.355Z",
     "passed": true,
-    "filesVerified": 406,
-    "blueTheme": true,
-    "guidedGameRestored": true,
-    "explainRestored": true,
+    "browser": "155.0.8059.84",
+    "origin": "http://127.0.0.1:4173",
+    "runtime": "workspace\\release\\ChessWorkshop-1.0.0\\runtime\\node.exe",
+    "filesVerified": 425,
+    "lessons": 32,
+    "lessonExercises": 97,
+    "puzzles": 100,
+    "candidates": 3,
+    "savedPliesRestored": 2,
+    "restoredPaused": true,
+    "lessonCompletionRestored": true,
+    "fullMoveReviewEntries": 2,
+    "completedLessonExercises": 3,
+    "localBestMoves": {
+      "w": false,
+      "b": true
+    },
+    "cameraLockRestored": true,
     "homePreviewUnlocked": true,
+    "explainRestored": true,
+    "guidedGameRestored": true,
+    "blueTheme": true,
     "specificLessonFeedback": true,
     "timeoutDecisionRestored": true,
-    "packagedIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340"
+    "externalRequests": [],
+    "occupiedPort": {
+      "exitCode": 1,
+      "actionableError": true
+    },
+    "sourceIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a",
+    "packagedIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
   },
   "finalCoachingJourneys": 25,
   "drag": {
@@ -78,12 +102,9 @@
   "finalPriorityJourneys": 14,
   "sourceInstall": {
     "passed": true,
-    "testedCommit": "c350d727d8d77aed4814182e2a4a916d3d8b3167",
+    "testedCommit": "ccf1f36cb34a72c4ee671acdb68a105d4e26b26b",
     "matchingRuntimeAssets": 9,
-    "restoredPaused": true,
-    "screenshots": 3,
-    "externalRequests": 0,
-    "raw": "source-install.json"
+    "raw": "source-install-final.json"
   },
   "difficultyRevision": {
     "policyVersion": "teaching-2",
@@ -94,6 +115,39 @@
     "raw": "beginner-tuning.json",
     "games": "teaching-games.json",
     "browserRaw": "beginner-browser-results.json",
-    "priorFullSuite": "Earlier 103-journey full suite and final focused checks remain historical evidence; no full-suite rerun claimed on this revision."
+    "priorFullSuite": "Superseded by the final full 106-journey run on this exact build; earlier reports retained as historical evidence."
+  },
+  "acceptance": {
+    "A1": "passed",
+    "A2": "passed",
+    "A3": "passed",
+    "A4": "passed",
+    "A5": "passed",
+    "A6": "passed",
+    "A7": "passed",
+    "A8": "passed",
+    "A9": "passed",
+    "A10": "passed",
+    "A11": "passed",
+    "A12": "passed",
+    "A13": "passed",
+    "A14": "passed",
+    "A15": "passed",
+    "A16": "passed"
+  },
+  "knownLimitations": [
+    "Firefox unverified; user selected Chrome instead. Edge core compatibility was checked earlier.",
+    "Automatic dead-position recognition covers supported proven patterns; unusual timeout mating possibility uses explicit adjudication.",
+    "Performance measurements are local headless Chrome results on this PC; no human rating or measured learning gain is claimed."
+  ],
+  "finalBrowser": {
+    "journeys": 106,
+    "fullSuite": true,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "raw": "release-browser-results.json",
+    "status": "release-browser-status.json",
+    "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
   }
 }

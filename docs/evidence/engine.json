@@ -16,21 +16,21 @@
     "option name UCI_ShowWDL type check default false",
     "option name EvalFile type string default nn-61e7af4bb97d.nnue"
   ],
-  "bestmove": "bestmove g1f3 ponder b8c6",
-  "elapsedMs": 412.6894,
+  "bestmove": "bestmove b1c3 ponder g8f6",
+  "elapsedMs": 374.71,
   "memoryBefore": {
-    "rss": 40718336,
+    "rss": 41590784,
     "heapTotal": 4689920,
     "heapUsed": 4018456,
     "external": 1521334,
     "arrayBuffers": 12644
   },
   "memoryAfter": {
-    "rss": 102973440,
-    "heapTotal": 6787072,
-    "heapUsed": 4316624,
-    "external": 137901418,
-    "arrayBuffers": 1859313
+    "rss": 103792640,
+    "heapTotal": 7049216,
+    "heapUsed": 4474288,
+    "external": 137901582,
+    "arrayBuffers": 1859477
   },
   "notes": "Node execution of the exact bundled single-threaded WASM provides startup/options and process memory evidence. Browser-worker legal output and cancellation are tested separately."
 }

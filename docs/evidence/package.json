@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-18T15:53:16.901Z",
+  "date": "2026-10-18T16:09:24.355Z",
   "passed": true,
   "browser": "155.0.8059.84",
   "origin": "http://127.0.0.1:4173",
   "runtime": "workspace\\release\\ChessWorkshop-1.0.0\\runtime\\node.exe",
-  "filesVerified": 419,
+  "filesVerified": 425,
   "lessons": 32,
   "lessonExercises": 97,
   "puzzles": 100,

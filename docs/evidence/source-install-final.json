@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-18T16:00:13.154375+00:00",
+  "passed": true,
+  "repository": "https://github.com/jhoyos135/ChessWorkshop",
+  "branch": "master",
+  "testedCommit": "ccf1f36cb34a72c4ee671acdb68a105d4e26b26b",
+  "runtime": "v20.19.4",
+  "commands": [
+    "git clone --branch master --single-branch --depth 1",
+    "npm ci",
+    "node scripts/bundle-engine.mjs",
+    "git pull --ff-only (verification-script fix)",
+    "npm run build"
+  ],
+  "runtimeAssetCount": 9,
+  "runtimeAssets": [
+    {
+      "file": "asset-manifest.json",
+      "bytes": 844,
+      "sha256": "dfafc0949e4d05c5d272b418309d316ee6beaaac7f76a6d41ea492289a51fcfa"
+    },
+    {
+      "file": "assets/index-BgBTspKT.js",
+      "bytes": 1478650,
+      "sha256": "3e82922034c1f79c0d1f84ed3b8a15c9d0839a42704a1f659b62c21210c906ca"
+    },
+    {
+      "file": "assets/index-CycTW_Ai.css",
+      "bytes": 31837,
+      "sha256": "5566ed541279632192b05c1b6860d653d0870df156177199e0f7a810a34f4f9d"
+    },
+    {
+      "file": "assets/teaching.worker-D07KTXwy.js",
+      "bytes": 38170,
+      "sha256": "0003699a4892ce91cddd9aa234e2bb52b4883bda112afe66f5ba7fa3aac497cf"
+    },
+    {
+      "file": "engine/stockfish-19-lite-single.js",
+      "bytes": 28230,
+      "sha256": "ccb130d7ff29408531c47d859a49f91d59d4f482d05a53eb1a3231a4f624c91a"
+    },
+    {
+      "file": "engine/stockfish-19-lite-single.wasm",
+      "bytes": 1845971,
+      "sha256": "ee4f115bdb2d32cadf96cada104a05b5ec257d7ad6f57582190b49bc71f096de"
+    },
+    {
+      "file": "index.html",
+      "bytes": 403,
+      "sha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a"
+    },
+    {
+      "file": "licenses/Stockfish-GPL-3.0.txt",
+      "bytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    {
+      "file": "theme.css",
+      "bytes": 20111,
+      "sha256": "df71663ddcb220fe667132c1d4c9b531c5d025ffb672b044fbf8fdfeec25f885"
+    }
+  ],
+  "buildIndexSha256": "8630dd62c573d9e640d665ee6ff8eff4c4979c1fbd7840e9b16b8c757bd11b2a",
+  "dependencyInstall": {
+    "addedPackages": 153,
+    "auditedPackages": 154,
+    "reportedVulnerabilities": 0
+  },
+  "closedFinding": {
+    "initialCommit": "969d24ca7c0f65efc115df074af95785d63bba7e",
+    "error": "TS2783: duplicate seed property in scripts/verify-beginner.ts",
+    "fix": "Store the input as initialSeed and retain the resulting seed separately",
+    "correctedCommit": "ccf1f36cb34a72c4ee671acdb68a105d4e26b26b"
+  },
+  "limitations": "One Windows machine with existing npm configuration/cache. Bundling recopies an unchanged GPL license with CRLF line endings. Source installation is verified separately from the packaged browser smoke."
+}

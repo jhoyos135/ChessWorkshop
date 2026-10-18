@@ -1,4 +1,4 @@
-# Playtesting record and remaining human checks
+# Playtesting record and user acceptance
 
 ## Observed user feedback · October 17, 2026
 
@@ -45,3 +45,8 @@ The old Beginner examined every immediate reply and chose from near-best moves o
 `beginner-tuning.json` records 64 spread seeds for each level and color: Beginner passed up the free-rook capture 32 times per color; First steps 47. Every decision replayed legally and identically from its seed. Eight complete paired games produced 818 legal plies, six Beginner wins and two First steps wins, with eight exact midpoint restores and no move-limit outcomes. Maximum calculation time was 425.2 ms for Beginner and 33.2 ms for First steps, within 500/250 ms budgets. Previous reports are preserved as teaching-games-v1.json/.pgn. These are regression results, not proof of subjective ease or ratings.
 
 Existing saved games use the revision on their next computer turn after a reload. That save records policy 2, its advanced seed and an upgrade event; historical moves are untouched. Both colors, reload, worker retry, cancellation and level changes passed Chrome checks. Full-strength coaching is unchanged. No new trial result for the revised difficulty is invented; future feedback can guide further adjustment.
+
+
+## Revised difficulty accepted · October 18, 2026
+
+After trying the revised Beginner, the user replied, “is fine now, continue with the goal until is completed.” This records acceptance of the new difficulty and closes the previous subjective difficulty gate. Together with “lessons are ok for now,” it is the user acceptance basis for this release. It does not claim a measured rating, a controlled study, or exhaustive review of every lesson branch.
