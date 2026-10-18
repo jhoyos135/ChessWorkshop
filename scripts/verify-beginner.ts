@@ -16,7 +16,7 @@ for(const fixture of fixtures)for(const level of ['First steps','Beginner'] as c
   if(JSON.stringify(answer)!==JSON.stringify(again))throw Error('Seeded replay diverged');
   const game=new Chess(fixture.fen),move=playUci(game,answer.move);
   if(answer.move===fixture.capture)captures++;else{if(move.captured||game.isCheck())throw Error('Expected a quiet alternative');quiet++;}
-  decisions.push({seed:session.seed,...answer});
+  decisions.push({initialSeed:session.seed,...answer});
  }
  cases.push({...fixture,level,quiet,captures,decisions});
 }

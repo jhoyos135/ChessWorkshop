@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-18T15:50:30.752Z",
+  "date": "2026-10-18T15:59:36.763Z",
   "passed": true,
   "policyVersion": "teaching-2",
   "profiles": {
@@ -27,260 +27,324 @@
       "captures": 17,
       "decisions": [
         {
-          "seed": 3761132862,
-          "move": "g1h1"
+          "initialSeed": 2654435769,
+          "move": "g1h1",
+          "seed": 3761132862
         },
         {
-          "seed": 3226217053,
-          "move": "g1h2"
+          "initialSeed": 1013904242,
+          "move": "g1h2",
+          "seed": 3226217053
         },
         {
-          "seed": 784628165,
-          "move": "c4d5"
+          "initialSeed": 3668340011,
+          "move": "c4d5",
+          "seed": 784628165
         },
         {
-          "seed": 2458475954,
-          "move": "g1f2"
+          "initialSeed": 2027808484,
+          "move": "g1f2",
+          "seed": 2458475954
         },
         {
-          "seed": 4258716665,
-          "move": "c4d5"
+          "initialSeed": 387276957,
+          "move": "c4d5",
+          "seed": 4258716665
         },
         {
-          "seed": 1561876425,
-          "move": "c4d5"
+          "initialSeed": 3041712726,
+          "move": "c4d5",
+          "seed": 1561876425
         },
         {
-          "seed": 871650656,
-          "move": "c4d5"
+          "initialSeed": 1401181199,
+          "move": "c4d5",
+          "seed": 871650656
         },
         {
-          "seed": 932386318,
-          "move": "c4b3"
+          "initialSeed": 4055616968,
+          "move": "c4b3",
+          "seed": 932386318
         },
         {
-          "seed": 2312130800,
-          "move": "g1f2"
+          "initialSeed": 2415085441,
+          "move": "g1f2",
+          "seed": 2312130800
         },
         {
-          "seed": 3920379642,
-          "move": "g1f1"
+          "initialSeed": 774553914,
+          "move": "g1f1",
+          "seed": 3920379642
         },
         {
-          "seed": 1311583358,
-          "move": "c4d5"
+          "initialSeed": 3428989683,
+          "move": "c4d5",
+          "seed": 1311583358
         },
         {
-          "seed": 3123752883,
-          "move": "c4d5"
+          "initialSeed": 1788458156,
+          "move": "c4d5",
+          "seed": 3123752883
         },
         {
-          "seed": 2649135620,
-          "move": "g1g2"
+          "initialSeed": 147926629,
+          "move": "g1g2",
+          "seed": 2649135620
         },
         {
-          "seed": 1969817514,
-          "move": "c4d5"
+          "initialSeed": 2802362398,
+          "move": "c4d5",
+          "seed": 1969817514
         },
         {
-          "seed": 1138305179,
-          "move": "c4b3"
+          "initialSeed": 1161830871,
+          "move": "c4b3",
+          "seed": 1138305179
         },
         {
-          "seed": 2100765972,
-          "move": "c4a2"
+          "initialSeed": 3816266640,
+          "move": "c4a2",
+          "seed": 2100765972
         },
         {
-          "seed": 3732997009,
-          "move": "g1h1"
+          "initialSeed": 2175735113,
+          "move": "g1h1",
+          "seed": 3732997009
         },
         {
-          "seed": 18943114,
-          "move": "c4e2"
+          "initialSeed": 535203586,
+          "move": "c4e2",
+          "seed": 18943114
         },
         {
-          "seed": 4013735075,
-          "move": "g1f1"
+          "initialSeed": 3189639355,
+          "move": "g1f1",
+          "seed": 4013735075
         },
         {
-          "seed": 3553155478,
-          "move": "g1h1"
+          "initialSeed": 1549107828,
+          "move": "g1h1",
+          "seed": 3553155478
         },
         {
-          "seed": 971241027,
-          "move": "c4d5"
+          "initialSeed": 4203543597,
+          "move": "c4d5",
+          "seed": 971241027
         },
         {
-          "seed": 2388382196,
-          "move": "c4d5"
+          "initialSeed": 2563012070,
+          "move": "c4d5",
+          "seed": 2388382196
         },
         {
-          "seed": 1667962794,
-          "move": "c4a6"
+          "initialSeed": 922480543,
+          "move": "c4a6",
+          "seed": 1667962794
         },
         {
-          "seed": 1952538470,
-          "move": "c4a2"
+          "initialSeed": 3576916312,
+          "move": "c4a2",
+          "seed": 1952538470
         },
         {
-          "seed": 1547701951,
-          "move": "c4d5"
+          "initialSeed": 1936384785,
+          "move": "c4d5",
+          "seed": 1547701951
         },
         {
-          "seed": 994906218,
-          "move": "c4b3"
+          "initialSeed": 295853258,
+          "move": "c4b3",
+          "seed": 994906218
         },
         {
-          "seed": 2398537586,
-          "move": "g1f2"
+          "initialSeed": 2950289027,
+          "move": "g1f2",
+          "seed": 2398537586
         },
         {
-          "seed": 4166230559,
-          "move": "c4d5"
+          "initialSeed": 1309757500,
+          "move": "c4d5",
+          "seed": 4166230559
         },
         {
-          "seed": 1214238588,
-          "move": "c4b3"
+          "initialSeed": 3964193269,
+          "move": "c4b3",
+          "seed": 1214238588
         },
         {
-          "seed": 2275594519,
-          "move": "c4d5"
+          "initialSeed": 2323661742,
+          "move": "c4d5",
+          "seed": 2275594519
         },
         {
-          "seed": 2693040814,
-          "move": "g1g2"
+          "initialSeed": 683130215,
+          "move": "g1g2",
+          "seed": 2693040814
         },
         {
-          "seed": 4211011146,
-          "move": "g1f1"
+          "initialSeed": 3337565984,
+          "move": "g1f1",
+          "seed": 4211011146
         },
         {
-          "seed": 1588894239,
-          "move": "c4d5"
+          "initialSeed": 1697034457,
+          "move": "c4d5",
+          "seed": 1588894239
         },
         {
-          "seed": 3172108035,
-          "move": "g1h2"
+          "initialSeed": 56502930,
+          "move": "g1h2",
+          "seed": 3172108035
         },
         {
-          "seed": 2642293857,
-          "move": "g1g2"
+          "initialSeed": 2710938699,
+          "move": "g1g2",
+          "seed": 2642293857
         },
         {
-          "seed": 272863293,
-          "move": "c4e2"
+          "initialSeed": 1070407172,
+          "move": "c4e2",
+          "seed": 272863293
         },
         {
-          "seed": 8618392,
-          "move": "c4d5"
+          "initialSeed": 3724842941,
+          "move": "c4d5",
+          "seed": 8618392
         },
         {
-          "seed": 3739868421,
-          "move": "g1h1"
+          "initialSeed": 2084311414,
+          "move": "g1h1",
+          "seed": 3739868421
         },
         {
-          "seed": 2880674664,
-          "move": "g1g2"
+          "initialSeed": 443779887,
+          "move": "g1g2",
+          "seed": 2880674664
         },
         {
-          "seed": 3036716647,
-          "move": "c4d5"
+          "initialSeed": 3098215656,
+          "move": "c4d5",
+          "seed": 3036716647
         },
         {
-          "seed": 389181875,
-          "move": "c4e2"
+          "initialSeed": 1457684129,
+          "move": "c4e2",
+          "seed": 389181875
         },
         {
-          "seed": 1934084324,
-          "move": "c4a2"
+          "initialSeed": 4112119898,
+          "move": "c4a2",
+          "seed": 1934084324
         },
         {
-          "seed": 3568701146,
-          "move": "g1h1"
+          "initialSeed": 2471588371,
+          "move": "g1h1",
+          "seed": 3568701146
         },
         {
-          "seed": 481797096,
-          "move": "c4f1"
+          "initialSeed": 831056844,
+          "move": "c4f1",
+          "seed": 481797096
         },
         {
-          "seed": 199587286,
-          "move": "c4e2"
+          "initialSeed": 3485492613,
+          "move": "c4e2",
+          "seed": 199587286
         },
         {
-          "seed": 3334909780,
-          "move": "g1h2"
+          "initialSeed": 1844961086,
+          "move": "g1h2",
+          "seed": 3334909780
         },
         {
-          "seed": 2935013379,
-          "move": "g1g2"
+          "initialSeed": 204429559,
+          "move": "g1g2",
+          "seed": 2935013379
         },
         {
-          "seed": 4207097796,
-          "move": "g1f1"
+          "initialSeed": 2858865328,
+          "move": "g1f1",
+          "seed": 4207097796
         },
         {
-          "seed": 3627794677,
-          "move": "g1h1"
+          "initialSeed": 1218333801,
+          "move": "g1h1",
+          "seed": 3627794677
         },
         {
-          "seed": 3096485246,
-          "move": "g1h2"
+          "initialSeed": 3872769570,
+          "move": "g1h2",
+          "seed": 3096485246
         },
         {
-          "seed": 1645248437,
-          "move": "c4a6"
+          "initialSeed": 2232238043,
+          "move": "c4a6",
+          "seed": 1645248437
         },
         {
-          "seed": 1980400822,
-          "move": "c4a2"
+          "initialSeed": 591706516,
+          "move": "c4a2",
+          "seed": 1980400822
         },
         {
-          "seed": 3292737268,
-          "move": "g1h2"
+          "initialSeed": 3246142285,
+          "move": "g1h2",
+          "seed": 3292737268
         },
         {
-          "seed": 259826607,
-          "move": "c4e2"
+          "initialSeed": 1605610758,
+          "move": "c4e2",
+          "seed": 259826607
         },
         {
-          "seed": 3939523415,
-          "move": "g1f1"
+          "initialSeed": 4260046527,
+          "move": "g1f1",
+          "seed": 3939523415
         },
         {
-          "seed": 4038575166,
-          "move": "c4d5"
+          "initialSeed": 2619515000,
+          "move": "c4d5",
+          "seed": 4038575166
         },
         {
-          "seed": 3596448132,
-          "move": "g1h1"
+          "initialSeed": 978983473,
+          "move": "g1h1",
+          "seed": 3596448132
         },
         {
-          "seed": 2192480209,
-          "move": "g1f2"
+          "initialSeed": 3633419242,
+          "move": "g1f2",
+          "seed": 2192480209
         },
         {
-          "seed": 69603340,
-          "move": "c4e2"
+          "initialSeed": 1992887715,
+          "move": "c4e2",
+          "seed": 69603340
         },
         {
-          "seed": 499388228,
-          "move": "c4f1"
+          "initialSeed": 352356188,
+          "move": "c4f1",
+          "seed": 499388228
         },
         {
-          "seed": 3421338979,
-          "move": "c4d5"
+          "initialSeed": 3006791957,
+          "move": "c4d5",
+          "seed": 3421338979
         },
         {
-          "seed": 1402484759,
-          "move": "c4a6"
+          "initialSeed": 1366260430,
+          "move": "c4a6",
+          "seed": 1402484759
         },
         {
-          "seed": 646704990,
-          "move": "c4f1"
+          "initialSeed": 4020696199,
+          "move": "c4f1",
+          "seed": 646704990
         },
         {
-          "seed": 4117592310,
-          "move": "g1f1"
+          "initialSeed": 2380164672,
+          "move": "g1f1",
+          "seed": 4117592310
         }
       ]
     },
@@ -293,260 +357,324 @@
       "captures": 32,
       "decisions": [
         {
-          "seed": 3761132862,
-          "move": "g1h1"
+          "initialSeed": 2654435769,
+          "move": "g1h1",
+          "seed": 3761132862
         },
         {
-          "seed": 3226217053,
-          "move": "c4d5"
+          "initialSeed": 1013904242,
+          "move": "c4d5",
+          "seed": 3226217053
         },
         {
-          "seed": 784628165,
-          "move": "c4d5"
+          "initialSeed": 3668340011,
+          "move": "c4d5",
+          "seed": 784628165
         },
         {
-          "seed": 2458475954,
-          "move": "g1f2"
+          "initialSeed": 2027808484,
+          "move": "g1f2",
+          "seed": 2458475954
         },
         {
-          "seed": 4258716665,
-          "move": "c4d5"
+          "initialSeed": 387276957,
+          "move": "c4d5",
+          "seed": 4258716665
         },
         {
-          "seed": 1561876425,
-          "move": "c4d5"
+          "initialSeed": 3041712726,
+          "move": "c4d5",
+          "seed": 1561876425
         },
         {
-          "seed": 871650656,
-          "move": "c4d5"
+          "initialSeed": 1401181199,
+          "move": "c4d5",
+          "seed": 871650656
         },
         {
-          "seed": 932386318,
-          "move": "c4b3"
+          "initialSeed": 4055616968,
+          "move": "c4b3",
+          "seed": 932386318
         },
         {
-          "seed": 2312130800,
-          "move": "g1f2"
+          "initialSeed": 2415085441,
+          "move": "g1f2",
+          "seed": 2312130800
         },
         {
-          "seed": 3920379642,
-          "move": "c4d5"
+          "initialSeed": 774553914,
+          "move": "c4d5",
+          "seed": 3920379642
         },
         {
-          "seed": 1311583358,
-          "move": "c4d5"
+          "initialSeed": 3428989683,
+          "move": "c4d5",
+          "seed": 1311583358
         },
         {
-          "seed": 3123752883,
-          "move": "c4d5"
+          "initialSeed": 1788458156,
+          "move": "c4d5",
+          "seed": 3123752883
         },
         {
-          "seed": 2649135620,
-          "move": "c4d5"
+          "initialSeed": 147926629,
+          "move": "c4d5",
+          "seed": 2649135620
         },
         {
-          "seed": 1969817514,
-          "move": "c4d5"
+          "initialSeed": 2802362398,
+          "move": "c4d5",
+          "seed": 1969817514
         },
         {
-          "seed": 1138305179,
-          "move": "c4b3"
+          "initialSeed": 1161830871,
+          "move": "c4b3",
+          "seed": 1138305179
         },
         {
-          "seed": 2100765972,
-          "move": "c4a2"
+          "initialSeed": 3816266640,
+          "move": "c4a2",
+          "seed": 2100765972
         },
         {
-          "seed": 3732997009,
-          "move": "g1h1"
+          "initialSeed": 2175735113,
+          "move": "g1h1",
+          "seed": 3732997009
         },
         {
-          "seed": 18943114,
-          "move": "c4e2"
+          "initialSeed": 535203586,
+          "move": "c4e2",
+          "seed": 18943114
         },
         {
-          "seed": 4013735075,
-          "move": "c4d5"
+          "initialSeed": 3189639355,
+          "move": "c4d5",
+          "seed": 4013735075
         },
         {
-          "seed": 3553155478,
-          "move": "g1h1"
+          "initialSeed": 1549107828,
+          "move": "g1h1",
+          "seed": 3553155478
         },
         {
-          "seed": 971241027,
-          "move": "c4d5"
+          "initialSeed": 4203543597,
+          "move": "c4d5",
+          "seed": 971241027
         },
         {
-          "seed": 2388382196,
-          "move": "c4d5"
+          "initialSeed": 2563012070,
+          "move": "c4d5",
+          "seed": 2388382196
         },
         {
-          "seed": 1667962794,
-          "move": "c4a6"
+          "initialSeed": 922480543,
+          "move": "c4a6",
+          "seed": 1667962794
         },
         {
-          "seed": 1952538470,
-          "move": "c4d5"
+          "initialSeed": 3576916312,
+          "move": "c4d5",
+          "seed": 1952538470
         },
         {
-          "seed": 1547701951,
-          "move": "c4d5"
+          "initialSeed": 1936384785,
+          "move": "c4d5",
+          "seed": 1547701951
         },
         {
-          "seed": 994906218,
-          "move": "c4b3"
+          "initialSeed": 295853258,
+          "move": "c4b3",
+          "seed": 994906218
         },
         {
-          "seed": 2398537586,
-          "move": "g1f2"
+          "initialSeed": 2950289027,
+          "move": "g1f2",
+          "seed": 2398537586
         },
         {
-          "seed": 4166230559,
-          "move": "c4d5"
+          "initialSeed": 1309757500,
+          "move": "c4d5",
+          "seed": 4166230559
         },
         {
-          "seed": 1214238588,
-          "move": "c4b3"
+          "initialSeed": 3964193269,
+          "move": "c4b3",
+          "seed": 1214238588
         },
         {
-          "seed": 2275594519,
-          "move": "c4d5"
+          "initialSeed": 2323661742,
+          "move": "c4d5",
+          "seed": 2275594519
         },
         {
-          "seed": 2693040814,
-          "move": "g1g2"
+          "initialSeed": 683130215,
+          "move": "g1g2",
+          "seed": 2693040814
         },
         {
-          "seed": 4211011146,
-          "move": "g1f1"
+          "initialSeed": 3337565984,
+          "move": "g1f1",
+          "seed": 4211011146
         },
         {
-          "seed": 1588894239,
-          "move": "c4d5"
+          "initialSeed": 1697034457,
+          "move": "c4d5",
+          "seed": 1588894239
         },
         {
-          "seed": 3172108035,
-          "move": "g1h2"
+          "initialSeed": 56502930,
+          "move": "g1h2",
+          "seed": 3172108035
         },
         {
-          "seed": 2642293857,
-          "move": "c4d5"
+          "initialSeed": 2710938699,
+          "move": "c4d5",
+          "seed": 2642293857
         },
         {
-          "seed": 272863293,
-          "move": "c4e2"
+          "initialSeed": 1070407172,
+          "move": "c4e2",
+          "seed": 272863293
         },
         {
-          "seed": 8618392,
-          "move": "c4d5"
+          "initialSeed": 3724842941,
+          "move": "c4d5",
+          "seed": 8618392
         },
         {
-          "seed": 3739868421,
-          "move": "g1h1"
+          "initialSeed": 2084311414,
+          "move": "g1h1",
+          "seed": 3739868421
         },
         {
-          "seed": 2880674664,
-          "move": "g1g2"
+          "initialSeed": 443779887,
+          "move": "g1g2",
+          "seed": 2880674664
         },
         {
-          "seed": 3036716647,
-          "move": "c4d5"
+          "initialSeed": 3098215656,
+          "move": "c4d5",
+          "seed": 3036716647
         },
         {
-          "seed": 389181875,
-          "move": "c4e2"
+          "initialSeed": 1457684129,
+          "move": "c4e2",
+          "seed": 389181875
         },
         {
-          "seed": 1934084324,
-          "move": "c4a2"
+          "initialSeed": 4112119898,
+          "move": "c4a2",
+          "seed": 1934084324
         },
         {
-          "seed": 3568701146,
-          "move": "g1h1"
+          "initialSeed": 2471588371,
+          "move": "g1h1",
+          "seed": 3568701146
         },
         {
-          "seed": 481797096,
-          "move": "c4d5"
+          "initialSeed": 831056844,
+          "move": "c4d5",
+          "seed": 481797096
         },
         {
-          "seed": 199587286,
-          "move": "c4d5"
+          "initialSeed": 3485492613,
+          "move": "c4d5",
+          "seed": 199587286
         },
         {
-          "seed": 3334909780,
-          "move": "g1h2"
+          "initialSeed": 1844961086,
+          "move": "g1h2",
+          "seed": 3334909780
         },
         {
-          "seed": 2935013379,
-          "move": "g1g2"
+          "initialSeed": 204429559,
+          "move": "g1g2",
+          "seed": 2935013379
         },
         {
-          "seed": 4207097796,
-          "move": "g1f1"
+          "initialSeed": 2858865328,
+          "move": "g1f1",
+          "seed": 4207097796
         },
         {
-          "seed": 3627794677,
-          "move": "c4d5"
+          "initialSeed": 1218333801,
+          "move": "c4d5",
+          "seed": 3627794677
         },
         {
-          "seed": 3096485246,
-          "move": "c4d5"
+          "initialSeed": 3872769570,
+          "move": "c4d5",
+          "seed": 3096485246
         },
         {
-          "seed": 1645248437,
-          "move": "c4a6"
+          "initialSeed": 2232238043,
+          "move": "c4a6",
+          "seed": 1645248437
         },
         {
-          "seed": 1980400822,
-          "move": "c4a2"
+          "initialSeed": 591706516,
+          "move": "c4a2",
+          "seed": 1980400822
         },
         {
-          "seed": 3292737268,
-          "move": "c4d5"
+          "initialSeed": 3246142285,
+          "move": "c4d5",
+          "seed": 3292737268
         },
         {
-          "seed": 259826607,
-          "move": "c4e2"
+          "initialSeed": 1605610758,
+          "move": "c4e2",
+          "seed": 259826607
         },
         {
-          "seed": 3939523415,
-          "move": "c4d5"
+          "initialSeed": 4260046527,
+          "move": "c4d5",
+          "seed": 3939523415
         },
         {
-          "seed": 4038575166,
-          "move": "c4d5"
+          "initialSeed": 2619515000,
+          "move": "c4d5",
+          "seed": 4038575166
         },
         {
-          "seed": 3596448132,
-          "move": "g1h1"
+          "initialSeed": 978983473,
+          "move": "g1h1",
+          "seed": 3596448132
         },
         {
-          "seed": 2192480209,
-          "move": "c4d5"
+          "initialSeed": 3633419242,
+          "move": "c4d5",
+          "seed": 2192480209
         },
         {
-          "seed": 69603340,
-          "move": "c4d5"
+          "initialSeed": 1992887715,
+          "move": "c4d5",
+          "seed": 69603340
         },
         {
-          "seed": 499388228,
-          "move": "c4d5"
+          "initialSeed": 352356188,
+          "move": "c4d5",
+          "seed": 499388228
         },
         {
-          "seed": 3421338979,
-          "move": "c4d5"
+          "initialSeed": 3006791957,
+          "move": "c4d5",
+          "seed": 3421338979
         },
         {
-          "seed": 1402484759,
-          "move": "c4a6"
+          "initialSeed": 1366260430,
+          "move": "c4a6",
+          "seed": 1402484759
         },
         {
-          "seed": 646704990,
-          "move": "c4f1"
+          "initialSeed": 4020696199,
+          "move": "c4f1",
+          "seed": 646704990
         },
         {
-          "seed": 4117592310,
-          "move": "g1f1"
+          "initialSeed": 2380164672,
+          "move": "g1f1",
+          "seed": 4117592310
         }
       ]
     },
@@ -559,260 +687,324 @@
       "captures": 17,
       "decisions": [
         {
-          "seed": 3761132862,
-          "move": "c5a7"
+          "initialSeed": 2654435769,
+          "move": "c5a7",
+          "seed": 3761132862
         },
         {
-          "seed": 3226217053,
-          "move": "g8f8"
+          "initialSeed": 1013904242,
+          "move": "g8f8",
+          "seed": 3226217053
         },
         {
-          "seed": 784628165,
-          "move": "c5d4"
+          "initialSeed": 3668340011,
+          "move": "c5d4",
+          "seed": 784628165
         },
         {
-          "seed": 2458475954,
-          "move": "g8g7"
+          "initialSeed": 2027808484,
+          "move": "g8g7",
+          "seed": 2458475954
         },
         {
-          "seed": 4258716665,
-          "move": "c5d4"
+          "initialSeed": 387276957,
+          "move": "c5d4",
+          "seed": 4258716665
         },
         {
-          "seed": 1561876425,
-          "move": "c5d4"
+          "initialSeed": 3041712726,
+          "move": "c5d4",
+          "seed": 1561876425
         },
         {
-          "seed": 871650656,
-          "move": "c5d4"
+          "initialSeed": 1401181199,
+          "move": "c5d4",
+          "seed": 871650656
         },
         {
-          "seed": 932386318,
-          "move": "c5b6"
+          "initialSeed": 4055616968,
+          "move": "c5b6",
+          "seed": 932386318
         },
         {
-          "seed": 2312130800,
-          "move": "g8g7"
+          "initialSeed": 2415085441,
+          "move": "g8g7",
+          "seed": 2312130800
         },
         {
-          "seed": 3920379642,
-          "move": "c5a3"
+          "initialSeed": 774553914,
+          "move": "c5a3",
+          "seed": 3920379642
         },
         {
-          "seed": 1311583358,
-          "move": "c5d4"
+          "initialSeed": 3428989683,
+          "move": "c5d4",
+          "seed": 1311583358
         },
         {
-          "seed": 3123752883,
-          "move": "c5d4"
+          "initialSeed": 1788458156,
+          "move": "c5d4",
+          "seed": 3123752883
         },
         {
-          "seed": 2649135620,
-          "move": "g8f7"
+          "initialSeed": 147926629,
+          "move": "g8f7",
+          "seed": 2649135620
         },
         {
-          "seed": 1969817514,
-          "move": "c5d4"
+          "initialSeed": 2802362398,
+          "move": "c5d4",
+          "seed": 1969817514
         },
         {
-          "seed": 1138305179,
-          "move": "c5b6"
+          "initialSeed": 1161830871,
+          "move": "c5b6",
+          "seed": 1138305179
         },
         {
-          "seed": 2100765972,
-          "move": "g8h7"
+          "initialSeed": 3816266640,
+          "move": "g8h7",
+          "seed": 2100765972
         },
         {
-          "seed": 3732997009,
-          "move": "c5a7"
+          "initialSeed": 2175735113,
+          "move": "c5a7",
+          "seed": 3732997009
         },
         {
-          "seed": 18943114,
-          "move": "c5e7"
+          "initialSeed": 535203586,
+          "move": "c5e7",
+          "seed": 18943114
         },
         {
-          "seed": 4013735075,
-          "move": "c5a3"
+          "initialSeed": 3189639355,
+          "move": "c5a3",
+          "seed": 4013735075
         },
         {
-          "seed": 3553155478,
-          "move": "c5a7"
+          "initialSeed": 1549107828,
+          "move": "c5a7",
+          "seed": 3553155478
         },
         {
-          "seed": 971241027,
-          "move": "c5d4"
+          "initialSeed": 4203543597,
+          "move": "c5d4",
+          "seed": 971241027
         },
         {
-          "seed": 2388382196,
-          "move": "c5d4"
+          "initialSeed": 2563012070,
+          "move": "c5d4",
+          "seed": 2388382196
         },
         {
-          "seed": 1667962794,
-          "move": "g8h8"
+          "initialSeed": 922480543,
+          "move": "g8h8",
+          "seed": 1667962794
         },
         {
-          "seed": 1952538470,
-          "move": "g8h7"
+          "initialSeed": 3576916312,
+          "move": "g8h7",
+          "seed": 1952538470
         },
         {
-          "seed": 1547701951,
-          "move": "c5d4"
+          "initialSeed": 1936384785,
+          "move": "c5d4",
+          "seed": 1547701951
         },
         {
-          "seed": 994906218,
-          "move": "c5b6"
+          "initialSeed": 295853258,
+          "move": "c5b6",
+          "seed": 994906218
         },
         {
-          "seed": 2398537586,
-          "move": "g8g7"
+          "initialSeed": 2950289027,
+          "move": "g8g7",
+          "seed": 2398537586
         },
         {
-          "seed": 4166230559,
-          "move": "c5d4"
+          "initialSeed": 1309757500,
+          "move": "c5d4",
+          "seed": 4166230559
         },
         {
-          "seed": 1214238588,
-          "move": "c5b6"
+          "initialSeed": 3964193269,
+          "move": "c5b6",
+          "seed": 1214238588
         },
         {
-          "seed": 2275594519,
-          "move": "c5d4"
+          "initialSeed": 2323661742,
+          "move": "c5d4",
+          "seed": 2275594519
         },
         {
-          "seed": 2693040814,
-          "move": "g8f7"
+          "initialSeed": 683130215,
+          "move": "g8f7",
+          "seed": 2693040814
         },
         {
-          "seed": 4211011146,
-          "move": "c5a3"
+          "initialSeed": 3337565984,
+          "move": "c5a3",
+          "seed": 4211011146
         },
         {
-          "seed": 1588894239,
-          "move": "c5d4"
+          "initialSeed": 1697034457,
+          "move": "c5d4",
+          "seed": 1588894239
         },
         {
-          "seed": 3172108035,
-          "move": "g8f8"
+          "initialSeed": 56502930,
+          "move": "g8f8",
+          "seed": 3172108035
         },
         {
-          "seed": 2642293857,
-          "move": "g8f7"
+          "initialSeed": 2710938699,
+          "move": "g8f7",
+          "seed": 2642293857
         },
         {
-          "seed": 272863293,
-          "move": "c5e7"
+          "initialSeed": 1070407172,
+          "move": "c5e7",
+          "seed": 272863293
         },
         {
-          "seed": 8618392,
-          "move": "c5d4"
+          "initialSeed": 3724842941,
+          "move": "c5d4",
+          "seed": 8618392
         },
         {
-          "seed": 3739868421,
-          "move": "c5a7"
+          "initialSeed": 2084311414,
+          "move": "c5a7",
+          "seed": 3739868421
         },
         {
-          "seed": 2880674664,
-          "move": "g8f7"
+          "initialSeed": 443779887,
+          "move": "g8f7",
+          "seed": 2880674664
         },
         {
-          "seed": 3036716647,
-          "move": "c5d4"
+          "initialSeed": 3098215656,
+          "move": "c5d4",
+          "seed": 3036716647
         },
         {
-          "seed": 389181875,
-          "move": "c5e7"
+          "initialSeed": 1457684129,
+          "move": "c5e7",
+          "seed": 389181875
         },
         {
-          "seed": 1934084324,
-          "move": "g8h7"
+          "initialSeed": 4112119898,
+          "move": "g8h7",
+          "seed": 1934084324
         },
         {
-          "seed": 3568701146,
-          "move": "c5a7"
+          "initialSeed": 2471588371,
+          "move": "c5a7",
+          "seed": 3568701146
         },
         {
-          "seed": 481797096,
-          "move": "c5f8"
+          "initialSeed": 831056844,
+          "move": "c5f8",
+          "seed": 481797096
         },
         {
-          "seed": 199587286,
-          "move": "c5e7"
+          "initialSeed": 3485492613,
+          "move": "c5e7",
+          "seed": 199587286
         },
         {
-          "seed": 3334909780,
-          "move": "g8f8"
+          "initialSeed": 1844961086,
+          "move": "g8f8",
+          "seed": 3334909780
         },
         {
-          "seed": 2935013379,
-          "move": "g8f7"
+          "initialSeed": 204429559,
+          "move": "g8f7",
+          "seed": 2935013379
         },
         {
-          "seed": 4207097796,
-          "move": "c5a3"
+          "initialSeed": 2858865328,
+          "move": "c5a3",
+          "seed": 4207097796
         },
         {
-          "seed": 3627794677,
-          "move": "c5a7"
+          "initialSeed": 1218333801,
+          "move": "c5a7",
+          "seed": 3627794677
         },
         {
-          "seed": 3096485246,
-          "move": "g8f8"
+          "initialSeed": 3872769570,
+          "move": "g8f8",
+          "seed": 3096485246
         },
         {
-          "seed": 1645248437,
-          "move": "g8h8"
+          "initialSeed": 2232238043,
+          "move": "g8h8",
+          "seed": 1645248437
         },
         {
-          "seed": 1980400822,
-          "move": "g8h7"
+          "initialSeed": 591706516,
+          "move": "g8h7",
+          "seed": 1980400822
         },
         {
-          "seed": 3292737268,
-          "move": "g8f8"
+          "initialSeed": 3246142285,
+          "move": "g8f8",
+          "seed": 3292737268
         },
         {
-          "seed": 259826607,
-          "move": "c5e7"
+          "initialSeed": 1605610758,
+          "move": "c5e7",
+          "seed": 259826607
         },
         {
-          "seed": 3939523415,
-          "move": "c5a3"
+          "initialSeed": 4260046527,
+          "move": "c5a3",
+          "seed": 3939523415
         },
         {
-          "seed": 4038575166,
-          "move": "c5d4"
+          "initialSeed": 2619515000,
+          "move": "c5d4",
+          "seed": 4038575166
         },
         {
-          "seed": 3596448132,
-          "move": "c5a7"
+          "initialSeed": 978983473,
+          "move": "c5a7",
+          "seed": 3596448132
         },
         {
-          "seed": 2192480209,
-          "move": "g8g7"
+          "initialSeed": 3633419242,
+          "move": "g8g7",
+          "seed": 2192480209
         },
         {
-          "seed": 69603340,
-          "move": "c5e7"
+          "initialSeed": 1992887715,
+          "move": "c5e7",
+          "seed": 69603340
         },
         {
-          "seed": 499388228,
-          "move": "c5f8"
+          "initialSeed": 352356188,
+          "move": "c5f8",
+          "seed": 499388228
         },
         {
-          "seed": 3421338979,
-          "move": "c5d4"
+          "initialSeed": 3006791957,
+          "move": "c5d4",
+          "seed": 3421338979
         },
         {
-          "seed": 1402484759,
-          "move": "g8h8"
+          "initialSeed": 1366260430,
+          "move": "g8h8",
+          "seed": 1402484759
         },
         {
-          "seed": 646704990,
-          "move": "c5f8"
+          "initialSeed": 4020696199,
+          "move": "c5f8",
+          "seed": 646704990
         },
         {
-          "seed": 4117592310,
-          "move": "c5a3"
+          "initialSeed": 2380164672,
+          "move": "c5a3",
+          "seed": 4117592310
         }
       ]
     },
@@ -825,260 +1017,324 @@
       "captures": 32,
       "decisions": [
         {
-          "seed": 3761132862,
-          "move": "c5a7"
+          "initialSeed": 2654435769,
+          "move": "c5a7",
+          "seed": 3761132862
         },
         {
-          "seed": 3226217053,
-          "move": "c5d4"
+          "initialSeed": 1013904242,
+          "move": "c5d4",
+          "seed": 3226217053
         },
         {
-          "seed": 784628165,
-          "move": "c5d4"
+          "initialSeed": 3668340011,
+          "move": "c5d4",
+          "seed": 784628165
         },
         {
-          "seed": 2458475954,
-          "move": "g8g7"
+          "initialSeed": 2027808484,
+          "move": "g8g7",
+          "seed": 2458475954
         },
         {
-          "seed": 4258716665,
-          "move": "c5d4"
+          "initialSeed": 387276957,
+          "move": "c5d4",
+          "seed": 4258716665
         },
         {
-          "seed": 1561876425,
-          "move": "c5d4"
+          "initialSeed": 3041712726,
+          "move": "c5d4",
+          "seed": 1561876425
         },
         {
-          "seed": 871650656,
-          "move": "c5d4"
+          "initialSeed": 1401181199,
+          "move": "c5d4",
+          "seed": 871650656
         },
         {
-          "seed": 932386318,
-          "move": "c5b6"
+          "initialSeed": 4055616968,
+          "move": "c5b6",
+          "seed": 932386318
         },
         {
-          "seed": 2312130800,
-          "move": "g8g7"
+          "initialSeed": 2415085441,
+          "move": "g8g7",
+          "seed": 2312130800
         },
         {
-          "seed": 3920379642,
-          "move": "c5d4"
+          "initialSeed": 774553914,
+          "move": "c5d4",
+          "seed": 3920379642
         },
         {
-          "seed": 1311583358,
-          "move": "c5d4"
+          "initialSeed": 3428989683,
+          "move": "c5d4",
+          "seed": 1311583358
         },
         {
-          "seed": 3123752883,
-          "move": "c5d4"
+          "initialSeed": 1788458156,
+          "move": "c5d4",
+          "seed": 3123752883
         },
         {
-          "seed": 2649135620,
-          "move": "c5d4"
+          "initialSeed": 147926629,
+          "move": "c5d4",
+          "seed": 2649135620
         },
         {
-          "seed": 1969817514,
-          "move": "c5d4"
+          "initialSeed": 2802362398,
+          "move": "c5d4",
+          "seed": 1969817514
         },
         {
-          "seed": 1138305179,
-          "move": "c5b6"
+          "initialSeed": 1161830871,
+          "move": "c5b6",
+          "seed": 1138305179
         },
         {
-          "seed": 2100765972,
-          "move": "g8h7"
+          "initialSeed": 3816266640,
+          "move": "g8h7",
+          "seed": 2100765972
         },
         {
-          "seed": 3732997009,
-          "move": "c5a7"
+          "initialSeed": 2175735113,
+          "move": "c5a7",
+          "seed": 3732997009
         },
         {
-          "seed": 18943114,
-          "move": "c5e7"
+          "initialSeed": 535203586,
+          "move": "c5e7",
+          "seed": 18943114
         },
         {
-          "seed": 4013735075,
-          "move": "c5d4"
+          "initialSeed": 3189639355,
+          "move": "c5d4",
+          "seed": 4013735075
         },
         {
-          "seed": 3553155478,
-          "move": "c5a7"
+          "initialSeed": 1549107828,
+          "move": "c5a7",
+          "seed": 3553155478
         },
         {
-          "seed": 971241027,
-          "move": "c5d4"
+          "initialSeed": 4203543597,
+          "move": "c5d4",
+          "seed": 971241027
         },
         {
-          "seed": 2388382196,
-          "move": "c5d4"
+          "initialSeed": 2563012070,
+          "move": "c5d4",
+          "seed": 2388382196
         },
         {
-          "seed": 1667962794,
-          "move": "g8h8"
+          "initialSeed": 922480543,
+          "move": "g8h8",
+          "seed": 1667962794
         },
         {
-          "seed": 1952538470,
-          "move": "c5d4"
+          "initialSeed": 3576916312,
+          "move": "c5d4",
+          "seed": 1952538470
         },
         {
-          "seed": 1547701951,
-          "move": "c5d4"
+          "initialSeed": 1936384785,
+          "move": "c5d4",
+          "seed": 1547701951
         },
         {
-          "seed": 994906218,
-          "move": "c5b6"
+          "initialSeed": 295853258,
+          "move": "c5b6",
+          "seed": 994906218
         },
         {
-          "seed": 2398537586,
-          "move": "g8g7"
+          "initialSeed": 2950289027,
+          "move": "g8g7",
+          "seed": 2398537586
         },
         {
-          "seed": 4166230559,
-          "move": "c5d4"
+          "initialSeed": 1309757500,
+          "move": "c5d4",
+          "seed": 4166230559
         },
         {
-          "seed": 1214238588,
-          "move": "c5b6"
+          "initialSeed": 3964193269,
+          "move": "c5b6",
+          "seed": 1214238588
         },
         {
-          "seed": 2275594519,
-          "move": "c5d4"
+          "initialSeed": 2323661742,
+          "move": "c5d4",
+          "seed": 2275594519
         },
         {
-          "seed": 2693040814,
-          "move": "g8f7"
+          "initialSeed": 683130215,
+          "move": "g8f7",
+          "seed": 2693040814
         },
         {
-          "seed": 4211011146,
-          "move": "c5a3"
+          "initialSeed": 3337565984,
+          "move": "c5a3",
+          "seed": 4211011146
         },
         {
-          "seed": 1588894239,
-          "move": "c5d4"
+          "initialSeed": 1697034457,
+          "move": "c5d4",
+          "seed": 1588894239
         },
         {
-          "seed": 3172108035,
-          "move": "g8f8"
+          "initialSeed": 56502930,
+          "move": "g8f8",
+          "seed": 3172108035
         },
         {
-          "seed": 2642293857,
-          "move": "c5d4"
+          "initialSeed": 2710938699,
+          "move": "c5d4",
+          "seed": 2642293857
         },
         {
-          "seed": 272863293,
-          "move": "c5e7"
+          "initialSeed": 1070407172,
+          "move": "c5e7",
+          "seed": 272863293
         },
         {
-          "seed": 8618392,
-          "move": "c5d4"
+          "initialSeed": 3724842941,
+          "move": "c5d4",
+          "seed": 8618392
         },
         {
-          "seed": 3739868421,
-          "move": "c5a7"
+          "initialSeed": 2084311414,
+          "move": "c5a7",
+          "seed": 3739868421
         },
         {
-          "seed": 2880674664,
-          "move": "g8f7"
+          "initialSeed": 443779887,
+          "move": "g8f7",
+          "seed": 2880674664
         },
         {
-          "seed": 3036716647,
-          "move": "c5d4"
+          "initialSeed": 3098215656,
+          "move": "c5d4",
+          "seed": 3036716647
         },
         {
-          "seed": 389181875,
-          "move": "c5e7"
+          "initialSeed": 1457684129,
+          "move": "c5e7",
+          "seed": 389181875
         },
         {
-          "seed": 1934084324,
-          "move": "g8h7"
+          "initialSeed": 4112119898,
+          "move": "g8h7",
+          "seed": 1934084324
         },
         {
-          "seed": 3568701146,
-          "move": "c5a7"
+          "initialSeed": 2471588371,
+          "move": "c5a7",
+          "seed": 3568701146
         },
         {
-          "seed": 481797096,
-          "move": "c5d4"
+          "initialSeed": 831056844,
+          "move": "c5d4",
+          "seed": 481797096
         },
         {
-          "seed": 199587286,
-          "move": "c5d4"
+          "initialSeed": 3485492613,
+          "move": "c5d4",
+          "seed": 199587286
         },
         {
-          "seed": 3334909780,
-          "move": "g8f8"
+          "initialSeed": 1844961086,
+          "move": "g8f8",
+          "seed": 3334909780
         },
         {
-          "seed": 2935013379,
-          "move": "g8f7"
+          "initialSeed": 204429559,
+          "move": "g8f7",
+          "seed": 2935013379
         },
         {
-          "seed": 4207097796,
-          "move": "c5a3"
+          "initialSeed": 2858865328,
+          "move": "c5a3",
+          "seed": 4207097796
         },
         {
-          "seed": 3627794677,
-          "move": "c5d4"
+          "initialSeed": 1218333801,
+          "move": "c5d4",
+          "seed": 3627794677
         },
         {
-          "seed": 3096485246,
-          "move": "c5d4"
+          "initialSeed": 3872769570,
+          "move": "c5d4",
+          "seed": 3096485246
         },
         {
-          "seed": 1645248437,
-          "move": "g8h8"
+          "initialSeed": 2232238043,
+          "move": "g8h8",
+          "seed": 1645248437
         },
         {
-          "seed": 1980400822,
-          "move": "g8h7"
+          "initialSeed": 591706516,
+          "move": "g8h7",
+          "seed": 1980400822
         },
         {
-          "seed": 3292737268,
-          "move": "c5d4"
+          "initialSeed": 3246142285,
+          "move": "c5d4",
+          "seed": 3292737268
         },
         {
-          "seed": 259826607,
-          "move": "c5e7"
+          "initialSeed": 1605610758,
+          "move": "c5e7",
+          "seed": 259826607
         },
         {
-          "seed": 3939523415,
-          "move": "c5d4"
+          "initialSeed": 4260046527,
+          "move": "c5d4",
+          "seed": 3939523415
         },
         {
-          "seed": 4038575166,
-          "move": "c5d4"
+          "initialSeed": 2619515000,
+          "move": "c5d4",
+          "seed": 4038575166
         },
         {
-          "seed": 3596448132,
-          "move": "c5a7"
+          "initialSeed": 978983473,
+          "move": "c5a7",
+          "seed": 3596448132
         },
         {
-          "seed": 2192480209,
-          "move": "c5d4"
+          "initialSeed": 3633419242,
+          "move": "c5d4",
+          "seed": 2192480209
         },
         {
-          "seed": 69603340,
-          "move": "c5d4"
+          "initialSeed": 1992887715,
+          "move": "c5d4",
+          "seed": 69603340
         },
         {
-          "seed": 499388228,
-          "move": "c5d4"
+          "initialSeed": 352356188,
+          "move": "c5d4",
+          "seed": 499388228
         },
         {
-          "seed": 3421338979,
-          "move": "c5d4"
+          "initialSeed": 3006791957,
+          "move": "c5d4",
+          "seed": 3421338979
         },
         {
-          "seed": 1402484759,
-          "move": "g8h8"
+          "initialSeed": 1366260430,
+          "move": "g8h8",
+          "seed": 1402484759
         },
         {
-          "seed": 646704990,
-          "move": "c5f8"
+          "initialSeed": 4020696199,
+          "move": "c5f8",
+          "seed": 646704990
         },
         {
-          "seed": 4117592310,
-          "move": "c5a3"
+          "initialSeed": 2380164672,
+          "move": "c5a3",
+          "seed": 4117592310
         }
       ]
     }
