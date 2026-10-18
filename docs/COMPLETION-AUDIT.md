@@ -23,6 +23,8 @@ October 18, 2026. **The full goal is not complete.** The implemented release can
 
 The added delivery requirement provides a public [jhoyos135/ChessWorkshop](https://github.com/jhoyos135/ChessWorkshop) repository on `master`, an illustrated README with three screenshots, source installation and offline-launch commands. Source, engine assets, content, tests, licenses and verification evidence are included; generated dependencies, build output and local packages are ignored by Git.
 
+An independent clean clone of public commit `c350d72` passed the documented dependency installation, engine bundling, production build and `npm start` commands. All nine built runtime assets match the delivered build byte for byte. Offline gameplay, acknowledged save/reload, local coaching, 32 lessons, 100 puzzles and all three README images were checked. [source-install.json](evidence/source-install.json) records the environment and scope; it does not replace human learning or instructional review.
+
 ## Closed gaps from the earlier audit
 
 The first guided game now reaches actual checkmate from the starting position and can reopen as a separate review game. Teaching imports now validate authored replies, phases, solved/assistance flags, demonstrations and full-game completion. Opponent moves/results have explicit accessible announcements, and rejected clicks explain the failure while preserving selection. Dedicated 3D special-move captures verify intermediate motion and the settled pieces. Clock suspension and in-game opponent-level changes now have dedicated behavioral coverage.

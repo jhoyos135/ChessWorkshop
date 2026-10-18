@@ -89,3 +89,11 @@ Deterministic UCI cases first reproduced an older displayed primary disagreeing 
 An earlier run spanned a host interruption and recorded one elapsed-time timeout during the lesson demonstration flow. The interrupted JSON and trace are preserved in evidence/interrupted-browser-results.json and evidence/interrupted-run. The clean full regression passed that flow and all other journeys.
 
 The public source repository is [jhoyos135/ChessWorkshop](https://github.com/jhoyos135/ChessWorkshop), with the requested `master` branch. Its README includes source installation, offline-launch instructions and three screenshots. Build output, dependencies, local packages and temporary browser reports are excluded from Git.
+
+## Clean public-source installation
+
+[source-install.json](evidence/source-install.json) records an independent clean clone of public commit `c350d72`. The README's `npm ci`, engine-bundling, production-build and `npm start` commands succeeded using Node 20.19.4. All nine built runtime assets match the delivered build byte for byte. Chrome verified two saved plies restored paused, a legal local-engine recommendation matching final bestmove, 32 lessons, 100 puzzles and the three README PNGs with external runtime requests blocked. The normal application server was restored afterward.
+
+This is one Windows installation using the machine's existing npm configuration/cache. Bundling recopies the upstream GPL license with its original Windows line endings; its text is unchanged. The content probe waits for navigation to finish before counting cards. These installation checks do not establish human learning outcomes.
+
+The new installation evidence was assembled after the 406-file runtime smoke. Archive sidecars record the final expanded file count. The runtime, static assets, server and launcher were compared unchanged during reassembly; the added files are verification documentation.

@@ -14,7 +14,7 @@
   "firefox": "unverified; user selected Chrome",
   "humanInstructionalReview": "outstanding",
   "behavioralHelpEvaluations": 13122,
-  "date": "2026-10-18T15:18:52.549883+00:00",
+  "date": "2026-10-18T15:36:23.444376+00:00",
   "status": "incomplete",
   "releaseStatus": "incomplete",
   "automatedChecks": "passed",
@@ -76,5 +76,14 @@
     "actualWasmTacticalPositions": 4,
     "raw": "final-coaching-results.json"
   },
-  "finalPriorityJourneys": 14
+  "finalPriorityJourneys": 14,
+  "sourceInstall": {
+    "passed": true,
+    "testedCommit": "c350d727d8d77aed4814182e2a4a916d3d8b3167",
+    "matchingRuntimeAssets": 9,
+    "restoredPaused": true,
+    "screenshots": 3,
+    "externalRequests": 0,
+    "raw": "source-install.json"
+  }
 }

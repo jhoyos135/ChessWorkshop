@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-18T15:27:46.774Z",
+  "passed": true,
+  "repository": "https://github.com/jhoyos135/ChessWorkshop",
+  "branch": "master",
+  "testedCommit": "c350d727d8d77aed4814182e2a4a916d3d8b3167",
+  "checkout": "workspace\\release\\source-install-check",
+  "runtime": "v20.19.4",
+  "browser": "155.0.8059.84",
+  "origin": "http://127.0.0.1:4173",
+  "commands": [
+    "git clone --branch master --single-branch --depth 1",
+    "npm ci",
+    "node scripts/bundle-engine.mjs",
+    "npm run build",
+    "npm start"
+  ],
+  "dependencyInstall": {
+    "addedPackages": 153,
+    "auditedPackages": 154,
+    "reportedVulnerabilities": 0
+  },
+  "buildIndexSha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340",
+  "committedPliesRestored": 2,
+  "restoredPaused": true,
+  "legalCoachMove": "g1f3",
+  "primaryMatchesFinalChoice": true,
+  "lessons": 32,
+  "puzzles": 100,
+  "screenshots": [
+    {
+      "file": "docs/images/game-3d.png",
+      "bytes": 353933
+    },
+    {
+      "file": "docs/images/game-flat.png",
+      "bytes": 163712
+    },
+    {
+      "file": "docs/images/lesson-complete.png",
+      "bytes": 126661
+    }
+  ],
+  "externalRequests": [],
+  "navigation": {
+    "immediateLessonCount": 0,
+    "immediatePuzzleCount": 0,
+    "readinessWaits": true
+  },
+  "limitations": "One clean public clone on this Windows machine using its existing npm configuration/cache. This verifies source installation and runtime behavior, not human learning outcomes.",
+  "runtimeAssets": [
+    {
+      "file": "asset-manifest.json",
+      "bytes": 844,
+      "sha256": "dfafc0949e4d05c5d272b418309d316ee6beaaac7f76a6d41ea492289a51fcfa"
+    },
+    {
+      "file": "assets/index-CycTW_Ai.css",
+      "bytes": 31837,
+      "sha256": "5566ed541279632192b05c1b6860d653d0870df156177199e0f7a810a34f4f9d"
+    },
+    {
+      "file": "assets/index-DtjBwnZf.js",
+      "bytes": 1478485,
+      "sha256": "cf3f67768976dd4586d6c71be24b4a197fd42c2ecde10e66c62a18f88bcfd492"
+    },
+    {
+      "file": "assets/teaching.worker-rbMFfCqc.js",
+      "bytes": 37833,
+      "sha256": "0dc15b75bbb68a4d6598c0e55146a958069cfef9e7178360f5cab5cef334b90d"
+    },
+    {
+      "file": "engine/stockfish-19-lite-single.js",
+      "bytes": 28230,
+      "sha256": "ccb130d7ff29408531c47d859a49f91d59d4f482d05a53eb1a3231a4f624c91a"
+    },
+    {
+      "file": "engine/stockfish-19-lite-single.wasm",
+      "bytes": 1845971,
+      "sha256": "ee4f115bdb2d32cadf96cada104a05b5ec257d7ad6f57582190b49bc71f096de"
+    },
+    {
+      "file": "index.html",
+      "bytes": 403,
+      "sha256": "057bb854ffa10548e92a2233da5b90d5d29f6c0d0b6c97bf18f4eb0ecc5ef340"
+    },
+    {
+      "file": "licenses/Stockfish-GPL-3.0.txt",
+      "bytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    {
+      "file": "theme.css",
+      "bytes": 20111,
+      "sha256": "df71663ddcb220fe667132c1d4c9b531c5d025ffb672b044fbf8fdfeec25f885"
+    }
+  ],
+  "allRuntimeAssetsMatchDelivered": true,
+  "postBuildStatus": "M public/licenses/Stockfish-GPL-3.0.txt",
+  "licenseCopy": {
+    "textUnchanged": true,
+    "sourceLineEndings": "LF",
+    "generatedLineEndings": "CRLF"
+  },
+  "originalServerRestored": true
+}
